@@ -9,15 +9,11 @@ nav .navbar-nav {
     margin-left:auto;
 }
 
-nav > .container-fluid {
-    padding:0;
-}
-
 header {
     position: relative;
     font-family: 'Assistant';
     font-weight: 500;
-    font-size: 1rem;
+    font-size:1.2em;
 }
 #nav_bg-img {
     position: absolute;
@@ -30,5 +26,17 @@ header {
     opacity: 0.5;
 }
 
+/* Adjust the spacing of the navbar to accomodate the nav links text */
+@media screen and (max-width:780px) {
+    nav > div.container{
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width:615px) {
+    nav > div.container{
+        padding: 0;;
+    }
+}
 
 /* ! Nav */
