@@ -26,17 +26,4 @@ header {
     opacity: 0.5;
 }
 
-/* Adjust the spacing of the navbar to accomodate the nav links text */
-@media screen and (max-width:780px) {
-    nav > div.container{
-        max-width: 750px;
-    }
-}
-
-@media screen and (max-width:615px) {
-    nav > div.container{
-        padding: 0;;
-    }
-}
-
 /* ! Nav */
