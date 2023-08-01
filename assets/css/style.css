@@ -15,38 +15,73 @@ nav .navbar-nav {
 
 /* Nav items */
 
-.navbar-nav .nav-item:not(:first-child)::after{
+.navbar-nav .nav-item:not(:first-child)::after {
     /* Add the border left to nav-items */
     /* Reminded myself how to use ":before" to make a line using w3docs [https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html#:~:text=We%20will%20add%20a%20line,line%20according%20to%20your%20text.] */
+   
     --nav-item_border-left-height: 40%;
-    height:var(--nav-item_border-left-height); /* Sets border height to variable */
-    top: calc((100% - var(--nav-item_border-left-height))/2); /* Works out how to center it by diving the avaible space by 2 */
+    
+    /* Sets border height to variable */
+    height: var(--nav-item_border-left-height);
 
-    content:"";
+    /* Works out how to center it by diving the avaible space by 2 */
+    top: calc((100% - var(--nav-item_border-left-height))/2);
+
+    content: "";
     position: absolute;
     border-left: 1px solid black;
 }
 
-.navbar-nav > .nav-item > .nav-link {
+.navbar-nav>.nav-item>.nav-link {
     padding: 3px 8px;
     margin: 0 5px;
-    
-    color:rgba(0, 0, 0, 0.8);
+
+    color: rgba(0, 0, 0, 0.8);
+    min-width: 70px;
+    text-align: center;
 }
 
-.navbar-nav > .nav-item > .nav-link.active {
+.navbar-nav>.nav-item>.nav-link.active {
     background-color: rgba(255, 255, 255, 0.35);
     box-shadow: 100px #ffff;
-    color:black;
+    color: black;
 }
 
-.navbar-nav > .nav-item > .nav-link:hover {
+.navbar-nav>.nav-item>.nav-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 7px #ffff;
-    color:black;
+    color: black;
+}
+
+/* Nav dropdown menu */
+.dropdown-menu {
+    right: 0;
+    margin: auto;
+    border-top: none;
+    border: none;
+    background-color: #fff6f7;
+    box-shadow: 0px 0px 7px #c4a4a4;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: initial;
 }
 
 
+/* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
+@media all and (min-width: 892px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {}
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* ! Nav dropdown menu */
 
 /* ! Nav items */
 
@@ -55,13 +90,14 @@ header {
     position: relative;
     font-family: 'Assistant';
     font-weight: 500;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
+
 #nav_bg-img {
     position: absolute;
     background-image: url(../images/navbar-bg.png);
     background-size: cover;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
