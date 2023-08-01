@@ -62,12 +62,14 @@ nav .navbar-nav {
     border: none;
     background-color: #fff6f7;
     box-shadow: 0px 0px 7px #c4a4a4;
-    
-    margin-top: 0.125rem;
 }
 
 .dropdown-menu[data-bs-popper] {
     left: initial;
+}
+
+.dropdown-item:hover {
+    background-color: #e1b6d250;
 }
 
 
@@ -126,6 +128,13 @@ header {
 
 section > .container {
     text-align: center;
+}
+
+/* Keeps the homepage-hero's eye centered as the device width gets smaller */
+@media screen and (max-width:670px){
+    #homepage-hero {
+        margin-left: 120px;
+    }
 }
 
 /* ! Hero */
