@@ -9,6 +9,26 @@ nav .navbar-nav {
     margin-left:auto;
 }
 
+.navbar-nav .nav-item {
+    position: relative; /*Makes it so that the nav items border-left will be relative to height of element*/
+}
+
+/* Nav items */
+/* Add the border left to nav-items */
+/* Reminded myself how to use :before to make a line using w3docs [https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html#:~:text=We%20will%20add%20a%20line,line%20according%20to%20your%20text.] */
+nav .navbar-nav .nav-item:not(:first-child)::before{
+    --nav-item_border-left-height: 40%;
+    height:var(--nav-item_border-left-height); /* Sets border height to variable */
+    top: calc((100% - var(--nav-item_border-left-height))/2); /* Works out how to center it by diving the avaible space by 2 */
+
+    content:"";
+    position: absolute;
+    border-left: 1px solid black;
+}
+
+/* ! Nav items */
+
+
 header {
     position: relative;
     font-family: 'Assistant';
