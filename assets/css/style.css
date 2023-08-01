@@ -100,8 +100,9 @@ header {
 
 #nav_bg-img {
     position: absolute;
-    background-image: url(../images/navbar-bg.png);
+    background-image: url(../images/crystal-bg.png);
     background-size: cover;
+    background-position-y: 47%;
     top: 0;
     right: 0;
     bottom: 0;
