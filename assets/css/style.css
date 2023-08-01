@@ -62,6 +62,8 @@ nav .navbar-nav {
     border: none;
     background-color: #fff6f7;
     box-shadow: 0px 0px 7px #c4a4a4;
+    
+    margin-top: 0.125rem;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -70,10 +72,10 @@ nav .navbar-nav {
 
 
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
-@media all and (min-width: 892px) {
-    .navbar .nav-item .dropdown-menu {
-        display: none;
-    }
+@media (hover: hover) { /* I modified this so it detects whether device can hover (essentially it will be: true if has mouse, false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
+        .navbar .nav-item .dropdown-menu {
+            display: none;
+        }
 
     .navbar .nav-item:hover .nav-link {}
 
@@ -118,6 +120,7 @@ header {
 }
 
 .hero-image {
+    margin: 0.75em 0;
     height: 100%;
 }
 
