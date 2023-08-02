@@ -21,8 +21,8 @@ nav .navbar-nav {
 }
 
 .navbar-nav .nav-item {
+    /* Makes it so that the .nav-link items border-left height will be relative to height of .nav-item */
     position: relative;
-    /*Makes it so that the nav items border-left will be relative to height of element*/
 }
 
 /* Nav items */
@@ -85,7 +85,7 @@ nav .navbar-nav {
 
 
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
-@media (hover: hover) { /* I modified this so it detects whether device can hover (essentially it will be: true if has mouse, false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
+@media (hover: hover) { /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
         .navbar .nav-item .dropdown-menu {
             display: none;
         }
@@ -162,7 +162,7 @@ footer {
     background-attachment: fixed;
 }
 
-footer > .container {
+footer > .footer_container {
     min-height: 100%;
     position: relative;
 }
