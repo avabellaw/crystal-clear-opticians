@@ -85,10 +85,11 @@ nav .navbar-nav {
 
 
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
-@media (hover: hover) { /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
-        .navbar .nav-item .dropdown-menu {
-            display: none;
-        }
+/* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
+@media (hover: hover) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
 
     .navbar .nav-item:hover .nav-link {}
 
@@ -100,6 +101,77 @@ nav .navbar-nav {
 /* ! Nav dropdown menu */
 
 /* ! Nav items */
+
+hr.seperator {
+    height: 4px;
+}
+
+.hero-tag-line_content>h1::after {
+    content: "\2713";
+    position: absolute;
+    margin-left: 6px;
+}
+
+.hero-tag-line_content>h1 {
+    /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
+    /* I've done this by setting word-spacing to 100% of the viewport width */
+    word-spacing: 100vw;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:580px) {
+    .hero-tag-line_content>h1 {
+        /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
+        /* I've done this by setting word-spacing to 100% of the viewport width */
+        word-spacing: initial;
+    }
+
+    .hero-tag-line_content>h1::after {
+        position: initial;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-width:675px) {
+    .hero-tag-line_content>h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .hero-tag-line {
+        max-width: 53em;
+        margin: 0 auto;
+    }
+}
+
+/* .hero-tag-line_content>h1 {
+    font-size: 1.2em;
+} */
+
+/* .hero-tag-line {
+    max-width: 816px;
+    margin: auto;
+} */
+
+.hero-tag-line_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .hero-tag-line_content>h1::after {
+    margin-left: 8px;
+}
+
+.hero-tag-line_content>h1 {
+    font-size: 1.5em;
+}
+
+.hero-tag-line_content>h1::after {
+    font-size: 1.3em;
+} */
+
+
 
 
 header {
@@ -127,17 +199,17 @@ header {
     justify-content: center;
 }
 
-.hero-image {
+/* .hero-image {
     margin: 0.75em 0;
-    height: 100%;
-}
+} */
 
-section > .container {
+.section-container {
     text-align: center;
+    /* margin: 0.75rem 0; */
 }
 
 /* Keeps the homepage-hero's eye centered as the device width gets smaller */
-@media screen and (max-width:670px){
+@media screen and (max-width:670px) {
     #homepage-hero {
         margin-left: 120px;
     }
@@ -162,7 +234,7 @@ footer {
     background-attachment: fixed;
 }
 
-footer > .footer_container {
+footer>.footer_container {
     min-height: 100%;
     position: relative;
 }
