@@ -3,6 +3,17 @@ body {
     font-size: 0.9rem;
 }
 
+/* Apply to div as a base class for creating a background image */
+.bg-img {
+    background-color: pink;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /* Nav */
 
 nav .navbar-nav {
@@ -98,15 +109,9 @@ header {
     font-size: 1.2em;
 }
 
-#nav_bg-img {
-    position: absolute;
+.bg-img--nav {
     background-image: url(../images/crystal-bg.png);
-    background-size: cover;
     background-position-y: 47%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     opacity: 0.5;
 }
 
@@ -139,3 +144,37 @@ section > .container {
 }
 
 /* ! Hero */
+
+/* Footer */
+
+footer {
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-img--footer {
+    background: url(../images/crystal-bg.png) no-repeat right top;
+    background-size: cover;
+    transform: scaleY(-1);
+    background-position-y: 96%;
+    opacity: 0.75;
+    background-attachment: fixed;
+}
+
+footer > .container {
+    min-height: 100%;
+    position: relative;
+}
+
+.footer_inner-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 15px;
+    BACKGROUND-COLOR: rgba(255, 255, 255, 0.632);
+}
+
+/* ! Footer */
