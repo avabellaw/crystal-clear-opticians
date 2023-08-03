@@ -1,11 +1,7 @@
 html {
-    font-size: 14px;
-}
-
-@media screen and (min-width:766px) {
-    html {
-        font-size: 16px;
-    }
+    /* Originally thought of using break points to change root font size and then use rem but found this idea [https://matthewjamestaylor.com/responsive-font-size] */
+    /* Sets the base font-size by adding on 0.39% of the view port width  */
+    font-size: calc(15px + 0.390625vw);
 }
 
 body {
@@ -278,8 +274,8 @@ p.diagram-description {
 
 @media screen and (min-width:600px) {
     .diagram-container {
-        width:75%;
-    }    
+        width: 75%;
+    }
 }
 
 /* ! Add-ons included */
