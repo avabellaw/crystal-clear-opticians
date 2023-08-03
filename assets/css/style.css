@@ -1,7 +1,7 @@
 html {
     /* Originally thought of using break points to change root font size and then use rem but found this idea [https://matthewjamestaylor.com/responsive-font-size] */
     /* Sets the base font-size by adding on 0.39% of the view port width  */
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(14px + 0.390625vw);
 }
 
 body {
@@ -14,20 +14,16 @@ body {
 
 /* All header sizes I'm expecting to use currently have been reduced by 0.1rem from the default (also using rem instead of em)*/
 h1 {
-    --h1-default-size: 1.9rem;
+    --h1-default-size: 1.5rem;
     font-size: var(--h1-default-size);
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.17rem;
 }
 
 h3 {
-    font-size: 1.07rem;
-}
-
-h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Apply to div as a base class for creating a background image */
@@ -148,17 +144,15 @@ hr.seperator {
     /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
-    font-size: 1.18rem;
+    font-size: 1rem;
     margin: 0;
 }
 
-@media screen and (min-width:500px) {
-    .hero-tag-line_content>h1 {
-        font-size: 1.5rem;
-    }
+.hero-image-container {
+    max-height: 60vh;
 }
 
-@media screen and (min-width:740px) {
+@media screen and (min-width:500px) {
     .hero-tag-line_content>h1 {
         /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
         /* I've done this by setting word-spacing to 100% of the viewport width */
@@ -169,15 +163,22 @@ hr.seperator {
         position: initial;
         margin-left: 8px;
     }
+
+    .hero-image-container {
+        max-height: 70vh;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .hero-tag-line_content>h1 {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width:850px) {
-    .hero-tag-line_content>h1 {
-        font-size: 1.7rem;
-    }
 
     .hero-tag-line {
-        max-width: 65em;
+        max-width: 800px;
         margin: 0 auto;
     }
 }
@@ -258,7 +259,7 @@ header {
 p.diagram-description {
     margin-bottom: 0;
     margin-top: 1em;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .diagram-container {
