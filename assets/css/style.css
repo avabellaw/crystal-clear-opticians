@@ -1,11 +1,12 @@
 body {
     font-family: 'Lora';
     font-size: 0.9rem;
+    background-color: #fff1f1;
 }
 
 /* Apply to div as a base class for creating a background image */
 .bg-img {
-    background-color: pink;
+    background-color: rgb(255, 247, 248);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -15,6 +16,10 @@ body {
 }
 
 /* Nav */
+
+nav {
+    border-bottom: 2px solid rgba(207, 162, 169, 0.5);
+}
 
 nav .navbar-nav {
     margin-left: auto;
@@ -104,6 +109,7 @@ nav .navbar-nav {
 
 hr.seperator {
     height: 4px;
+    margin: 0.7rem 0 ;
 }
 
 .hero-tag-line_content>h1::after {
@@ -140,7 +146,7 @@ hr.seperator {
 
 @media screen and (min-width:800px) {
     .hero-tag-line {
-        max-width: 53em;
+        max-width: 59em;
         margin: 0 auto;
     }
 }
@@ -181,7 +187,7 @@ header {
 
 .section-container {
     text-align: center;
-    /* margin: 0.75rem 0; */
+    margin-top: 0.75rem;
 }
 
 /* Keeps the homepage-hero's eye centered as the device width gets smaller */
