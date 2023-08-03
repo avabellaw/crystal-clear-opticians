@@ -1,7 +1,9 @@
 body {
+    --body-bg-colour:#fff1f1;
+
     font-family: 'Lora';
     font-size: 0.9rem;
-    background-color: #fff1f1;
+    background-color: var(--body-bg-colour);
 }
 
 /* Apply to div as a base class for creating a background image */
@@ -166,7 +168,7 @@ header {
 .bg-img--nav {
     background-image: url(../images/crystal-bg.png);
     background-position-y: 47%;
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 /* ! Nav */
@@ -187,7 +189,24 @@ header {
 
 .section-container {
     text-align: center;
-    margin-top: 0.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-container:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top:-20px;
+    bottom: -20px;
+    left: 0;
+    right: 0px;
+    background: url(../images/crystal-bg.png) fixed no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    box-shadow: inset 0px 0 30px 40px var(--body-bg-colour);
 }
 
 /* Keeps the homepage-hero's eye centered as the device width gets smaller */
