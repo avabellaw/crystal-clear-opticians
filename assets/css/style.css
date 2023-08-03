@@ -43,6 +43,10 @@ nav {
     border-bottom: 2px solid rgba(207, 162, 169, 0.5);
 }
 
+.navbar {
+    height:11vh;
+}
+
 nav .navbar-nav {
     margin-left: auto;
 }
@@ -129,7 +133,15 @@ nav .navbar-nav {
 
 hr.seperator {
     height: 4px;
-    margin: 0.7rem 0;
+    margin: 7.5px 0;
+}
+
+#homepage-hero {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
 }
 
 .hero-tag-line_content>h1::after {
@@ -146,10 +158,6 @@ hr.seperator {
     margin: 0;
 }
 
-.hero-image-container {
-    max-height: 60vh;
-}
-
 @media screen and (min-width:500px) {
     .hero-tag-line_content>h1 {
         /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
@@ -160,10 +168,6 @@ hr.seperator {
     .hero-tag-line_content>h1::after {
         position: initial;
         margin-left: 8px;
-    }
-
-    .hero-image-container {
-        max-height: 70vh;
     }
 }
 
@@ -176,14 +180,18 @@ hr.seperator {
 @media screen and (min-width:780px) {
 
     .hero-tag-line {
-        max-width: 44em;
         margin: 0 auto;
     }
+}
+
+.hero-tag-line {
+    margin-bottom: -10px;
 }
 
 .hero-tag-line_content {
     display: flex;
     justify-content: space-around;
+    margin:15px 0;
 }
 
 header {
@@ -206,14 +214,15 @@ header {
 .hero-image-container {
     overflow: hidden;
     max-width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
-/* .hero-image {
-    margin: 0.75em 0;
-} */
+.hero-image {
+    height: 100%;
+    width: auto;
+}
 
 .section-container {
     text-align: center;
@@ -239,7 +248,7 @@ header {
 
 /* Keeps the homepage-hero's eye centered as the device width gets smaller */
 @media screen and (max-width:670px) {
-    #homepage-hero {
+    #homepage-hero img {
         margin-left: 120px;
     }
 }
