@@ -1,7 +1,7 @@
 html {
     /* Originally thought of using break points to change root font size and then use rem but found this idea [https://matthewjamestaylor.com/responsive-font-size] */
     /* Sets the base font-size by adding on 0.39% of the view port width  */
-    font-size: calc(14px + 0.390625vw);
+    font-size: calc(15px + 0.390625vw);
 }
 
 body {
@@ -118,8 +118,6 @@ nav .navbar-nav {
         display: none;
     }
 
-    .navbar .nav-item:hover .nav-link {}
-
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
     }
@@ -171,14 +169,14 @@ hr.seperator {
 
 @media screen and (min-width:650px) {
     .hero-tag-line_content>h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width:780px) {
 
     .hero-tag-line {
-        max-width: 800px;
+        max-width: 44em;
         margin: 0 auto;
     }
 }
