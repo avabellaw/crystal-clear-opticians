@@ -22,6 +22,7 @@
         <div class="bg-img bg-img--nav"></div>
         <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
         <nav class="navbar navbar-expand-sm navbar-light">
+            <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
             <div class="container-md">
                 <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -66,25 +67,25 @@
 
     <!-- Hero section-->
     <section>
-        <!-- Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the lg breakpoint -->
-        <div id="homepage-hero">
-            <div class="hero-image-container">
-                <img class="img-responsive hero-image" src="assets/images/homepage-hero.png"
-                    alt="Close-up of women's face with crystal in eye">
-            </div>
-
-            <div class="hero-tag-line">
-                <hr class="seperator">
-                <div class="hero-tag-line_content">
-                    <h1>Transparent pricing</h1>
-                    <h1>Quick Delivery</h1>
-                    <h1>Professional results</h1>
+        <div class="container-md section-container" id="homepage-hero-container">
+            <div id="homepage-hero">
+                <div class="hero-image-container">
+                    <img class="img-responsive hero-image" src="assets/images/homepage-hero.png"
+                        alt="Close-up of women's face with crystal in eye">
                 </div>
-                <hr class="seperator">
+    
+                <div class="hero-tag-line">
+                    <hr class="seperator">
+                    <div class="hero-tag-line_content">
+                        <h1>Transparent pricing</h1>
+                        <h1>Quick Delivery</h1>
+                        <h1>Professional results</h1>
+                    </div>
+                    <hr class="seperator">
+                </div>
             </div>
         </div>
-
-
+        
     </section>
     <!-- End of Hero-->
 

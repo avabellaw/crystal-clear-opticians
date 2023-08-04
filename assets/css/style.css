@@ -1,14 +1,23 @@
 html {
-    /* Originally thought of using break points to change root font size and then use rem but found this idea [https://matthewjamestaylor.com/responsive-font-size] */
-    /* Sets the base font-size by adding on 0.39% of the view port width  */
-    font-size: calc(15px + 0.390625vw);
+    font-size:16px;
+}
+
+@media screen and (min-width:768px){
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:992px){
+    html {
+        font-size: 18px;
+    }
 }
 
 body {
     --body-bg-colour: #fff1f1;
 
     font-family: 'Lora';
-    font-size: 0.9rem;
     background-color: var(--body-bg-colour);
 }
 
@@ -44,7 +53,7 @@ nav {
 }
 
 .navbar {
-    height:11vh;
+    min-height:11vh;
 }
 
 nav .navbar-nav {
@@ -154,7 +163,7 @@ hr.seperator {
     /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 0;
 }
 
@@ -173,14 +182,7 @@ hr.seperator {
 
 @media screen and (min-width:650px) {
     .hero-tag-line_content>h1 {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (min-width:780px) {
-
-    .hero-tag-line {
-        margin: 0 auto;
+        /* font-size: 1.2rem; */
     }
 }
 
@@ -210,6 +212,10 @@ header {
 /* ! Nav */
 
 /* Hero */
+
+#homepage-hero-container {
+    padding: 0;
+}
 
 .hero-image-container {
     overflow: hidden;
