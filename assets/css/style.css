@@ -19,9 +19,6 @@ body {
 
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-}
-
-p {
     font-size: calc(0.65rem + .9vw);
 }
 
@@ -57,7 +54,7 @@ nav {
 }
 
 .navbar {
-    min-height:11vh;
+    min-height: 11vh;
 }
 
 nav .navbar-nav {
@@ -194,14 +191,14 @@ hr.seperator {
 .hero-tag-line {
     margin: 0 auto;
     margin-bottom: -10px;
-    width:100%;
+    width: 100%;
     max-width: 44.6rem;
 }
 
 .hero-tag-line_content {
     display: flex;
     justify-content: space-around;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
 
 header {
@@ -271,40 +268,78 @@ header {
 /* Main sections */
 
 .section-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Add-ons included */
 
-p.diagram-description {
+p.diagram_description {
     margin-bottom: 0;
-    margin-top: 1em;
+    margin-top: 0.9em;
 }
 
-.diagram-container {
+.diagram_img-container {
     overflow: hidden;
     width: 90%;
-    border-radius: 30%;
-    margin: auto;
+    margin: 1.2em auto;
 }
 
-.diagram-container>img {
+.diagram_img-container>img {
     width: 100%;
 }
 
+.diagram_img-container--rounded {
+    border-radius: 30%;
+}
+
+.diagram_title {
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
+.diagram {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: flex-end;
+}
+
+#add-ons-included ul {
+    margin: 35px 0;
+    list-style: none;
+}
+
+#add-ons-included ul>li {
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width:600px) {
-    .diagram-container {
+    .diagram_img-container {
         width: 75%;
     }
 }
 
 /* ! Add-ons included */
 
+/* More add-ons */
+
+article#more-add-ons section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#more-add-ons .diagram {
+    min-height: 271px;
+}
+
+/* ! More add-ons */
+
 /* Main sections */
 
 /* Footer */
 
-footer {
+.page-footer {
     height: 25vh;
     position: relative;
     overflow: hidden;
