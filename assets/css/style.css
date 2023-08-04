@@ -163,15 +163,22 @@ hr.seperator {
     /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:440px) {
+    .hero-tag-line_content>h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:600px) {
     .hero-tag-line_content>h1 {
         /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
         /* I've done this by setting word-spacing to 100% of the viewport width */
         word-spacing: initial;
+        font-size: 1.2rem;
     }
 
     .hero-tag-line_content>h1::after {
@@ -180,20 +187,17 @@ hr.seperator {
     }
 }
 
-@media screen and (min-width:650px) {
-    .hero-tag-line_content>h1 {
-        /* font-size: 1.2rem; */
-    }
-}
-
 .hero-tag-line {
+    margin: 0 auto;
     margin-bottom: -10px;
+    width:100%;
+    max-width: 44.6rem;
 }
 
 .hero-tag-line_content {
     display: flex;
     justify-content: space-around;
-    margin:15px 0;
+    margin:1rem 0;
 }
 
 header {
