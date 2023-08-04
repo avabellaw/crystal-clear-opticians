@@ -1,18 +1,18 @@
-html {
-    font-size:16px;
+/* html {
+    font-size:14px;
 }
 
 @media screen and (min-width:768px){
     html {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width:992px){
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
-}
+} */
 
 body {
     --body-bg-colour: #fff1f1;
@@ -21,19 +21,23 @@ body {
     background-color: var(--body-bg-colour);
 }
 
-/* All header sizes I'm expecting to use currently have been reduced by 0.1rem from the default (also using rem instead of em)*/
-h1 {
-    --h1-default-size: 1.5rem;
+p {
+    font-size: calc(0.65rem + .9vw);
+}
+
+/* All header sizes I'm expecting to use currently set to default overriding bootstrap (also using rem instead of em)*/
+/* h1 {
+    --h1-default-size: 1.8rem;
     font-size: var(--h1-default-size);
 }
 
 h2 {
-    font-size: 1.17rem;
+    font-size: 1.35rem;
 }
 
 h3 {
-    font-size: 1rem;
-}
+    font-size: 1.07rem;
+} */
 
 /* Apply to div as a base class for creating a background image */
 .bg-img {
@@ -153,13 +157,13 @@ hr.seperator {
     padding: 10px;
 }
 
-.hero-tag-line_content>h1::after {
+.hero-tag-line_content>p::after {
     content: "\2713";
     position: absolute;
     margin-left: 6px;
 }
 
-.hero-tag-line_content>h1 {
+.hero-tag-line_content>p {
     /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
@@ -168,20 +172,20 @@ hr.seperator {
 }
 
 @media screen and (min-width:440px) {
-    .hero-tag-line_content>h1 {
+    .hero-tag-line_content>p {
         font-size: 1.3rem;
     }
 }
 
 @media screen and (min-width:600px) {
-    .hero-tag-line_content>h1 {
+    .hero-tag-line_content>p {
         /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
         /* I've done this by setting word-spacing to 100% of the viewport width */
         word-spacing: initial;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
-    .hero-tag-line_content>h1::after {
+    .hero-tag-line_content>p::after {
         position: initial;
         margin-left: 8px;
     }
@@ -204,7 +208,6 @@ header {
     position: relative;
     font-family: 'Assistant';
     font-weight: 500;
-    font-size: 1.2em;
 }
 
 .bg-img--nav {
@@ -276,7 +279,6 @@ header {
 p.diagram-description {
     margin-bottom: 0;
     margin-top: 1em;
-    font-size: 1rem;
 }
 
 .diagram-container {
