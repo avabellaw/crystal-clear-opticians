@@ -19,7 +19,7 @@ body {
 
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-    /* font-size: calc(0.65rem + .75vw); */
+    font-size: calc(0.70rem + .6vw);
 }
 
 /* All header sizes I'm expecting to use currently set to default overriding bootstrap (also using rem instead of em)*/
@@ -135,18 +135,19 @@ nav .navbar-nav {
         display: block;
     }
 
-    .navbar-nav>.nav-item>.nav-link:hover, .navbar-nav>.nav-item>.nav-link.show--hover {
+    .navbar-nav>.nav-item>.nav-link:hover,
+    .navbar-nav>.nav-item>.nav-link.show--hover {
         background-color: rgba(255, 255, 255, 0.5);
         box-shadow: 0px 0px 7px #ffff;
         color: black;
     }
 }
 
-    .navbar-nav>.nav-item>.nav-link.show {
-            background-color: rgba(255, 255, 255, 0.5);
-            box-shadow: 0px 0px 7px #ffff;
-            color: black;
-    }
+.navbar-nav>.nav-item>.nav-link.show {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 7px #ffff;
+    color: black;
+}
 
 
 /* ! Nav dropdown menu */
@@ -164,6 +165,17 @@ hr.seperator {
     flex-direction: column;
     justify-content: end;
     padding: 10px;
+}
+
+
+@media screen and (min-height:1100px){
+    .navbar {
+        min-height:7vh;
+    }
+
+    #homepage-hero {
+        min-height: 93vh;
+    }
 }
 
 .hero-tag-line_content>p::after {
@@ -284,16 +296,16 @@ header {
     position: relative;
 }
 
-.section-header::before{
-    content:"";
+.section-header::before {
+    content: "";
     position: absolute;
     bottom: -15px;
     left: 40%;
     right: 40%;
     border-bottom: 1px solid black;
     -webkit-box-shadow: 0 8px 6px -6px black;
-   -moz-box-shadow: 0 8px 6px -6px black;
-        box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 /* Add-ons included */
