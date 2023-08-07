@@ -147,20 +147,35 @@
                 </header>
                 <section>
                     <div class="diagram">
-                        <div class="diagram_img-container">
-                            <img src="assets/images/photochromatic-diagram.png"
-                                alt="Clear glasses - cloudy day and tinted glasses - sunny day">
-                        </div>
-                        <h4 class="diagram_title">Light-reactive lenses</h4>
-                        <p class="diagram_description"><span>Only £65!</span></p>
-                    </div>
+                        <div class="row">
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <div class="diagram_img-container">
+                                    <img src="assets/images/photochromatic-diagram.png"
+                                        alt="Clear glasses - cloudy day and tinted glasses - sunny day">
+                                </div>
 
-                    <div class="diagram">
-                        <div class="diagram_img-container">
-                            <img src="assets/images/tinted-glasses-diagram.png" alt="Glasses with different tints">
+                            </div>
+
+                            <div class="col-6 col-md-4 align-self-center">
+
+                                <div class="diagram_img-container">
+                                    <img src="assets/images/tinted-glasses-diagram.png"
+                                        alt="Glasses with different tints">
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="diagram_title">Tint your glasses</h4>
-                        <p class="diagram_description"><span>Only £40 !</span></p>
+
+                        <div class="row">
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <h4 class="diagram_title">Light-reactive lenses</h4>
+                                <p class="diagram_description"><span>Only £65!</span></p>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h4 class="diagram_title">Tint your glasses</h4>
+                                <p class="diagram_description"><span>Only £40 !</span></p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -191,7 +206,8 @@
     </footer>
     <!-- End of Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
@@ -200,11 +216,24 @@
             $('.dropdown').hover(function () {
                 $(this).addClass('show--hover');
                 $(this).find('.dropdown-toggle').addClass('show--hover');
+                $(this).find('.dropdown-toggle').attr("aria-expanded", true);
                 $(this).find('.dropdown-menu').addClass('show--hover');
+
+               
+                // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
+                const canHover = window.matchMedia('(hover: hover)').matches; 
+
+                if(canHover) {
+                     // Disable dropdown on click [https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown]
+                    $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown--disabled");
+                }
             }, function () {
                 $(this).removeClass('show--hover');
                 $(this).find('.dropdown-toggle').removeClass('show--hover');
+                $(this).find('.dropdown-toggle').attr("aria-expanded", false);
                 $(this).find('.dropdown-menu').removeClass('show--hover');
+
+                $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
             });
         });
     </script>

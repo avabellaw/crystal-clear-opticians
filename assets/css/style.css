@@ -296,18 +296,6 @@ header {
     position: relative;
 }
 
-.section-header::before {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 40%;
-    right: 40%;
-    border-bottom: 1px solid black;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-}
-
 /* Add-ons included */
 
 p.diagram_description {
@@ -319,6 +307,7 @@ p.diagram_description {
     overflow: hidden;
     width: 90%;
     margin: 1.2em auto;
+    padding: 5px 0;
 }
 
 .diagram_img-container>img {
@@ -332,13 +321,6 @@ p.diagram_description {
 .diagram_title {
     font-size: 1.1em;
     text-transform: capitalize;
-}
-
-.diagram {
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    justify-content: flex-end;
 }
 
 #add-ons-included ul {
@@ -364,10 +346,6 @@ article#more-add-ons section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#more-add-ons .diagram {
-    min-height: 271px;
 }
 
 /* ! More add-ons */
