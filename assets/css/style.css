@@ -19,7 +19,7 @@ body {
 
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-    font-size: calc(0.65rem + .9vw);
+    /* font-size: calc(0.65rem + .75vw); */
 }
 
 /* All header sizes I'm expecting to use currently set to default overriding bootstrap (also using rem instead of em)*/
@@ -31,10 +31,10 @@ body {
 h2 {
     font-size: 1.35rem;
 }
-
+*/
 h3 {
-    font-size: 1.07rem;
-} */
+    font-size: calc(1.2rem + .6vw);
+}
 
 /* Apply to div as a base class for creating a background image */
 .bg-img {
@@ -100,12 +100,6 @@ nav .navbar-nav {
     color: black;
 }
 
-.navbar-nav>.nav-item>.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 7px #ffff;
-    color: black;
-}
-
 /* Nav dropdown menu */
 .dropdown-menu {
     right: 0;
@@ -113,7 +107,9 @@ nav .navbar-nav {
     border-top: none;
     border: none;
     background-color: #fff6f7;
-    box-shadow: 0px 0px 7px #c4a4a4;
+    /* box-shadow: 0px 0px 7px #c4a4a4; */
+    border-top: 5px solid transparent;
+    border-radius: 0;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -124,18 +120,34 @@ nav .navbar-nav {
     background-color: #e1b6d250;
 }
 
+.dropdown-menu.show {
+    margin-top: 0;
+}
 
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
 /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
 @media (hover: hover) {
-    .navbar .nav-item .dropdown-menu {
+    .navbar .nav-item .dropdown-menu:not(.show) {
         display: none;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
     }
+
+    .navbar-nav>.nav-item>.nav-link:hover, .navbar-nav>.nav-item>.nav-link.show--hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 7px #ffff;
+        color: black;
+    }
 }
+
+    .navbar-nav>.nav-item>.nav-link.show {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 7px #ffff;
+            color: black;
+    }
+
 
 /* ! Nav dropdown menu */
 
@@ -252,7 +264,7 @@ header {
     right: 0px;
     background: url(../images/crystal-bg.png) fixed no-repeat;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.15;
     box-shadow: inset 0 0 30px 40px var(--body-bg-colour);
 }
 
@@ -269,6 +281,19 @@ header {
 
 .section-header {
     margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.section-header::before{
+    content:"";
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    right: 40%;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+   -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
 }
 
 /* Add-ons included */

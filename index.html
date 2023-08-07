@@ -23,7 +23,7 @@
         <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
         <nav class="navbar navbar-expand-sm navbar-light">
             <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
-            <div class="container-md">
+            <div class="container-lg">
                 <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,7 +67,7 @@
 
     <!-- Hero section-->
     <section>
-        <div class="container-md section-container" id="homepage-hero-container">
+        <div class="container-lg section-container" id="homepage-hero-container">
             <div id="homepage-hero">
                 <div class="hero-image-container">
                     <img class="img-responsive hero-image" src="assets/images/homepage-hero.png"
@@ -143,7 +143,7 @@
         <div class="container section-container">
             <article id="more-add-ons">
                 <header>
-                    <h2>More Add-ons!</h2>
+                    <h2 class="section-header">More Add-ons!</h2>
                 </header>
                 <section>
                     <div class="diagram">
@@ -191,7 +191,23 @@
     </footer>
     <!-- End of Footer -->
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Taken and then modified [https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]
+        $(document).ready(function () {
+            $('.dropdown').hover(function () {
+                $(this).addClass('show--hover');
+                $(this).find('.dropdown-toggle').addClass('show--hover');
+                $(this).find('.dropdown-menu').addClass('show--hover');
+            }, function () {
+                $(this).removeClass('show--hover');
+                $(this).find('.dropdown-toggle').removeClass('show--hover');
+                $(this).find('.dropdown-menu').removeClass('show--hover');
+            });
+        });
+    </script>
 </body>
 
 </html>
