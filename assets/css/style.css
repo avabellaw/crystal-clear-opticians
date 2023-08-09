@@ -18,7 +18,7 @@ body {
     --body-bg-colour: #fff1f1;
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-    font-size: calc(0.75rem + .6vw);
+    font-size: calc(0.75rem + .65vw);
 }
 
 /* All header sizes I'm expecting to use currently set to default overriding bootstrap (also using rem instead of em)*/
@@ -283,6 +283,7 @@ header {
     right: 0px;
     background: url(../images/crystal-bg.png) fixed no-repeat;
     background-size: cover;
+    background-position: -100px;
     opacity: 0.2;
     box-shadow: inset 0 0 30px 40px var(--body-bg-colour);
 }
@@ -391,7 +392,6 @@ header {
 /* Footer */
 
 .page-footer {
-    height: 25vh;
     position: relative;
     overflow: hidden;
 }
@@ -405,19 +405,47 @@ header {
     background-attachment: fixed;
 }
 
-footer>.footer_container {
-    min-height: 100%;
-    position: relative;
+.page-footer {
+    padding: 0.7rem;
 }
 
-.footer_inner-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 15px;
+.page-footer > .footer_container {
+    position: relative;
+    text-align: center;
     BACKGROUND-COLOR: rgba(255, 255, 255, 0.632);
+}
+
+.footer_inner-container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.page-footer .footer_column {
+    padding: 0.6rem;
+}
+
+.page-footer p:last-of-type {
+    margin-bottom: 0;
+}
+
+.page-footer {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:576px) {
+    .page-footer {
+        font-size: 0.9rem;
+    }
+}
+
+.page-footer h5 {
+    /* Based on what .page-footer font-size is set to */
+    font-size: 1.2em;
+}
+
+.page-footer p {
+    /* Based on what .page-footer font-size is set to */
+    font-size: 1em;
 }
 
 /* ! Footer */
