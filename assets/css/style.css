@@ -150,10 +150,6 @@ nav .navbar-nav {
 
 /* ! Nav items */
 
-article {
-    margin: 1rem 0;
-}
-
 article > section {
     margin:0.7rem 0;
 }
@@ -274,6 +270,7 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    padding: 2rem 0;
 }
 
 .section-container:before {
@@ -306,9 +303,21 @@ header {
     position: relative;
 }
 
+@media screen and (min-width:576px){
+    .section-container {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    .section-container {
+        margin-bottom: 3rem;
+    }
+}
+
 /* Diagram table styling */
 
-table.diagram {
+.diagram {
     --diagram-cell-vertical-spacing:15px;
 
     border-spacing: 20px 0;
@@ -354,6 +363,12 @@ table.diagram {
 .diagram_description {
     margin-bottom: 0;
     font-size: 0.95em;
+}
+
+@media screen and (min-width:992px) {
+    .diagram {
+        max-width: 700px;
+    }
 }
 
 /* ! Diagram table styling */
