@@ -21,6 +21,10 @@ body {
     font-size: calc(0.75rem + .65vw);
 }
 
+header {
+    font-size: calc(0.68rem + .65vw);
+}
+
 /* All header sizes I'm expecting to use currently set to default overriding bootstrap (also using rem instead of em)*/
 /* h1 {
     --h1-default-size: 1.8rem;
@@ -150,8 +154,8 @@ nav .navbar-nav {
 
 /* ! Nav items */
 
-article > section {
-    margin:0.7rem 0;
+article>section {
+    margin: 0.7rem 0;
 }
 
 hr.seperator {
@@ -160,8 +164,8 @@ hr.seperator {
 }
 
 hr.space-seperator {
-    height:0px;
-    margin:1rem 0;
+    height: 0px;
+    margin: 1rem 0;
 }
 
 #homepage-hero {
@@ -197,7 +201,7 @@ hr.space-seperator {
     margin: 0;
 }
 
-.hero-tag-line > hr.seperator:last-child {
+.hero-tag-line>hr.seperator:last-child {
     margin-bottom: 0;
 }
 
@@ -304,13 +308,13 @@ header {
     position: relative;
 }
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
     .section-container {
         margin-bottom: 2rem;
     }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) {
     .section-container {
         margin-bottom: 3rem;
     }
@@ -319,7 +323,7 @@ header {
 /* Diagram table styling */
 
 .diagram {
-    --diagram-cell-vertical-spacing:15px;
+    --diagram-cell-vertical-spacing: 15px;
 
     border-spacing: 20px 0;
     border-collapse: separate;
@@ -328,7 +332,7 @@ header {
 }
 
 .diagram td {
-    padding-top:var(--diagram-cell-vertical-spacing);
+    padding-top: var(--diagram-cell-vertical-spacing);
 }
 
 .diagram th {
@@ -409,13 +413,13 @@ header {
     padding: 0.7rem;
 }
 
-.page-footer > .footer_container {
+.page-footer>.footer_container {
     position: relative;
     text-align: center;
     BACKGROUND-COLOR: rgba(255, 255, 255, 0.632);
 }
 
-.footer_inner-container{
+.footer_inner-container {
     max-width: 800px;
     margin: auto;
 }
@@ -449,3 +453,29 @@ header {
 }
 
 /* ! Footer */
+
+/* frames.html */
+
+#frames-collage > .row > div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 35px;
+    /* padding: 1rem; */
+}
+
+#frames-collage h2 {
+    margin-top: 15px;
+    border: solid rgba(0, 0, 0, 0.4);
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+
+.frames-collage_img-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* frames.html */
