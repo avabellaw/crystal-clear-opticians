@@ -338,10 +338,17 @@ header {
 /* Main sections */
 
 .section-header {
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
     position: relative;
     text-align: center;
     text-transform: capitalize;
+}
+
+@media screen and (min-width:992px) {
+    .section-header {
+        margin-bottom: 3rem;
+    }
 }
 
 /* Diagram table styling */
@@ -540,9 +547,17 @@ header {
 
 /* about.html  */
 
+@media screen and (max-height: 700px) {
+
+    #about-section {
+        /* Sets about-section to the remaining height after page-header and navbar height  */
+        height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
+        margin:0;
+    }
+}
+
 #about-section {
-    /* Sets about-section to the remaining height after page-header and navbar height  */
-    height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
+    margin-bottom:10vh;
 }
 
 #about-section>.section-container {
@@ -584,6 +599,7 @@ header {
     min-height: 400px;
     max-width: 600px;
 }
+
 /* ! Location */
 
 /* Contact form */
