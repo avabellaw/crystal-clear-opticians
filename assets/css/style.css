@@ -19,6 +19,10 @@ body {
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
     font-size: calc(0.75rem + .65vw);
+
+    /* Height variables */
+    --page-header-height: 15vh;
+    --navbar-min-height: 12vh;
 }
 
 header {
@@ -33,16 +37,20 @@ header {
 */
 
 .page-header {
-    height: 15vh;
+    height: var(--page-header-height);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.8rem;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width:576px) {
+    body {
+        --page-header-height: 22vh;
+    }
+
     .page-header {
-        height: 22vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,7 +80,14 @@ nav {
 }
 
 .navbar {
-    min-height: 12vh;
+    min-height: var(--navbar-min-height);
+}
+
+@media screen and (min-height:1100px) {
+    body {
+        /* Shrink navbar height if on device such as an iPad Air */
+        --navbar-min-height: 7vh;
+    }
 }
 
 nav .navbar-nav {
@@ -187,22 +202,15 @@ hr.space-seperator {
 }
 
 .hero {
-    height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    /* Make hero take rest of space left after the navbar */
+    height: calc(100vh - var(--navbar-min-height));
     padding: 10px;
 }
 
-
-@media screen and (min-height:1100px) {
-    .navbar {
-        min-height: 7vh;
-    }
-
-    .hero {
-        min-height: 93vh;
-    }
+#homepage-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .hero_tag-line_content>p::after {
@@ -256,9 +264,12 @@ hr.space-seperator {
 }
 
 header {
-    position: relative;
     font-family: 'Assistant';
     font-weight: 500;
+}
+
+.navbar-container {
+    position: relative;
 }
 
 .bg-img--nav {
@@ -534,16 +545,30 @@ header {
 
 /* about.html  */
 
-#about-hero {
-    flex-direction: row;
+.section-container--about {
+
+    height: calc(100vh - var(--navbar-min-height))
+}
+
+#about-section {
+    /* Sets about-section to the remaining height after page-header and navbar height  */
+}
+
+#about-section>img {
+    max-width: 30vw;
+
+    max-height: 50vh;
+}
+
+.about-section_text {
     padding: 2rem;
-    display: inline-block;
 }
 
-#about-hero>.hero_image-container {
-    float: left;
+@media screen and (min-width:576px) {
+    #about-section {
+        padding: 0 4.5rem;
+        display: flex;
+    }
 }
-
-#about-hero>img {}
 
 /* ! about.html */

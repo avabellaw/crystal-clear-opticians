@@ -19,66 +19,82 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="bg-img bg-img--nav"></div>
-        <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
-            <div class="container-lg">
-                <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Our Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/services.html#pre-screening">Pre-screening</a></li>
-                                <li><a class="dropdown-item" href="/services.html#eye-test">Eye test</a></li>
-                                <li><a class="dropdown-item" href="/services.html#contacts">Eye test</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/frames.html">Our Frames</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/about.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/about.html">About</a></li>
-                                <li><a class="dropdown-item" href="/about.html#location">Location</a></li>
-                                <li><a class="dropdown-item" href="/about.html#contact">Contact Us</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="navbar-container">
+            <div class="bg-img bg-img--nav"></div>
+            <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
+                <div class="container-lg">
+                    <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/services.html#pre-screening">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="/services.html#eye-test">Eye test</a></li>
+                                    <li><a class="dropdown-item" href="/services.html#contacts">Eye test</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/frames.html">Our Frames</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/about.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/about.html">About</a></li>
+                                    <li><a class="dropdown-item" href="/about.html#location">Location</a></li>
+                                    <li><a class="dropdown-item" href="/about.html#contact">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="page-header">
+                        <h1>About Crystal Clear opticians</h1>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <!-- End of Navbar -->
 
     <!-- Hero section-->
     <section>
-        <div class="container-lg section-container hero-container">
-            <div class="hero" id="about-hero">
-                <div class="hero_image-container">
+        <div class="container-lg section-container section-container--about">
+            <div class="row">
+                <div class="col" id="about-section">
                     <img class="img-responsive img-thumbnail" src="assets/images/quarts-plain-bg.jpg"
                         alt="Clear quarts quarts, plain purple background">
+    
+    
+                    <div class="about-section_text">
+                        <p>kjsfdh sljkf salkjd flksaj ldksj fdlkjaslfkjsa lkfj asl;kfj kldsajf kldsj afkd
+                            salkfjasld;kjfl;sdkja fl;kasdj f;lkjsd l;fjdslk afjl</p>
+                    </div>
+    
                 </div>
-
-                <p>kjsfdh sljkf salkjd flksaj ldksj fdlkjaslfkjsa lkfj asl;kfj kldsajf kldsj afkd salkfjasld;kjfl;sdkja fl;kasdj f;lkjsd l;fjdslk afjl</p>
             </div>
-        </div>
     </section>
     <!-- End of Hero-->
 
@@ -86,25 +102,25 @@
     <footer class="page-footer">
         <div class="bg-img bg-img--footer"></div>
         <div class="container-sm footer_container">
-                <div class="row">
-                    <div class="d-flex footer_inner-container">
-                        <div class="col-12 col-sm-4 footer_column">
-                            <h5>Address</h5>
-                            <p>127 Firefly Avenue<br>Teep Town<br>Wales<br>ZB18 6YO</p>
-                        </div>
-    
-                        <div class="col-12 col-sm-4 footer_column">
-                            <h5>Opening Times</h5>
-                            <p>Monday - Saturday<br>09:00 - 20:00</p>
-                        </div>
-    
-                        <div class="col-12 col-sm-4 footer_column">
-                            <h5>Phone Number</h5>
-                            <p>07783834565</p>
-                        </div>
+            <div class="row">
+                <div class="d-flex footer_inner-container">
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Address</h5>
+                        <p>127 Firefly Avenue<br>Teep Town<br>Wales<br>ZB18 6YO</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Opening Times</h5>
+                        <p>Monday - Saturday<br>09:00 - 20:00</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Phone Number</h5>
+                        <p>07783834565</p>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
     <!-- End of Footer -->

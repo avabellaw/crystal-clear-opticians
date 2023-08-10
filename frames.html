@@ -19,54 +19,53 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="bg-img bg-img--nav"></div>
-        <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
-            <div class="container-lg">
-                <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Our Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Pre-screening</a></li>
-                                <li><a class="dropdown-item" href="#">Eye test</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/frames.html">Our Frames</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Location</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="navbar-container">
+            <div class="bg-img bg-img--nav"></div>
+            <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
+                <div class="container-lg">
+                    <a class="navbar-brand" href="#"><img src="assets/images/Logo.png" height="50" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="#">Eye test</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/frames.html">Our Frames</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/about.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Location</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- End of Navbar -->
+            </nav>
+        </div>
 
-    <section>
-        <div class="container section-container">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="page-header">
@@ -74,7 +73,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </header>
+    <!-- End of Navbar -->
 
+    <section>
+        <div class="container section-container">
             <div id="frames-collage">
                 <div class="row justify-content-center">
                     <div class="col-6 col-md-4">
