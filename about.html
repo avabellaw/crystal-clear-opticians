@@ -100,7 +100,7 @@
 
     <!-- Location -->
     <section id="location-section">
-        <div class="container-fluid section-container ">
+        <div class="container section-container ">
             <div class="section-header">
                 <h2>
                     Find us in this non-descript remote location!
@@ -109,8 +109,7 @@
             <div class="embed-responsive">
                 <iframe class="embed-responsive-item"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77761.44787574225!2d-4.072894719147911!3d52.47831647360724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486f84ba0487479d%3A0x50d8b23d498d430!2sCeulanamaesmawr!5e0!3m2!1sen!2suk!4v1691685439405!5m2!1sen!2suk"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -125,21 +124,30 @@
                 </h2>
             </div>
 
-            <form method="post" action="">
-                <label for="name">Name: </label>
-                <input id="name" name="name" type="text" required>
-
-                <label for="number">Phone number: </label>
-                <input id="number" name="number" type="tel" required>
-
-                <label for="message">Message: </label>
-                <textarea id="message" name="message" type="textarea" cols="40" rows="10" required></textarea>
-
-                <label for="attachment">Attachments:</label>
-                <input type="file" id="attachment" name="attachment">
-
-                <input type="submit" value="Send form">
-            </form>
+            <div class="form-container">
+                <form method="post" action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone number: </label>
+                        <input class="form-control" id="number" name="number" type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea class="form-control" id="message" name="message" type="textarea" cols="40" rows="10"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="attachment">Attachments:</label>
+                        <input class="form-control" type="file" id="attachment" name="attachment">
+                    </div>
+    
+                    <input class="btn btn-primary" type="submit" value="Send form">
+                </form>
+            </div>
+            
         </div>
     </section>
     <!-- ! Contact form -->
