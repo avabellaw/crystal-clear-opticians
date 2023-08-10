@@ -101,7 +101,7 @@
     <!-- Location -->
     <section id="location-section">
         <div class="container-fluid section-container ">
-            <div class="section-header mb-4">
+            <div class="section-header">
                 <h2>
                     Find us in this non-descript remote location!
                 </h2>
@@ -115,6 +115,34 @@
         </div>
     </section>
     <!-- ! Location -->
+
+    <!-- Contact form -->
+    <section id="contact-section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>
+                    Contact us for more information
+                </h2>
+            </div>
+
+            <form method="post" action="">
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="number">Phone number: </label>
+                <input id="number" name="number" type="tel" required>
+
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" type="textarea" cols="40" rows="10" required></textarea>
+
+                <label for="attachment">Attachments:</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <input type="submit" value="Send form">
+            </form>
+        </div>
+    </section>
+    <!-- ! Contact form -->
 
     <!-- Footer -->
     <footer class="page-footer">

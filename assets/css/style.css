@@ -338,7 +338,7 @@ header {
 /* Main sections */
 
 .section-header {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
@@ -577,7 +577,7 @@ header {
 
 /* Location */
 #location-section iframe {
-    border: 3px dashed green;
+    border: 2px solid green;
     width: 100%;
     min-height: 400px;
     max-width: 600px;
