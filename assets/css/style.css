@@ -23,6 +23,7 @@ body {
     /* Height variables */
     --page-header-height: 15vh;
     --navbar-min-height: 12vh;
+    --section-vertical-margins: 1rem;
 }
 
 header {
@@ -303,7 +304,11 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+
+.section-container {
+    margin-bottom: var(--section-vertical-margin);
 }
 
 .section-container:before {
@@ -336,6 +341,7 @@ header {
     margin-bottom: 1rem;
     position: relative;
 }
+
 /* Diagram table styling */
 
 .diagram {
@@ -409,7 +415,7 @@ header {
 
 @media screen and (min-width:576px) {
     .section-container {
-        padding: 1rem 10vw;
+        padding: 2.5rem 10vw;
     }
 }
 
@@ -537,20 +543,46 @@ header {
     height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
 }
 
+#about-section>.section-container {
+    padding: 10px;
+}
+
 #about-section img {
     max-width: 30vw;
-
-    max-height: 50vh;
+    max-height: 45vh;
 }
 
 .about-section_text {
     padding: 2rem;
+    align-items: center;
+}
+
+.about-section_text>p:last-child {
+    margin: 0;
 }
 
 @media screen and (min-width:576px) {
-    #about-section {
-        padding: 0 4.5rem;
+    #about-section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+    }
+
+    #about-section>.section-container {
+        display: flex;
+        justify-content: center;
     }
 }
+
+/* Location */
+#location-section iframe {
+    border: 3px dashed green;
+    width: 100%;
+    min-height: 400px;
+    max-width: 600px;
+}
+
+/* ! Location */
 
 /* ! about.html */
