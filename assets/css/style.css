@@ -41,20 +41,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0.8rem; */
     text-transform: capitalize;
 }
 
 @media screen and (min-width:576px) {
     body {
-        --page-header-height: 22vh;
+        --page-header-height: 24vh;
     }
 
     .page-header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1rem;
+        padding-bottom: 2vh;
     }
 }
 
@@ -336,19 +336,6 @@ header {
     margin-bottom: 1rem;
     position: relative;
 }
-
-@media screen and (min-width:576px) {
-    .section-container {
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .section-container {
-        margin-bottom: 3rem;
-    }
-}
-
 /* Diagram table styling */
 
 .diagram {
@@ -545,16 +532,12 @@ header {
 
 /* about.html  */
 
-.section-container--about {
-
-    height: calc(100vh - var(--navbar-min-height))
-}
-
 #about-section {
     /* Sets about-section to the remaining height after page-header and navbar height  */
+    height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
 }
 
-#about-section>img {
+#about-section img {
     max-width: 30vw;
 
     max-height: 50vh;
@@ -567,7 +550,6 @@ header {
 @media screen and (min-width:576px) {
     #about-section {
         padding: 0 4.5rem;
-        display: flex;
     }
 }
 
