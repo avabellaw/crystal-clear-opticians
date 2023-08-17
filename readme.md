@@ -39,8 +39,59 @@ Site owner goals are:
 
 ## Research 
 
-### [Look Deeper](https://www.lookdeeper.com.au/ )
+### Look Deeper
+https://www.lookdeeper.com.au/
 
+![Look deeper deeper homepage image](assets/images/readme/eyesburg.png)
+
+What I like:
+
+* Simplistic, powerful and attractive design.
+* Nice animations.
+* Interactive fact nodules.
+* Simple and cold call to action in top-right of screen.
+
+What I dislike:
+
+Slow load speed is bad for UX. 
+The initial load time before caching the JavaScript is **8.5+ seconds**! 
+![Look deeper performance image](assets/images/readme/eyesburg-perfomance.png)
+![Look deeper performance image zoomed in](assets/images/readme/eyesburg_perfomance-zoom-in.png)
+
+### Smart optometry
+https://www.smart-optometry.com/
+
+![Smart optometry homepage image](assets/images/readme/smart-optometry.png)
+
+What I like:
+
+* Simple bold design. High quality image.
+* Bright and attractive images.
+* Attractive, simple and easy-to-read font and typeface.
+
+![Smart optometry font/typeface image](assets/images/readme/smart-optometry_typeface.png)
+
+What I dislike:
+
+* Important sections of website haven’t got parts that jump out at you and attract your attention
+
+### Perspective eyecare
+http://www.perspectiveyes.com
+
+![Perspective eyecare homepage](assets/images/readme/perspective-eyes.png)
+
+What I like:
+
+* Feels more personal.
+* Obvious navigation that leads exactly where you want.
+* Frequent calls to action.
+* Attractive design elements and animation.
+
+![Perspective eye care services table](assets/images/readme/perspective-eyes_services.png)
+
+What I dislike:
+
+* Look and feel seems off. Feels outdated possibly due to the colour scheme.
 
 ---
 
