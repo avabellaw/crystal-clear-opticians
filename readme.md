@@ -37,6 +37,11 @@ Site owner goals are:
 * Attract people to the shop to buy frames.
 * Attract people to book appointments in-store.
 
+## Research 
+
+### [Look Deeper](https://www.lookdeeper.com.au/ )
+
+
 ---
 
 # Credits
