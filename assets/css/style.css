@@ -102,21 +102,23 @@ nav .navbar-nav {
 
 /* Nav items */
 
-.navbar-nav .nav-item:not(:first-child)::after {
-    /* Add the border left to nav-items */
-    /* Reminded myself how to use ":before" to make a line using w3docs [https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html#:~:text=We%20will%20add%20a%20line,line%20according%20to%20your%20text.] */
+@media screen and (min-width:576px) {
+    .navbar-nav .nav-item:not(:first-child)::after {
+        /* Add the border left to nav-items */
+        /* Reminded myself how to use ":before" to make a line using w3docs [https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html#:~:text=We%20will%20add%20a%20line,line%20according%20to%20your%20text.] */
 
-    --nav-item_border-left-height: 40%;
+        --nav-item_border-left-height: 40%;
 
-    /* Sets border height to variable */
-    height: var(--nav-item_border-left-height);
+        /* Sets border height to variable */
+        height: var(--nav-item_border-left-height);
 
-    /* Works out how to center it by diving the avaible space by 2 */
-    top: calc((100% - var(--nav-item_border-left-height))/2);
+        /* Works out how to center it by diving the avaible space by 2 */
+        top: calc((100% - var(--nav-item_border-left-height))/2);
 
-    content: "";
-    position: absolute;
-    border-left: 1px solid black;
+        content: "";
+        position: absolute;
+        border-left: 1px solid black;
+    }
 }
 
 .navbar-nav>.nav-item>.nav-link {
@@ -507,11 +509,11 @@ header {
     /* This sets a variable for the spacing inbetween the frames cards and then removes the spacing from the top of the collage using minus margins */
     --frames-collage-vertical-spacing: 3rem;
 
-    margin-top: calc(var(--frames-collage-vertical-spacing) * -1);
+    /* margin-bottom: calc(var(--frames-collage-vertical-spacing) * -1); */
 }
 
 #frames-collage>.row>div {
-    margin-top: var(--frames-collage-vertical-spacing);
+    margin-bottom: var(--frames-collage-vertical-spacing);
 }
 
 @media screen and (min-width:576px) {
@@ -552,12 +554,12 @@ header {
     #about-section {
         /* Sets about-section to the remaining height after page-header and navbar height  */
         height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
-        margin:0;
+        margin: 0;
     }
 }
 
 #about-section {
-    margin-bottom:10vh;
+    margin-bottom: 10vh;
 }
 
 #about-section>.section-container {
@@ -606,7 +608,9 @@ header {
 
 form {
     text-align: left;
+    margin: auto;
     margin-bottom: 1.5rem;
+    max-width: 650px;
 }
 
 form label {
