@@ -1,11 +1,13 @@
-# UX
+# Milestone Project 1 - Crystal Clear Opticians
 
-## Project Goals
+## UX
+
+### Project Goals
 
 Crystal Clear Opticians is a new shop selling a range of frames and performing private eye tests.
 The site aims to drive traffic to the buisness, give an insight to patients on what to expect and allow them to browse their most popular frames.
 
-# User Goals
+## User Goals
 
 The target audience is a mixed-group of ages with a focus on older people as most people find they need glasses bettwen ages 41-61. The target audience will also contain many people with impaired vision. 
 As a result, font-sizes are big and the site maintains a simple and intuitive layout. 
@@ -58,7 +60,7 @@ The initial load time before caching the JavaScript is **8.5+ seconds**!
 ![Look deeper performance image](assets/images/readme/eyesburg-perfomance.png)
 ![Look deeper performance image zoomed in](assets/images/readme/eyesburg_perfomance-zoom-in.png)
 
-### Smart optometry
+### Smart Optometry
 https://www.smart-optometry.com/
 
 ![Smart optometry homepage image](assets/images/readme/smart-optometry.png)
@@ -75,7 +77,7 @@ What I dislike:
 
 * Important sections of website haven’t got parts that jump out at you and attract your attention
 
-### Perspective eyecare
+### Perspective Eyecare
 http://www.perspectiveyes.com
 
 ![Perspective eyecare homepage](assets/images/readme/perspective-eyes.png)
@@ -93,13 +95,41 @@ What I dislike:
 
 * Look and feel seems off. Feels outdated possibly due to the colour scheme.
 
+### Eye Gotcha
+https://www.eyegotchasf.com/
+
+![Eye Gotcha homepage](assets/images/readme/eyegotchasf.png)
+
+### COHEN'S Fashion Optical
+https://www.cohensfashionoptical.com/
+
+![COHEN'S Fashion Optical image](assets/images/readme/cohensfashionoptical.png)
+
+### Example of opticians website with a page explaining testing
+https://www.visionexpress.com/eye-test/eye-test-explained
+
 ---
 
-# Credits
+## Credits
 
-## Media
+### Content
 
-### Images
+All content was written by the developer, Ava.
+
+### Code
+
+* [Boostrap 5](https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/) Used intermittendly throughout to provide a responsive and easy to use grid system.
+* Navbar created using [Bootstrap's navbar]([https://getbootstrap.com/docs/5.0/components/navbar/]) and then modified.
+* Footer also uses Bootstrap classes
+* Code to open navbar dropdowns on hover taken from this [Stackoverflow post]([https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]) 
+* JQuery _check device can hover_ code taken from [this website](https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42)
+* Disable dropdown on click to prevent issues taken from [Stackoverflow post](https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown)
+
+
+
+### Media
+
+#### Images
 
 Images were sourced from the following places:
 * [Pexels](https://www.pexels.com)
