@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crystal Clear Opticians</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Noto+Sans">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar-container">
+            <div class="bg-img bg-img--nav"></div>
+            <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
+                <div class="container-lg">
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" height="50" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="services.html#pre-screening">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="services.html#eye-test">Eye test</a></li>
+                                    <li><a class="dropdown-item" href="services.html#contacts">Eye test</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="frames.html">Our Frames</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="about.html">About</a></li>
+                                    <li><a class="dropdown-item" href="about.html#location-section">Location</a></li>
+                                    <li><a class="dropdown-item" href="about.html#contact-section">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Pre-screening -->
+    <section id="pre-screening-section">
+
+    </section>
+    <!-- End of Pre-screening -->
+
+    <!-- Eye Test -->
+    <section id="eye-test-section">
+
+    </section>
+    <!-- End of Eye test -->
+
+    <!-- Contacts -->
+    <section id="contacts-section">
+
+    </section>
+    <!-- End of Contacts -->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="bg-img bg-img--footer"></div>
+        <div class="container-sm footer_container">
+            <div class="row">
+                <div class="d-flex footer_inner-container">
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Address</h5>
+                        <p>127 Firefly Avenue<br>Teep Town<br>Wales<br>ZB18 6YO</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Opening Times</h5>
+                        <p>Monday - Saturday<br>09:00 - 20:00</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h5>Phone Number</h5>
+                        <p>07783834565</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Taken and then modified [https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]
+        $(document).ready(function () {
+            $('.dropdown').hover(function () {
+                $(this).addClass('show--hover');
+                $(this).find('.dropdown-toggle').addClass('show--hover');
+                $(this).find('.dropdown-toggle').attr("aria-expanded", true);
+                $(this).find('.dropdown-menu').addClass('show--hover');
+
+
+                // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
+                const canHover = window.matchMedia('(hover: hover)').matches;
+
+                if (canHover) {
+                    // Disable dropdown on click [https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown]
+                    $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown--disabled");
+                }
+            }, function () {
+                $(this).removeClass('show--hover');
+                $(this).find('.dropdown-toggle').removeClass('show--hover');
+                $(this).find('.dropdown-toggle').attr("aria-expanded", false);
+                $(this).find('.dropdown-menu').removeClass('show--hover');
+
+                $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
+            });
+        });
+    </script>
+</body>
+
+</html>
