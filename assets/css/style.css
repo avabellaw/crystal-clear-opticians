@@ -14,7 +14,7 @@
     }
 } */
 
-body {
+body {    
     --body-bg-colour: #fff1f1;
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
@@ -24,6 +24,12 @@ body {
     --page-header-height: 15vh;
     --navbar-min-height: 12vh;
     --section-vertical-margins: 1rem;
+
+    /* If there isn't enough content, there is whitespace below the footer. I made this so that the middle section grows to fill that space using flexbox. */
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
@@ -59,9 +65,9 @@ header {
     }
 }
 
-h3 {
+/* h3 {
     font-size: calc(1.1rem + .6vw);
-}
+} */
 
 /* Apply to div as a base class for creating a background image */
 .bg-img {
@@ -204,6 +210,10 @@ hr.space-seperator {
     margin: 1rem 0;
 }
 
+hr.space-seperator--medium {
+    margin: 1.5rem 0
+}
+
 .hero {
     /* Make hero take rest of space left after the navbar */
     height: calc(100vh - var(--navbar-min-height));
@@ -266,7 +276,7 @@ hr.space-seperator {
     margin: 1rem 0;
 }
 
-header {
+.navbar {
     font-family: 'Assistant';
     font-weight: 500;
 }
@@ -625,6 +635,13 @@ form .form-group {
 form input[type="submit"] {
     margin-top: 0.7em;
 }
+
+/* Form submitted confirmation */
+#form-confirmation-section {
+    
+}
+
+/* ! Form submitted confirmation */
 
 /* ! Contact form */
 
