@@ -81,14 +81,28 @@ h3 {
     left: 0;
 }
 
-/* Information mark (<detail> and <summary>) styles */
+/* 
+    Information mark (<detail> and <summary>) styles 
+*/
 
 .info-mark>summary {
+    /* Remove arrow marker next to <summary> [https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e] */
     list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 0.6em;
+    margin-top: 0.8em;
 }
 
-.info-mark>summary::-webkit-details-marker {
-    display: none;
+.info-symbol-container {
+    border-radius: 50px;
+    padding: 0.3em 0.4em;
+    background-color: rgb(158, 77, 164);
+    color: white;
+    font-weight: 600;
+}
+
+.info-symbol-container:hover {
+    filter: brightness(1.3);
 }
 
 /* End of Informartion mark styles */
