@@ -116,6 +116,8 @@ https://www.visionexpress.com/eye-test/eye-test-explained
 
 All content was written by the developer, Ava.
 
+[Charactor code for information (i)](https://stackoverflow.com/questions/33878539/is-there-an-html-entity-for-an-info-icon)
+ 
 ### Code
 
 * [Boostrap 5](https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/) Used intermittendly throughout to provide a responsive and easy to use grid system.
@@ -159,6 +161,8 @@ Glasses icons:
 Diagrams:
 * [Bifocal diagram image](https://www.allaboutvision.com/lenses/multifocal.htm)
 * [Varifocal diagram image](https://crescentheightsoptometry.com/wp-content/uploads/2015/10/progressive-660x326.png?quality=100.3019052014480)
+* [Auto-refractor hot air balloon](https://www.reddit.com/r/LiminalSpace/comments/orxnb7/it_just_feels_so_off/)
+* [Tonometer example image](https://www.reviewofoptometry.com/article/the-dos-and-donts-of-measuring-iop)
 
 
 Image references for the frames section of website:

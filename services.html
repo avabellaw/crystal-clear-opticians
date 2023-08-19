@@ -37,12 +37,13 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Services
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="services.html#pre-screening">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="services.html#pre-screening">Pre-screening</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="services.html#eye-test">Eye test</a></li>
                                     <li><a class="dropdown-item" href="services.html#contacts">Eye test</a></li>
                                 </ul>
@@ -66,12 +67,72 @@
                 </div>
             </nav>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="page-header">
+                        <h1>Our Services</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- End of Navbar -->
 
     <!-- Pre-screening -->
     <section id="pre-screening-section">
+        <div class="container section-container">
+            <h2 class="section-header">Pre-screening</h2>
 
+            <table class="diagram">
+                <tr>
+                    <th>
+                        <div class="diagram_img-container">
+                            <img src="assets/images/autorefractor-hot-air-balloon.webp"
+                                alt="Common hot air balloon image for auto-refrator">
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="diagram_img-container">
+                            <img src="assets/images/tonometer-example.webp" alt="Man with Tonometer aimed at right eye">
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="diagram_title">Auto-Refractor</h3>
+                        <p>Whilst focusing on this image, this machine will measure how well your eyes focus on the
+                            image. It will blur and unblur.</p>
+
+                        <details>
+                            <summary>&#9432;</summary>
+                            This test is to assist your optometrist by estimating your prescription (or RX for shorthand!).
+                        </details>
+                    </td>
+
+                    <td>
+                        <h3 class="diagram_title">Tonometer</h3>
+                        <p>You will see a blinking dot and 4 puffs of air will be used to determine the pressure of your eye.</p>
+
+                        <details>
+                            <summary>&#9432;</summary>
+                            People with high intraocular pressure are more likely to develop glaucoma.
+                        </details>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Visual Fields Test</h3>
+
+                    <img src="" alt="Animation demonstrating visiual fields test">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End of Pre-screening -->
 
@@ -143,7 +204,13 @@
 
                 $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
             });
+            $(function () {
+                $('[data-toggle="popover"]').popover({
+                    container: 'body'
+                });
+            })
         });
+
     </script>
 </body>
 
