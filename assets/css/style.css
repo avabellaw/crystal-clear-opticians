@@ -88,13 +88,16 @@ h4 {
     margin-bottom: 1.8em;
     margin-top: 1.15em;
     box-shadow: 0px 0px 15px 1px #eca9e08f inset;
-    padding: 0.8em;
+    padding: 1.2em;
     border-radius: 10px;
     background-color: #fff0ff;
     position: absolute;
     right: 0;
     left: 0;
     width: 100%;
+    border: 1px solid #52065a73;
+    /* Much higher index than needed to ensure it's always on top throughout development */
+    z-index: 100;
 }
 
 .info-mark {
@@ -716,7 +719,8 @@ form input[type="submit"] {
 .alert {
     color: black;
     padding: 1.4em;
-    margin: 0.4em 0;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
 }
 
 .alert > p:last-child {
@@ -730,7 +734,7 @@ form input[type="submit"] {
 }
 
 .alert--info {
-    box-shadow: 0 0 15px 3px #ebb2e1bf inset;
+    box-shadow: 0 0 5px 5px #ebb2e1bf inset;
     background-color: #fff0fdb0;
 }
 
