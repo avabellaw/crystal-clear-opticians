@@ -129,6 +129,7 @@ All content was written by the developer, Ava.
 * Disable dropdown on click to prevent issues taken from [Stackoverflow post](https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown)
 * When form is submitted, you are taken to a thank you page that auto-redirects back to index.html. This was suggested to me by my mentor Darío Carrasquel.
 * Styling content using [Boostrap typography](https://getbootstrap.com/docs/5.0/content/typography/)
+* For creating the gradient to be used with <mark> to highlight text, I used [cssgradient.io](https://cssgradient.io/)
 
 ### Media
 
