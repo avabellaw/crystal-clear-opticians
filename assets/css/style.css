@@ -52,8 +52,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 0.8rem; */
     text-transform: capitalize;
+    text-align: center;
 }
 
 @media screen and (min-width:576px) {
@@ -111,13 +111,19 @@ h4 {
 
 .info-mark--display-center p {
     width: 40vw;
-    left:calc(50% - 20vw);
+    left: calc(50% - 20vw);
 }
 
 .info-mark>summary {
     /* Remove arrow marker next to <summary> [https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e] */
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:800px) {
+    .info-mark>summary {
+        font-size: 1.4rem;
+    }
 }
 
 .info-symbol-container {
@@ -370,7 +376,7 @@ hr.space-seperator--medium {
 .section-container {
     text-align: center;
     position: relative;
-    padding: 1.5rem;
+    padding: 0.2rem;
 }
 
 .section-container {
@@ -743,9 +749,12 @@ form input[type="submit"] {
     background-color: #00000052;
 }
 
-.alert--info {
-    box-shadow: 0 0 5px 5px #ebb2e1bf inset;
+.alert--pink {
     background-color: #fff0fdb0;
+}
+
+.alert--soft-border {
+    box-shadow: 0 0 5px 5px #0000002c inset;
 }
 
 /* End of Alerts */
