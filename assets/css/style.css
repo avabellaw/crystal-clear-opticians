@@ -65,11 +65,6 @@ header {
     }
 }
 
-h3 {
-    margin-top: 0.6em;
-    margin-bottom: 0.25em;
-}
-
 /* Apply to div as a base class for creating a background image */
 .bg-img {
     background-color: rgb(255, 247, 248);
@@ -85,12 +80,23 @@ h3 {
     Information mark (<detail> and <summary>) styles 
 */
 
+.info-mark p {
+    margin-bottom: 1.8em;
+    margin-top: 1.15em;
+    box-shadow: 0px 0px 15px 1px #eca9e08f inset;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: #fff0ff96;
+}
+
+.info-mark {
+    margin: 0.8em 0;
+}
+
 .info-mark>summary {
     /* Remove arrow marker next to <summary> [https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e] */
     list-style: none;
     font-size: 1.5rem;
-    margin-bottom: 0.6em;
-    margin-top: 0.8em;
 }
 
 .info-symbol-container {
