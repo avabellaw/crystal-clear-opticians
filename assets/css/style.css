@@ -86,11 +86,16 @@ header {
     box-shadow: 0px 0px 15px 1px #eca9e08f inset;
     padding: 0.8em;
     border-radius: 10px;
-    background-color: #fff0ff96;
+    background-color: #fff0ff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
 }
 
 .info-mark {
     margin: 0.8em 0;
+    position: relative;
 }
 
 .info-mark>summary {
@@ -348,7 +353,6 @@ hr.space-seperator--medium {
 .section-container {
     text-align: center;
     position: relative;
-    overflow: hidden;
     padding: 1.5rem;
 }
 
