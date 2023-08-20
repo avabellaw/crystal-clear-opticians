@@ -170,6 +170,12 @@ nav .navbar-nav {
 
 /* Nav items */
 
+.navbar-brand > img {
+    height: auto;
+    max-width: 50vw;
+    width: 160px;
+}
+
 @media screen and (min-width:576px) {
     .navbar-nav .nav-item:not(:first-child)::after {
         /* Add the border left to nav-items */
@@ -229,7 +235,7 @@ nav .navbar-nav {
 
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
 /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
-@media (hover: hover) {
+/* @media (hover: hover) {
     .navbar .nav-item .dropdown-menu:not(.show) {
         display: none;
     }
@@ -244,7 +250,7 @@ nav .navbar-nav {
         box-shadow: 0px 0px 7px #ffff;
         color: black;
     }
-}
+} */
 
 .navbar-nav>.nav-item>.nav-link.show {
     background-color: rgba(255, 255, 255, 0.5);
@@ -374,7 +380,8 @@ hr.space-seperator--medium {
 }
 
 .section-container {
-    /* Adding padding here will break bootstrap container */
+    /* Adding horizontal padding here will break bootstrap container */
+    padding: 1.2rem 0;
     text-align: center;
     position: relative;
 }
@@ -410,11 +417,13 @@ hr.space-seperator--medium {
 /* Main sections */
 
 .section-header {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
     position: relative;
     text-align: center;
     text-transform: capitalize;
+    border-bottom: 1px solid #9a23ad4f;
+    padding: 0.8rem 1rem;
 }
 
 @media screen and (min-width:992px) {

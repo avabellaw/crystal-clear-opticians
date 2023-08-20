@@ -26,7 +26,9 @@
             <nav class="navbar navbar-expand-sm navbar-light">
                 <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
                 <div class="container-lg">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" height="50" alt=""></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/Logo.png" width="160" alt="">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -38,26 +40,26 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown"
+                                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Services
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <li><a class="dropdown-item"
                                             href="services.html#pre-screening-section">Pre-screening</a></li>
                                     <li><a class="dropdown-item" href="services.html#eye-test-section">Eye test</a></li>
-                                    <li><a class="dropdown-item" href="services.html#contacts-section">Eye test</a></li>
+                                    <li><a class="dropdown-item" href="services.html#contacts-section">Contacts</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="frames.html">Our Frames</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     About
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                     <li><a class="dropdown-item" href="about.html">About</a></li>
                                     <li><a class="dropdown-item" href="about.html#location-section">Location</a></li>
                                     <li><a class="dropdown-item" href="about.html#contact-section">Contact Us</a></li>
@@ -99,7 +101,7 @@
     <section>
         <div class="container section-container">
             <article id="add-ons-included">
-                <header>]
+                <header>
                     <h2 class="section-header">Necessary add-ons included</h2>
                 </header>
 
@@ -236,7 +238,7 @@
                 </section>
 
                 <footer>
-                    <p><small>Remember, all necessary add-ons are included! </small></p>
+                    <p>Remember, all necessary add-ons are included!</p>
                     <a href="frames.html" class="btn btn-primary">Click for more frames</a>
                 </footer>
             </article>
@@ -282,29 +284,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Taken and then modified [https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]
+        // Taken and modified to toggle dropdown on hover [https://stackoverflow.com/questions/22842903/how-to-open-bootstrap-dropdown-programmatically]
         $(document).ready(function () {
+            // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
             $('.dropdown').hover(function () {
-                $(this).addClass('show--hover');
-                $(this).find('.dropdown-toggle').addClass('show--hover');
-                $(this).find('.dropdown-toggle').attr("aria-expanded", true);
-                $(this).find('.dropdown-menu').addClass('show--hover');
-
-
-                // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
-                const canHover = window.matchMedia('(hover: hover)').matches;
-
-                if (canHover) {
-                    // Disable dropdown on click [https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown]
-                    $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown--disabled");
+                if ($(this).find('.dropdown-menu').is(":hidden") && window.matchMedia('(hover: hover)').matches) {
+                    $(this).find('.dropdown-toggle').dropdown('show');
                 }
             }, function () {
-                $(this).removeClass('show--hover');
-                $(this).find('.dropdown-toggle').removeClass('show--hover');
-                $(this).find('.dropdown-toggle').attr("aria-expanded", false);
-                $(this).find('.dropdown-menu').removeClass('show--hover');
-
-                $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
+                if ($(this).find('.dropdown-menu').is(":visible") && window.matchMedia('(hover: hover)').matches) {
+                    $(this).find('.dropdown-toggle').dropdown('toggle');
+                }
             });
         });
     </script>
