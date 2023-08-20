@@ -19,6 +19,7 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- Navbar -->
         <div class="navbar-container">
             <div class="bg-img bg-img--nav"></div>
             <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
@@ -42,10 +43,10 @@
                                     Our Services
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="services.html#pre-screening">Pre-screening</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="services.html#eye-test">Eye test</a></li>
-                                    <li><a class="dropdown-item" href="services.html#contacts">Eye test</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="services.html#pre-screening-section">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="services.html#eye-test-section">Eye test</a></li>
+                                    <li><a class="dropdown-item" href="services.html#contacts-section">Eye test</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -67,6 +68,7 @@
                 </div>
             </nav>
         </div>
+        <!-- End of Navbar -->
 
         <div class="container">
             <div class="row">
@@ -84,100 +86,101 @@
     <section id="pre-screening-section">
         <div class="container-sm section-container">
             <header>
-                <div class="row">
-                    <div class="col">
-                        <h2 class="section-header">Pre-screening</h2>
-                    </div>
-                </div>
+                <h2 class="section-header">Pre-screening</h2>
             </header>
 
             <section>
-                <div class="row">
-                    <!-- Make col flex and then set <details> margin-top to auto to push to bottom of col [https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/] -->
-                    <div class="col-12 col-md-6 d-flex flex-column">
+                <div class="container-sm">
+                    <div class="row">
+                        <!-- Make col flex and then set <details> margin-top to auto to push to bottom of col [https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/] -->
+                        <div class="col-12 col-md-6 d-flex flex-column">
 
-                        <h3>Auto-Refractor</h3>
-                        <div class="overflow-hidden d-flex justify-content-center mb-2">
-                            <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
-                                alt="Common hot air balloon image for auto-refrator">
+                            <h3>Auto-Refractor</h3>
+                            <div class="overflow-hidden d-flex justify-content-center mb-2">
+                                <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
+                                    alt="Common hot air balloon image for auto-refrator">
+                            </div>
+                            <p>
+                                Whilst focusing on this image, this machine will measure how well your eyes focus on the
+                                image. It will blur and unblur.
+                            </p>
+
+                            <details class="info-mark mt-auto">
+                                <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
+                                <summary>
+                                    <span class="info-symbol-container"
+                                        aria-label="Infomation mark to reveal fact">&#9432;</span>
+                                </summary>
+                                <p>This test is to assist your optometrist by estimating your prescription (or RX for
+                                    shorthand!).</p>
+                            </details>
+
                         </div>
-                        <p>
-                            Whilst focusing on this image, this machine will measure how well your eyes focus on the
-                            image. It will blur and unblur.
-                        </p>
+                        <div class="col-12 col-md-6 d-flex flex-column">
+                            <h3>Tonometer</h3>
+                            <div class="overflow-hidden d-flex justify-content-center mb-2">
+                                <img height="230" src="assets/images/tonometer-example.webp"
+                                    alt="Man with Tonometer aimed at right eye">
+                            </div>
 
-                        <details class="info-mark mt-auto">
-                            <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
-                            <summary>
-                                <span class="info-symbol-container"
-                                    aria-label="Infomation mark to reveal fact">&#9432;</span>
-                            </summary>
-                            <p>This test is to assist your optometrist by estimating your prescription (or RX for
-                                shorthand!).</p>
-                        </details>
+                            <p>
+                                You will see a blinking dot and 4 puffs of air will be used to determine the pressure of
+                                your
+                                eye.
+                            </p>
 
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column">
-                        <h3>Tonometer</h3>
-                        <div class="overflow-hidden d-flex justify-content-center mb-2">
-                            <img height="230" src="assets/images/tonometer-example.webp"
-                                alt="Man with Tonometer aimed at right eye">
+                            <details class="info-mark mt-auto">
+                                <summary>
+                                    <span class="info-symbol-container"
+                                        aria-label="Information mark to reveal fact">&#9432;</span>
+                                </summary>
+                                <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
+                            </details>
                         </div>
-
-                        <p>
-                            You will see a blinking dot and 4 puffs of air will be used to determine the pressure of
-                            your
-                            eye.
-                        </p>
-
-                        <details class="info-mark mt-auto">
-                            <summary>
-                                <span class="info-symbol-container"
-                                    aria-label="Information mark to reveal fact">&#9432;</span>
-                            </summary>
-                            <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
-                        </details>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-10 offset-1">
-                        <h3 class="section-header">Visual Fields Test</h3>
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <h3 class="section-header">Visual Fields Test</h3>
 
-                        <img src="" alt="Animation demonstrating visiual fields test">
+                            <img src="" alt="Animation demonstrating visiual fields test">
 
-                        <p>
-                            This will test how sensitive your visual field is and where there are blind spots.
-                            There will be 4 red dots, you will fixate on the center of these dots and press a button
-                            when you see a white dot flash within your field of vision.
-                        </p>
+                            <p>
+                                This will test how sensitive your visual field is and where there are blind spots.
+                                There will be 4 red dots, you will fixate on the center of these dots and press a button
+                                when you see a white dot flash within your field of vision.
+                            </p>
 
-                        <div class="row">
-                            <div class="col-8 offset-2">
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="mb-0">
-                                            This test will discover or monitor any array of conidition including but not
-                                            limited
-                                            to:
-                                        </p>
+                            <hr class="space-seperator">
+
+                            <div class="row">
+                                <div class="col-8 offset-2">
+                                    <div class="row">
+                                        <div class="col-12 col-md-11">
+                                            <p class="mb-0">
+                                                This test will discover or monitor any array of conidition including but
+                                                not
+                                                limited
+                                                to:
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-1">
+                                            <details class="info-mark info-mark--display-center">
+                                                <summary>
+                                                    <span class="info-symbol-container"
+                                                        aria-label="Information mark to reveal fact">&#9432;</span>
+                                                </summary>
+                                                <p>This test can even detect the presence of a brain tumour!</p>
+                                            </details>
+                                        </div>
                                     </div>
-                                    <div class="col-1">
-                                        <details class="info-mark info-mark--display-center">
-                                            <summary>
-                                                <span class="info-symbol-container"
-                                                    aria-label="Information mark to reveal fact">&#9432;</span>
-                                            </summary>
-                                            <p>This test can even detect the presence of a brain tumour!</p>
-                                        </details>
-                                    </div>
+
+                                    <ul class="bullet-list">
+                                        <li>Glaucoma</li>
+                                        <li>Macular degeneration</li>
+                                        <li>Scotoma - Blind spot</li>
+                                    </ul>
                                 </div>
-
-                                <ul class="bullet-list">
-                                    <li>Glaucoma</li>
-                                    <li>Macular degeneration</li>
-                                    <li>Scotoma - Blind spot</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -187,9 +190,11 @@
             <hr class="space-seperator">
 
             <footer>
-                <div class="row">
-                    <div class="col-8 offset-2">
-                        <h4>Now you will see the optometrist who will determine your prescripion.</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 offset-2">
+                            <h4>Now you will see the optometrist who will determine your prescripion.</h4>
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -199,82 +204,87 @@
 
     <!-- Eye Test -->
     <section id="eye-test-section">
-        <div class="container section-container">
+        <div class="container-sm section-container">
             <header>
-                <div class="row">
-                    <div class="col">
-                        <h2 class="section-header">Your eye exam</h2>
-                    </div>
-                </div>
+                <h2 class="section-header">Your eye exam</h2>
             </header>
             <section>
-                <div class="row">
-                    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
-                        <!-- <div class="container--small"> -->
-                        <h3>After pre-screening, you meet you're optometrist. <br><small>What happens now?</small></h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                            <!-- <div class="container--small"> -->
+                            <h3>After pre-screening, you meet you're optometrist. <br><small>What happens now?</small>
+                            </h3>
 
-                        <p>
-                            One of the many tools at their disposal will be the Phoropter.
-                        </p>
-                        <!-- </div> -->
+                            <p>
+                                One of the many tools at their disposal will be the Phoropter.
+                            </p>
+                            <!-- </div> -->
 
-                        <hr class="space-seperator">
+                            <hr class="space-seperator">
 
-                        <div class="row">
-                            <div class="col">
-                                <h3>Phoropter</h3>
-                                <div class="overflow-hidden d-flex justify-content-center mb-2">
-
-                                    <img class="img-responsive img-thumbnail" src="assets/images/phoropter.webp"
-                                        alt="Phoropter, glasses with many different lenses">
-
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>Phoropter</h3>
+                                        <div class="overflow-hidden d-flex justify-content-center mb-2">
+    
+                                            <img class="img-responsive img-thumbnail" src="assets/images/phoropter.webp"
+                                                alt="Phoropter, glasses with many different lenses">
+    
+                                        </div>
+    
+                                        <p>
+                                            This will be used to find the perfect lens and help determine your final
+                                            prescription.
+                                        </p>
+                                    </div>
                                 </div>
+    
+                                <hr class="space-seperator">
 
-                                <p>
-                                    This will be used to find the perfect lens and help determine your final
-                                    prescription.
-                                </p>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <p>Using the Auto-Refractor's results as baseline for your prescripion, the
+                                            optometrist
+                                            will ask
+                                            you many questions and take varias measurements.</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <details class="info-mark info-mark--display-center">
+                                            <summary>
+                                                <span class="info-symbol-container"
+                                                    aria-label="Information mark to reveal fact">&#9432;</span>
+                                            </summary>
+                                            <p>Some countries will rely on this machine alone but your ocular health is
+                                                much
+                                                more
+                                                important
+                                                than an estimate!</p>
+                                        </details>
+                                    </div>
+                                </div>
                             </div>
+
+                            <hr class="space-seperator">
                         </div>
-
-                        <hr class="space-seperator">
-
-                        <div class="row">
-                            <div class="col-10">
-                                <p>Using the Auto-Refractor's results as baseline for your prescripion, the optometrist
-                                    will ask
-                                    you many questions and take varias measurements.</p>
-                            </div>
-                            <div class="col-2">
-                                <details class="info-mark info-mark--display-center">
-                                    <summary>
-                                        <span class="info-symbol-container"
-                                            aria-label="Information mark to reveal fact">&#9432;</span>
-                                    </summary>
-                                    <p>Some countries will rely on this machine alone but your ocular health is much
-                                        more
-                                        important
-                                        than an estimate!</p>
-                                </details>
-                            </div>
-                        </div>
-
-                        <hr class="space-seperator">
                     </div>
                 </div>
             </section>
             <footer>
-                <div class="row">
-                    <div class="col">
-                        <h3>You now have your presciption!</h3>
-                        <p>It's time to choose your frame to be ordered and
-                            delivered within 3 weeks!</p>
-                        <!-- Boostrap alert, modification inspired by alert-info [https://getbootstrap.com/docs/4.0/components/alerts/] -->
-                        <div class="alert alert--info" role="alert">
-                            <h4>Need your new glasses sooner?</h4>
-                            <hr class="seperator">
-                            <p><strong>Expedite your journey to 20/20 vision for only £35!</strong></p>
-                            <p>Reducing your wait to only <mark>12 days</mark> max!</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>You now have your presciption!</h3>
+                            <p>It's time to choose your frame to be ordered and
+                                delivered within 3 weeks!</p>
+                            <!-- Boostrap alert, modification inspired by alert-info [https://getbootstrap.com/docs/4.0/components/alerts/] -->
+                            <div class="alert alert--pink alert--soft-border" role="alert">
+                                <h4>Need your new glasses sooner?</h4>
+                                <hr class="seperator">
+                                <p><strong>Expedite your journey to 20/20 vision for only £35!</strong></p>
+                                <p>Reducing your wait to only <mark>12 days</mark> max!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -287,42 +297,53 @@
     <section id="contacts-section">
         <div class="container section-container">
             <header>
-                <div class="row">
-                    <div class="col">
-                        <h2 class="section-header">Contact lenses</h2>
-                    </div>
-                </div>
+                <h2 class="section-header">Contact lenses</h2>
             </header>
 
             <section>
-                <h3>Interested in contact lenses?</h3>
-                
-                <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
-                    <p><i>* Buying contacts requires an in-date presciption.</i></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Interested in contact lenses?</h3>
+
+                            <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
+                                <p><i>* Buying contacts requires an in-date presciption.</i></p>
+                            </div>
+
+                            <hr class="space-seperator">
+
+                            <p>Book a contact lense fitting where we'll ensure they're the perfect fit!</p>
+                            <p>
+                                Our quick and easy ordering system will make ordering your contacts seemless.
+                                Online, in-person or through phone call and gain sight without glasses today!
+                            </p>
+                            <p>
+                                <i>After this, you will require an aftercare appointment each year to comply with
+                                    British law</i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                <hr class="space-seperator">
-
-                <p>Book a contact lense fitting where we'll ensure they're the perfect fit!</p>
-                <p>
-                    Our quick and easy ordering system will make ordering your contacts seemless.
-                    Online, in-person or through phone call and gain sight without glasses today!
-                </p>
-                <p>
-                    <i>After this, you will require an aftercare appointment each year to comply with British law</i>
-                </p>
             </section>
 
             <footer>
-                <div class="alert alert-info">
-                    <p>
-                        There are instances where certain contacts will need to be ordered.<br>
-                        <strong>This will take 10 days.</strong>
-                    </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="alert alert-info alert--soft-border">
+                                <p>
+                                    There are instances where certain contacts will need to be ordered.<br>
+                                    <strong>This will take 10 days.</strong>
+                                </p>
 
-                    <p>
-                        By choosing our £15 priority service,<br>this takes <strong><mark class="mark--blue">only 4 days</mark></strong>. 
-                    </p>
+                                <p>
+                                    By choosing our £15 priority service,<br>this takes <strong><mark
+                                            class="mark--blue">only 4
+                                            days</mark></strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
     </section>
