@@ -83,61 +83,99 @@
     <!-- Pre-screening -->
     <section id="pre-screening-section">
         <div class="container section-container">
-            <h2 class="section-header">Pre-screening</h2>
-
-            <div class="row">
-                <div class="col-4 offset-2">
-
-                    <h3>Auto-Refractor</h3>
-                    <div class="overflow-hidden d-flex justify-content-center mb-2">
-                        <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
-                            alt="Common hot air balloon image for auto-refrator">
+            <header>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="section-header">Pre-screening</h2>
                     </div>
-                    <p>Whilst focusing on this image, this machine will measure how well your eyes focus on the
-                        image. It will blur and unblur.</p>
-
                 </div>
-                <div class="col-4">
-                    <h3>Tonometer</h3>
-                    <div class="overflow-hidden d-flex justify-content-center mb-2">
-                        <img height="230" src="assets/images/tonometer-example.webp"
-                            alt="Man with Tonometer aimed at right eye">
+            </header>
+
+            <section>
+                <div class="row">
+                    <div class="col-4 offset-2">
+
+                        <h3>Auto-Refractor</h3>
+                        <div class="overflow-hidden d-flex justify-content-center mb-2">
+                            <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
+                                alt="Common hot air balloon image for auto-refrator">
+                        </div>
+                        <p>Whilst focusing on this image, this machine will measure how well your eyes focus on the
+                            image. It will blur and unblur.</p>
+
+                    </div>
+                    <div class="col-4">
+                        <h3>Tonometer</h3>
+                        <div class="overflow-hidden d-flex justify-content-center mb-2">
+                            <img height="230" src="assets/images/tonometer-example.webp"
+                                alt="Man with Tonometer aimed at right eye">
+                        </div>
+
+
+                        <p>You will see a blinking dot and 4 puffs of air will be used to determine the pressure of your
+                            eye.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 offset-2">
+                        <details class="info-mark">
+                            <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
+                            <summary>
+                                <span class="info-symbol-container"
+                                    aria-label="Infomation mark to reveal fact">&#9432;</span>
+                            </summary>
+                            <p>This test is to assist your optometrist by estimating your prescription (or RX for
+                                shorthand!).</p>
+                        </details>
                     </div>
 
-                    
-                    <p>You will see a blinking dot and 4 puffs of air will be used to determine the pressure of your
-                        eye.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4 offset-2">
-                    <details class="info-mark">
-                        <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
-                        <summary>
-                            <span class="info-symbol-container" aria-label="Infomation mark to reveal fact">&#9432;</span>
-                        </summary>
-                        <p>This test is to assist your optometrist by estimating your prescription (or RX for shorthand!).</p>
-                    </details>
+                    <div class="col-4">
+                        <details class="info-mark">
+                            <summary>
+                                <span class="info-symbol-container"
+                                    aria-label="Information mark to reveal fact">&#9432;</span>
+                            </summary>
+                            <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
+                        </details>
+                    </div>
                 </div>
 
-                <div class="col-4">
-                    <details class="info-mark">
-                        <summary>
-                            <span class="info-symbol-container" aria-label="Information mark to reveal fact">&#9432;</span>
-                        </summary>
-                        <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
-                    </details>
-                </div>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Visual Fields Test</h3>
 
-            <div class="row">
-                <div class="col">
-                    <h3>Visual Fields Test</h3>
+                        <img src="" alt="Animation demonstrating visiual fields test">
 
-                    <img src="" alt="Animation demonstrating visiual fields test">
+                        <p>
+                            This will test how sensitive your visual field is and where there are blind spots.
+                            There will be 4 red dots, you will fixate on the center of these dots and press a button
+                            when you see a white dot flash within your field of vision.
+                        </p>
+
+                        <p>
+                            This test will discover or monitor any array of conidition including but not limited to:
+                        </p>
+                        <ul>
+                            <li>Glaucoma</li>
+                            <li>Macular degeneration</li>
+                            <li>Scotoma(s) - Blind spots</li>
+                        </ul>
+
+                        <details class="info-mark">
+                            <summary>
+                                <span class="info-symbol-container"
+                                    aria-label="Information mark to reveal fact">&#9432;</span>
+                            </summary>
+                            <p>This test can even detect the presence of a brain tumour!</p>
+                        </details>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <footer>
+                
+            </footer>
         </div>
     </section>
     <!-- End of Pre-screening -->
