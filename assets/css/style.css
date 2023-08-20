@@ -219,6 +219,7 @@ nav .navbar-nav {
     background-color: #fff6f7;
     border-top: 5px solid transparent;
     border-radius: 0;
+    text-align: center;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -246,16 +247,34 @@ nav .navbar-nav {
 
     .navbar-nav>.nav-item>.nav-link:hover,
     .navbar-nav>.nav-item>.nav-link.show--hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 7px #ffff;
-    color: black;
-}
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 7px #ffff;
+        color: black;
+    }
 }
 
 .navbar-nav>.nav-item>.nav-link.show {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 7px #ffff;
     color: black;
+}
+
+@media screen and (max-width:576px) {
+    .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.292);
+        border: 1px solid white;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .navbar-nav>.nav-item>.nav-link.show {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 7px #ffff;
+    }
+
+    .dropdown-menu {
+        box-shadow: 0 0 10px 5px rgb(255, 228, 232) inset;
+    }
 }
 
 
