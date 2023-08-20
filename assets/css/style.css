@@ -105,6 +105,15 @@ h4 {
     position: relative;
 }
 
+.info-mark--display-center {
+    position: initial;
+}
+
+.info-mark--display-center p {
+    width: 40vw;
+    left:calc(50% - 20vw);
+}
+
 .info-mark>summary {
     /* Remove arrow marker next to <summary> [https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e] */
     list-style: none;
@@ -751,3 +760,8 @@ mark {
 }
 
 /* End of Typography */
+
+.container--small {
+    margin: auto;
+    max-width: 500px;
+}
