@@ -759,6 +759,10 @@ mark {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 19%, var(--mark-highlight-colour) 30%, var(--mark-highlight-colour) 70%, rgba(255, 255, 255, 0) 81%, rgba(255, 255, 255, 0) 100%);
 }
 
+mark.mark--blue {
+    --mark-highlight-colour: rgb(198, 205, 255);
+}
+
 /* End of Typography */
 
 .container--small {
