@@ -286,6 +286,7 @@
     <script>
         // Taken and then modified [https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]
         $(document).ready(function () {
+            // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
             $('.dropdown').hover(function () {
                 $(this).addClass('show--hover');
                 $(this).find('.dropdown-toggle').addClass('show--hover');
