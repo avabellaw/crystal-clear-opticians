@@ -685,3 +685,24 @@ form input[type="submit"] {
 /* ! Contact form */
 
 /* ! about.html */
+
+/* Lists */
+
+/* Make list-style bullet points an svg image [https://stackoverflow.com/questions/52347084/positioning-a-svg-icon-as-list-style-image] */
+.bullet-list {
+    display: inline-block;
+    text-align: left;
+
+    /* Eye svg file downloaded from Font Awesome [https://fontawesome.com/icons/eye?f=classic&s=solid] */
+    list-style-image: url(../images/icons/eye-solid.svg);
+}
+
+.bullet-list li {
+    padding-left: 0.4em;
+}
+
+.bullet-list li::marker {
+    font-size: 1.75em;
+}
+
+/* End of Lists */
