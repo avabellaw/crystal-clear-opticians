@@ -374,9 +374,9 @@ hr.space-seperator--medium {
 }
 
 .section-container {
+    /* Adding padding here will break bootstrap container */
     text-align: center;
     position: relative;
-    padding: 0.2rem;
 }
 
 .section-container {
@@ -577,8 +577,6 @@ hr.space-seperator--medium {
 
 /* frames.html */
 
-/* #frames-collage > .row > div { */
-
 #frames-collage {
     /* This sets a variable for the spacing inbetween the frames cards and then removes the spacing from the top of the collage using minus margins */
     --frames-collage-vertical-spacing: 3rem;
@@ -774,7 +772,15 @@ mark.mark--blue {
 
 /* End of Typography */
 
-.container--small {
-    margin: auto;
-    max-width: 500px;
+/* Utilities */
+
+.center-x-y {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+/* End of Utitlities */
