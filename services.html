@@ -113,8 +113,9 @@
             <div class="row">
                 <div class="col-4 offset-2">
                     <details class="info-mark">
+                        <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
                         <summary>
-                            <span class="info-symbol-container">&#9432;</span>
+                            <span class="info-symbol-container" aria-label="Infomation mark to reveal fact">&#9432;</span>
                         </summary>
                         <p>This test is to assist your optometrist by estimating your prescription (or RX for shorthand!).</p>
                     </details>
@@ -123,7 +124,7 @@
                 <div class="col-4">
                     <details class="info-mark">
                         <summary>
-                            <span class="info-symbol-container">&#9432;</span>
+                            <span class="info-symbol-container" aria-label="Information mark to reveal fact">&#9432;</span>
                         </summary>
                         <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
                     </details>
