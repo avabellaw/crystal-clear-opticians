@@ -117,6 +117,7 @@ https://www.visionexpress.com/eye-test/eye-test-explained
 All content was written by the developer, Ava.
 
 [Charactor code for information (i)](https://stackoverflow.com/questions/33878539/is-there-an-html-entity-for-an-info-icon)
+[Eye SVG for bullet points from Font Awesome](https://fontawesome.com/icons/eye?f=classic&s=solid)
  
 ### Code
 
@@ -127,7 +128,7 @@ All content was written by the developer, Ava.
 * JQuery _check device can hover_ code taken from [this website](https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42)
 * Disable dropdown on click to prevent issues taken from [Stackoverflow post](https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown)
 * When form is submitted, you are taken to a thank you page that auto-redirects back to index.html. This was suggested to me by my mentor Darío Carrasquel.
-
+* Styling content using [Boostrap typography](https://getbootstrap.com/docs/5.0/content/typography/)
 
 ### Media
 
