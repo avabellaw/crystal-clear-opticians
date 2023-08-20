@@ -82,7 +82,7 @@
 
     <!-- Pre-screening -->
     <section id="pre-screening-section">
-        <div class="container section-container">
+        <div class="container-sm section-container">
             <header>
                 <div class="row">
                     <div class="col">
@@ -93,33 +93,20 @@
 
             <section>
                 <div class="row">
-                    <div class="col-4 offset-2">
+                    <!-- Make col flex and then set <details> margin-top to auto to push to bottom of col [https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/] -->
+                    <div class="col-12 col-md-6 d-flex flex-column">
 
                         <h3>Auto-Refractor</h3>
                         <div class="overflow-hidden d-flex justify-content-center mb-2">
                             <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
                                 alt="Common hot air balloon image for auto-refrator">
                         </div>
-                        <p>Whilst focusing on this image, this machine will measure how well your eyes focus on the
-                            image. It will blur and unblur.</p>
+                        <p>
+                            Whilst focusing on this image, this machine will measure how well your eyes focus on the
+                            image. It will blur and unblur.
+                        </p>
 
-                    </div>
-                    <div class="col-4">
-                        <h3>Tonometer</h3>
-                        <div class="overflow-hidden d-flex justify-content-center mb-2">
-                            <img height="230" src="assets/images/tonometer-example.webp"
-                                alt="Man with Tonometer aimed at right eye">
-                        </div>
-
-
-                        <p>You will see a blinking dot and 4 puffs of air will be used to determine the pressure of your
-                            eye.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-4 offset-2">
-                        <details class="info-mark">
+                        <details class="info-mark mt-auto">
                             <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
                             <summary>
                                 <span class="info-symbol-container"
@@ -128,10 +115,22 @@
                             <p>This test is to assist your optometrist by estimating your prescription (or RX for
                                 shorthand!).</p>
                         </details>
-                    </div>
 
-                    <div class="col-4">
-                        <details class="info-mark">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column">
+                        <h3>Tonometer</h3>
+                        <div class="overflow-hidden d-flex justify-content-center mb-2">
+                            <img height="230" src="assets/images/tonometer-example.webp"
+                                alt="Man with Tonometer aimed at right eye">
+                        </div>
+
+                        <p>
+                            You will see a blinking dot and 4 puffs of air will be used to determine the pressure of
+                            your
+                            eye.
+                        </p>
+
+                        <details class="info-mark mt-auto">
                             <summary>
                                 <span class="info-symbol-container"
                                     aria-label="Information mark to reveal fact">&#9432;</span>
@@ -156,7 +155,8 @@
                         <div class="row">
                             <div class="col-8 offset-2">
                                 <p>
-                                    This test will discover or monitor any array of conidition including but not limited to:
+                                    This test will discover or monitor any array of conidition including but not limited
+                                    to:
                                 </p>
 
                                 <ul class="bullet-list">
@@ -188,7 +188,8 @@
                 <div class="row">
                     <div class="col">
                         <p>Now you will see the optometrist who will determine your prescripion.</p>
-                        <p>Afterwards, you can use your new prescription to choose your frame and have it ordered and delivered within 3 weeks!</p>
+                        <p>Afterwards, you can use your new prescription to choose your frame and have it ordered and
+                            delivered within 3 weeks!</p>
                         <!-- Boostrap alert, modification inspired by alert-info [https://getbootstrap.com/docs/4.0/components/alerts/] -->
                         <div class="alert alert--info" role="alert">
                             <h4>Need your new glasses sooner?</h4>
