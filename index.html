@@ -280,25 +280,42 @@
                 </div>
             </div>
 
-                <!-- Section: Social media -->
-                <div class="social-icons-container">
-                    <!-- Facebook -->
-                    <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.facebook.com/" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+            <!-- Section: Social media -->
 
-                    <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com/" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <!-- HTML from mdboostrap [https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/#section-icons] -->
+            <!-- Icons from Font Awesome [https://fontawesome.com/search] -->
+            <!-- Tooltips from Boostrap [https://getbootstrap.com/docs/5.0/components/tooltips/] -->
+            <div class="social-icons-container">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.facebook.com/"
+                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
 
-                    <!-- Linkedin -->
-                    <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.linkedin.com/feed/" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.instagram.com/"
+                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
 
-                    <!-- Github -->
-                    <a class="btn btn-link btn-floating btn-lg m-1" href="https://github.com/avabellaw/crystal-clear-opticians" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-                </div>
-                <!-- Section: Social media -->
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.linkedin.com/feed/"
+                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg" target="_blank"
+                    href="https://github.com/avabellaw/crystal-clear-opticians" role="button"
+                    data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Section: Social media -->
 
 
             <!-- Copyright -->
@@ -345,6 +362,12 @@
 
                 $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
             });
+
+            // Initialize Boostrap tooltips [https://getbootstrap.com/docs/5.0/components/tooltips/]
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
         });
     </script>
 </body>
