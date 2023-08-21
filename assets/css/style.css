@@ -581,7 +581,9 @@ hr.space-seperator--medium {
 }
 
 .page-footer .footer_column {
-    padding: 0.8rem;
+    padding: 1rem;
+    position: relative;
+    overflow-wrap: break-word;
 }
 
 .page-footer p:last-of-type {
@@ -602,6 +604,17 @@ hr.space-seperator--medium {
     .footer_inner-container {
         flex-wrap: nowrap;
     }
+
+    /* Adds a border between columns to footer */
+    .page-footer .footer_column:not(:first-child):before {
+        content: "";
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 0;
+
+        border-left: 1px dashed rgba(0, 0, 0, 0.3);
+    }
 }
 
 .page-footer h5 {
@@ -617,19 +630,19 @@ hr.space-seperator--medium {
 
 /* Social media icons */
 .social-icons-container {
-    padding-top:0.6em;
+    padding-top: 0.6em;
     padding-bottom: 0.2em;
     border-top: 2px solid #00000021;
-    margin-top: 1em;
+    margin-top: 0.8em;
 }
 
-.social-icons-container a{
+.social-icons-container a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 1.3em;
-    margin:1px;
+    margin: 1px;
 }
 
-.social-icons-container a:hover{
+.social-icons-container a:hover {
     color: black;
     transform: scale(1.2);
     transition: font-size 0.2s ease-in;
