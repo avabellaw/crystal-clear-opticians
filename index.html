@@ -287,31 +287,28 @@
             <!-- Tooltips from Boostrap [https://getbootstrap.com/docs/5.0/components/tooltips/] -->
             <div class="social-icons-container">
                 <!-- Facebook -->
-                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.facebook.com/"
-                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Facebook">
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Facebook (opens in new tab)" target="_blank"
+                    href="https://www.facebook.com/" role="button" title="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
 
                 <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.instagram.com/"
-                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Instagram">
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Instagram (opens in new tab)"
+                    target="_blank" href="https://www.instagram.com/" role="button" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-link btn-floating btn-lg" target="_blank" href="https://www.linkedin.com/feed/"
-                    role="button" data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Linkedin">
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Linkedin (opens in new tab)" target="_blank"
+                    href="https://www.linkedin.com/feed/" role="button" title="Linkedin">
                     <i class="fab fa-linkedin"></i>
                 </a>
 
                 <!-- Github -->
                 <a class="btn btn-link btn-floating btn-lg" target="_blank"
+                    aria-label="Github project link (opens in new tab)"
                     href="https://github.com/avabellaw/crystal-clear-opticians" role="button"
-                    data-mdb-ripple-color="dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Github">
+                    data-mdb-ripple-color="dark">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -362,12 +359,6 @@
 
                 $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
             });
-
-            // Initialize Boostrap tooltips [https://getbootstrap.com/docs/5.0/components/tooltips/]
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
         });
     </script>
 </body>

@@ -631,7 +631,7 @@ hr.space-seperator--medium {
 
 .social-icons-container a:hover{
     color: black;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: font-size 0.2s ease-in;
 }
 
