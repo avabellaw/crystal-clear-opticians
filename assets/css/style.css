@@ -105,6 +105,11 @@ h4 {
     position: relative;
 }
 
+
+.info-mark[open] p {
+    animation: zoomIn 0.2s;
+}
+
 .info-mark--display-center {
     position: initial;
 }
@@ -136,6 +141,7 @@ h4 {
 
 @media (hover:hover) {
     .info-symbol-container:hover {
+        transition: all 0.2s ease-in-out;
         filter: brightness(1.3);
     }
 }
@@ -243,6 +249,7 @@ nav .navbar-nav {
 
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
+        animation: fadeIn 0.3s;
     }
 
     .navbar-nav>.nav-item>.nav-link:hover,
@@ -436,13 +443,13 @@ hr.space-seperator--medium {
 /* Main sections */
 
 .section-header {
-    margin-top: 0.2rem;
+    margin: 0.2rem 1.5rem;
     margin-bottom: 1.4rem;
     position: relative;
     text-align: center;
     text-transform: capitalize;
     border-bottom: 1px solid #9a23ad4f;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0;
 }
 
 @media screen and (min-width:992px) {
@@ -812,3 +819,29 @@ mark.mark--blue {
 }
 
 /* End of Utitlities */
+
+/* Animation */
+
+/* Used dev.mozilla to figure out keyframes again [https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes] */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+/* End of Animation */
