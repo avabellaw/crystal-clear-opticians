@@ -224,7 +224,7 @@ nav .navbar-nav {
     border: none;
     background-color: #fff6f7;
     border-top: 5px solid transparent;
-    border-radius: 0;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -383,7 +383,7 @@ hr.space-seperator--medium {
 }
 
 .bg-img--nav {
-    background-image: url(../images/crystal-bg.png);
+    background-image: url(../images/crystal-bg.webp);
     background-position-y: 47%;
     opacity: 0.65;
 }
@@ -398,7 +398,7 @@ hr.space-seperator--medium {
 
 .hero_image-container {
     overflow: hidden;
-    width:fit-content;
+    width: fit-content;
     max-width: 100%;
     height: 100%;
     margin: auto;
@@ -431,7 +431,7 @@ hr.space-seperator--medium {
     bottom: -20px;
     left: 0;
     right: 0px;
-    background: url(../images/crystal-bg.png) fixed no-repeat;
+    background: url(../images/crystal-bg.webp) fixed no-repeat;
     background-size: cover;
     background-position: -50px;
     opacity: 0.2;
@@ -493,7 +493,7 @@ hr.space-seperator--medium {
 }
 
 .diagram_img-container>img {
-    width: 90%;
+    width: 100%;
 }
 
 .diagram_img-container--rounded {
@@ -556,7 +556,7 @@ hr.space-seperator--medium {
 }
 
 .bg-img--footer {
-    background: url(../images/crystal-bg.png) no-repeat right top;
+    background: url(../images/crystal-bg.webp) no-repeat right top;
     background-size: cover;
     transform: scaleY(-1);
     background-position-y: 96%;
@@ -613,6 +613,28 @@ hr.space-seperator--medium {
 .page-footer p {
     /* Based on what .page-footer font-size is set to */
     font-size: 1em;
+}
+
+/* Social media icons */
+.social-icons-container {
+    padding-top:0.4em;
+    border-top: 2px solid #00000021;
+    margin-top: 1em;
+}
+
+.social-icons-container a{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.social-icons-container a:hover{
+    color: black;
+}
+
+/* Copyright banner */
+.footer_copyright {
+    padding: 1em 0;
+    background-color: #ffffff49;
+    position: relative;
 }
 
 /* ! Footer */
