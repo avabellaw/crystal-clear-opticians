@@ -44,7 +44,7 @@ Site owner goals are:
 ### Look Deeper
 https://www.lookdeeper.com.au/
 
-![Look deeper deeper homepage image](assets/images/readme/eyesburg.png)
+![Look deeper deeper homepage image](assets/images/readme/eyesburg.webp)
 
 What I like:
 
@@ -57,13 +57,13 @@ What I dislike:
 
 Slow load speed is bad for UX. 
 The initial load time before caching the JavaScript is **8.5+ seconds**! 
-![Look deeper performance image](assets/images/readme/eyesburg-perfomance.png)
-![Look deeper performance image zoomed in](assets/images/readme/eyesburg_perfomance-zoom-in.png)
+![Look deeper performance image](assets/images/readme/eyesburg-perfomance.webp)
+![Look deeper performance image zoomed in](assets/images/readme/eyesburg_perfomance-zoom-in.webp)
 
 ### Smart Optometry
 https://www.smart-optometry.com/
 
-![Smart optometry homepage image](assets/images/readme/smart-optometry.png)
+![Smart optometry homepage image](assets/images/readme/smart-optometry.webp)
 
 What I like:
 
@@ -71,7 +71,7 @@ What I like:
 * Bright and attractive images.
 * Attractive, simple and easy-to-read font and typeface.
 
-![Smart optometry font/typeface image](assets/images/readme/smart-optometry_typeface.png)
+![Smart optometry font/typeface image](assets/images/readme/smart-optometry_typeface.webp)
 
 What I dislike:
 
@@ -80,7 +80,7 @@ What I dislike:
 ### Perspective Eyecare
 http://www.perspectiveyes.com
 
-![Perspective eyecare homepage](assets/images/readme/perspective-eyes.png)
+![Perspective eyecare homepage](assets/images/readme/perspective-eyes.webp)
 
 What I like:
 
@@ -89,7 +89,7 @@ What I like:
 * Frequent calls to action.
 * Attractive design elements and animation.
 
-![Perspective eye care services table](assets/images/readme/perspective-eyes_services.png)
+![Perspective eye care services table](assets/images/readme/perspective-eyes_services.webp)
 
 What I dislike:
 
@@ -98,12 +98,12 @@ What I dislike:
 ### Eye Gotcha
 https://www.eyegotchasf.com/
 
-![Eye Gotcha homepage](assets/images/readme/eyegotchasf.png)
+![Eye Gotcha homepage](assets/images/readme/eyegotchasf.webp)
 
 ### COHEN'S Fashion Optical
 https://www.cohensfashionoptical.com/
 
-![COHEN'S Fashion Optical image](assets/images/readme/cohensfashionoptical.png)
+![COHEN'S Fashion Optical image](assets/images/readme/cohensfashionoptical.webp)
 
 ### Example of opticians website with a page explaining testing
 https://www.visionexpress.com/eye-test/eye-test-explained
@@ -162,7 +162,7 @@ Glasses icons:
 
 Diagrams:
 * [Bifocal diagram image](https://www.allaboutvision.com/lenses/multifocal.htm)
-* [Varifocal diagram image](https://crescentheightsoptometry.com/wp-content/uploads/2015/10/progressive-660x326.png?quality=100.3019052014480)
+* [Varifocal diagram image](https://crescentheightsoptometry.com/wp-content/uploads/2015/10/progressive-660x326.webp?quality=100.3019052014480)
 * [Auto-refractor hot air balloon](https://www.reddit.com/r/LiminalSpace/comments/orxnb7/it_just_feels_so_off/)
 * [Tonometer example image](https://www.reviewofoptometry.com/article/the-dos-and-donts-of-measuring-iop)
 
