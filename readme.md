@@ -39,6 +39,122 @@ Site owner goals are:
 * Attract people to the shop to buy frames.
 * Attract people to book appointments in-store.
 
+## Technologies Used
+
+### Languages Used
+
+* HTML5  
+* CSS3
+* JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+* Bootstrap 5.0.2:
+    * Used to for responsiveness out-the-box, utility classes and components that allow for reliable design and reduces time wasted by reinventing the wheel. 
+* Google Fonts
+    * Gives easy access to many fonts supplied through a CDN that downloads close to the region of the user. Speeding up delivery.
+    * I used the fonts: Assistant, Lora - used throughout the website. Lora for content and Assistant for the headings and nav/footer.
+* JQuery
+    * Used to add tooltips, make nav responsive and add a dropdown within the nav.
+    * I edited Bootstrap's JQuery to allow me to create new rules for the nav dropdown such as dropdown on hover when on screens that can hover.
+* Font Awesome 
+    * Gives professional icons.
+* Git 
+    * Used for version control.
+* GitHub
+    * Used to store commits and to present project using GitHub pages
+* Visual Studio Code
+    * Used as the IDE for the project.
+* Visual Studio Code extension - Live View
+    * Used instead of Python to run a server to host the website on localhost in two clicks.
+* Paint.NET
+    * Used to edit and create images for the project such as the homepage hero and the visual FIELDS gif in services.html
+* Figma
+    * Used to create the mockup of the website before developing.
+* Word 
+    * Used to present the project requirements in my own words, for project research and for brainstorming.
+* Notepad and Notepad++
+    * Used for quick notes from my mentor and for notes while developing.
+* Chrome - Inspect element
+    * This was used to:
+        * Style the website and test new ideas to be copied into the project.
+        * Continously test responsiveness through adjusting the screen size and by testing preset device dimensions.
+        * Bug fix.
+        * Find out how Bootstrap is styling elements.
+* Firefox, Microsoft Edge, Safari
+    * Used to test compatability for other browsers.
+
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
+
+* [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+### Testing User Stories from User Experience (UX) Section NOT FINISHED
+
+### Further Testing
+
+* Tested on Google Chrome, Firefox, Safari, Microsoft Edge and Internet Explorer
+* Continously tested by adjusting the width of the page to discover breakpoints and useful information such as where max-width should be used.
+* Viewed on Chrome's preset device dimensions: IPhone SE, Samsung Galaxy S8+, Laptop, iPad Air and varias others including Nest Hub. I switched up with brands I used for phones, laptops and tablets etc.
+* Tested links and whether they went to the right places and opened the correct way.
+* My mentor, partner and friends reviewed the website and documentation to check for bugs or user experience issues I may have gone blind too or simply wouldn't have noticed. I also asked for input on some decisions from my partner.
+
+### Known Bugs
+
+* One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the about page instead of the about section of the the about page. 
+* Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
+
+### Deployment ASK MENTOR WHETHER OKAY I COPIED FROM THE CODE INSTITUTE README
+
+#### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    * Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+#### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+#### Making a Local Clone
+
+1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+[Click Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+
 ## Research 
 
 ### Look Deeper
