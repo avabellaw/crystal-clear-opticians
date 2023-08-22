@@ -105,6 +105,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 * One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the about page instead of the about section of the the about page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
+* CSS validators gives warning "Due to their dynamic nature, CSS variables are currently not statically checked". 
+This warning is thrown because CSS validators can't check the variable without running the code. As this is only a warning and the code is functional, I have kept the code as is.
+
 
 ### Deployment ASK MENTOR WHETHER OKAY I COPIED FROM THE CODE INSTITUTE README
 

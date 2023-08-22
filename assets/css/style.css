@@ -185,7 +185,6 @@ nav .navbar-nav {
 
 .navbar-nav>.nav-item>.nav-link.active {
     background-color: rgba(255, 255, 255, 0.35);
-    box-shadow: 100px #ffff;
     color: black;
 }
 
@@ -936,7 +935,7 @@ mark.mark--blue {
     }
 
     to {
-        transform: scale(100%);
+        transform: scale(1);
     }
 }
 
