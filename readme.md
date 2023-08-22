@@ -181,6 +181,11 @@ Image references for the frames section of website:
 * https://www.pexels.com/photo/spectacles-placed-on-objective-lens-7501398/
 * https://unsplash.com/photos/d05w6_7FaPM
 
+### GIFS
+
+GIF animation to demonstrate FIELDS test created by me using paint.net and [ezgif](https://ezgif.com/maker). I used 12 pictures.
+I made the contrast quite low which was realistic however decided to edit the gif using ezgif maker to improve visibility. I decreased the brightness (-15%) and increased the contrast (+50%).
+
 ### Videos
 
 Video of cataracts surgery on servies page [from pixabay](https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/)
