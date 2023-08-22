@@ -196,10 +196,6 @@ nav .navbar-nav {
     transition: background-color 0.3s ease-in-out;
 }
 
-.dropdown-menu.show {
-    margin-top: 0;
-}
-
 /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
 /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
 @media (hover: hover) {
@@ -738,6 +734,14 @@ form input[type="submit"] {
 
 /* ! about.html */
 
+/* services.html */
+
+#cataract-surgery-video {
+    max-width: 600px;
+}
+
+/* End of services.html */
+
 /* Information mark (<detail> and <summary>) styles */
 
 .info-mark p {
@@ -878,6 +882,11 @@ mark.mark--blue {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.video-responsive {
+    margin: auto;
+    width: 100%;
 }
 
 /* End of Utitlities */

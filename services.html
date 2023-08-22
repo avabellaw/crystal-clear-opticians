@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Crystal Clear Opticians</title>
+    <title>Our Services - Crystal Clear Opticians</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Noto+Sans">
@@ -27,7 +27,7 @@
                 <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
                 <div class="container-lg">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/Logo.webp" width="160" alt="">
+                        <img src="assets/images/nav-logo.webp" width="160" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -337,6 +337,49 @@
     </section>
     <!-- End of Contacts -->
 
+    <!-- Cataracts -->
+    <section id="contacts-section">
+        <div class="container section-container">
+            <header>
+                <h2 class="section-header">Cataracts</h2>
+            </header>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>What is cataracts?</h3>
+
+                            <p>Most cataracts develops as you get older. It is when the lens of your eye thickens and
+                                becomes cloudy which makes seeing out of the affected eye(s) increasingly difficult.</p>
+                            <p>Luckily, surgery has a 99% success rate and you'll be back
+                                on your feet <a href="https://www.nhs.uk/conditions/cataract-surgery"
+                                    aria-label="NHS Cataract Surgery (opens in new tab)" target="_blank"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="NHS Cataract Surgery">within
+                                    2-6 weeks.</a></p>
+
+                            <h3 id="cataracts-surgery-video-title">What is cataract-surgery?</h3>
+
+                            <!-- W3Schools HTML5 video tag [https://www.w3schools.com/tags/tag_video.asp] -->
+                            <video class="video-responsive img-thumbnail" id="cataract-surgery-video" aria-labelledby="cataracts-surgery-video-title" aria-describedby="cataracts-surgery-video-desc" controls>
+                                <source src="assets/videos/cataract-surgery.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <p id="cataracts-surgery-video-desc">
+                                The cloudy lens will be removed and replaced with a new clear lens.
+                            </p>
+
+                            <h3>Refferal for surgery and post-op</h3>
+
+                            <p>During your eye test, we may discover cataracts. We can then refer you for </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+    <!-- End of Cataracts -->
+
     <!-- Footer -->
     <footer class="page-footer">
         <div class="bg-img bg-img--footer"></div>
@@ -451,6 +494,11 @@
             })
         });
 
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
     </script>
 </body>
 
