@@ -47,6 +47,22 @@ h4 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.container-small {
+    padding: 0 10%;
+}
+
+@media screen and (min-width:992px) {
+    .container-small {
+        padding: 0 20%;
+    } 
+}
+
 .page-header {
     height: var(--page-header-height);
     display: flex;
@@ -398,12 +414,13 @@ hr.space-seperator--medium {
 
 .section-header {
     margin: 0.2rem 1.5rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 2rem;
     position: relative;
     text-align: center;
     text-transform: capitalize;
     border-bottom: 1px solid #9a23ad4f;
-    padding: 0.8rem 0;
+    padding-top: 0.8rem;
+    padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width:992px) {

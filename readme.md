@@ -183,4 +183,4 @@ Image references for the frames section of website:
 
 ### Videos
 
-Video for cataracts surgery video [from pixabay](https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/)
+Video of cataracts surgery on servies page [from pixabay](https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/)
