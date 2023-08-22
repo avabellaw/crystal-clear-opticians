@@ -362,6 +362,7 @@
 
                             <!-- W3Schools HTML5 video tag [https://www.w3schools.com/tags/tag_video.asp] -->
                             <video class="video-responsive img-thumbnail" id="cataract-surgery-video" aria-labelledby="cataracts-surgery-video-title" aria-describedby="cataracts-surgery-video-desc" controls>
+                                <!-- Video from pixabay [https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/] -->
                                 <source src="assets/videos/cataract-surgery.webm" type="video/webm">
                                 Your browser does not support the video tag.
                             </video>
@@ -470,7 +471,6 @@
                 $(this).find('.dropdown-toggle').addClass('show--hover');
                 $(this).find('.dropdown-toggle').attr("aria-expanded", true);
                 $(this).find('.dropdown-menu').addClass('show--hover');
-
 
                 // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
                 const canHover = window.matchMedia('(hover: hover)').matches;
