@@ -1,0 +1,60 @@
+/* Styles for about.html */
+
+#about-section {
+    margin-bottom: 10vh;
+}
+
+#about-section>.section-container {
+    padding: 10px;
+}
+
+#about-section img {
+    max-width: 30vw;
+    max-height: 45vh;
+}
+
+.about-section_text {
+    padding: 2rem;
+    align-items: center;
+}
+
+.about-section_text>p:last-child {
+    margin: 0;
+}
+
+/* Location */
+
+#location-section iframe {
+    border: 2px solid green;
+    width: 100%;
+    min-height: 400px;
+    max-width: 600px;
+}
+
+/* ! Location */
+
+
+/* about.html Media Queries */
+
+@media screen and (max-height: 700px) {
+
+    #about-section {
+        /* Sets about-section to the remaining height after page-header and navbar height  */
+        height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:576px) {
+    #about-section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+    }
+
+    #about-section>.section-container {
+        display: flex;
+        justify-content: center;
+    }
+}

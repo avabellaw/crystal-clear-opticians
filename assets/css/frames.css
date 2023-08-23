@@ -1,0 +1,50 @@
+/* Styles for frames.html */
+
+#frames-collage {
+    /* This sets a variable for the spacing inbetween the frames cards and then removes the spacing from the top of the collage using minus margins */
+    --frames-collage-vertical-spacing: 3rem;
+
+    /* margin-bottom: calc(var(--frames-collage-vertical-spacing) * -1); */
+}
+
+#frames-collage>.row>div {
+    margin-bottom: var(--frames-collage-vertical-spacing);
+}
+
+#frames-collage h2 {
+    margin-top: 1rem;
+    border: solid rgba(0, 0, 0, 0.4);
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+
+.collage-card_img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.collage-card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+}
+
+.collage-card:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease-out;
+}
+
+/* Frames Media Queries */
+
+@media screen and (min-width:576px) {
+    #frames-collage {
+        --frames-collage-vertical-spacing: 5rem;
+    }
+}
