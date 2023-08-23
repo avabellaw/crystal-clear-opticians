@@ -277,6 +277,8 @@ nav .navbar-nav {
 
 /* Hero */
 
+/* Homepage hero could be used for future pages, therefore, I've included it style.css and added it using classes instead of using ids */
+
 .hero {
     /* Make hero take rest of space left after the navbar */
     height: calc(100vh - var(--navbar-min-height));
@@ -388,7 +390,7 @@ nav .navbar-nav {
 }
 
 /* Keeps the homepage-hero's eye centered as the device width gets smaller */
-@media screen and (max-width:670px) {
+@media screen and (max-width:670px) and (min-height:660px) {
     #homepage-hero img {
         margin-left: 120px;
     }
