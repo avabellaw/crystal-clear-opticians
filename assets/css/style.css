@@ -301,7 +301,7 @@ nav .navbar-nav {
     /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
-    font-size: 1.2em;
+    font-size: 1.05em;
     margin: 0;
 }
 
@@ -312,7 +312,7 @@ nav .navbar-nav {
 .hero_tag-line {
     margin: 0 auto;
     width: 100%;
-    max-width: 44.6rem;
+    max-width: 1000px;
 }
 
 .hero_tag-line_content {
@@ -345,7 +345,7 @@ nav .navbar-nav {
 
 @media screen and (min-width:440px) {
     .hero_tag-line_content>p {
-        font-size: 1.3rem;
+        font-size: 1.1em;
     }
 }
 
@@ -354,7 +354,7 @@ nav .navbar-nav {
         /* Forces the tag line words to wrap early because tick is made position absolute which affects the centering of text */
         /* I've done this by setting word-spacing to 100% of the viewport width */
         word-spacing: initial;
-        font-size: 1.3rem;
+        font-size: 1.18em;
     }
 
     .hero_tag-line_content>p::after {
@@ -370,14 +370,15 @@ nav .navbar-nav {
     }
 }
 
-@media screen and (max-width:992px) and (max-height: 420px) and (orientation:landscape) {
+@media screen and (min-aspect-ratio:4/3), (max-height:400px) {
+    /* Learnt the aspect-ratio media queries from developer.mozilla [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio] */
     .hero-image {
         height: auto;
     }
 
     .hero_image-container {
         width: 100%;
-        max-width: 700px;
+        max-width: 1000px;
         flex-direction: column;
     }
 }
