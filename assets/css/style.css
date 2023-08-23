@@ -21,7 +21,7 @@ body {
     --body-bg-colour: #fff1f1;
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-    font-size: calc(0.68rem + .65vw);
+    font-size: calc(0.80rem + .68vw);
 
     /* If there isn't enough content, there is whitespace below the footer. 
     Middle section grows to fill that space using flexbox. */
@@ -360,7 +360,7 @@ nav .navbar-nav {
     right: 0px;
     background: url(../images/crystal-bg.webp) fixed no-repeat;
     background-size: cover;
-    background-position: -50px;
+    background-position: right;
     opacity: 0.2;
     box-shadow: inset 0 0 30px 40px var(--body-bg-colour);
 }

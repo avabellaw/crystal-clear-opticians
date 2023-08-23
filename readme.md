@@ -1,6 +1,12 @@
 # Milestone Project 1 - Crystal Clear Opticians
 
-## UX
+This website showcases Crstal Clear Opticians as a new, highly effiecient and affordable opticains with a range of glasses.
+It is designed to be accessible through bigger font sizes and a straight-forward, simplified navigation system.
+It is built with responsiveness at it's core and made to be accessible, especially for people with vison problems.
+
+[View live project](https://avabellaw.github.io/crystal-clear-opticians)
+
+## User Experience (UX)
 
 ### Project Goals
 
