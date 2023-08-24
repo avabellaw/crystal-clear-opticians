@@ -1,26 +1,26 @@
 # Milestone Project 1 - Crystal Clear Opticians
 
-This website showcases Crstal Clear Opticians as a new, highly effiecient and affordable opticains with a range of glasses.
-It is designed to be accessible through bigger font sizes and a straight-forward, simplified navigation system.
-It is built with responsiveness at it's core and made to be accessible, especially for people with vison problems.
+This website showcases Crystal Clear Opticians which is a highly effiecient and affordable opticains with a range of glasses.
+It is built with responsiveness at it's core and made to be accessible, especially for people with vison problems. It has bigger font sizes and a straight-forward, simplified navigation system.
 
 [View live project](https://avabellaw.github.io/crystal-clear-opticians)
+
+
+<img src="assets/images/readme/multi-device-mockup.webp" alt="Multi-Device Mockup" width="50%">
 
 ## User Experience (UX)
 
 ### Project Goals
 
-Crystal Clear Opticians is a new shop selling a range of frames and performing private eye tests.
+Crystal Clear is an efficient opticians that delivers fast while maintining a transparent and easy to understand pricing structure with no hidden add-ons. It also sells a range of frames and performs private eye tests.
 The site aims to drive traffic to the buisness, give an insight to patients on what to expect and allow them to browse their most popular frames.
 
 ## User Goals
 
 The target audience is a mixed-group of ages with a focus on older people as most people find they need glasses bettwen ages 41-61. The target audience will also contain many people with impaired vision. 
-As a result, font-sizes are big and the site maintains a simple and intuitive layout. 
+As a result, font-sizes are big and the site maintains a simple and intuitive layout. Most font-sizes use rem (or em) which enables the user to scale font-size easily.
 
 The navigation is comprised of 4 main sections that contain the most important and frequently accessed information.
-
-Crystal Clear is an efficient opticians that delivers fast while maintining a transparent and easy to understand pricing structure with no hidden add-ons.
 
 User goals are:
 
@@ -89,7 +89,8 @@ Site owner goals are:
         * Find out how Bootstrap is styling elements.
 * Firefox, Microsoft Edge, Safari
     * Used to test compatability for other browsers.
-
+* [Responsinator](http://www.responsinator.com/) for testing on different screens.
+ 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
@@ -259,6 +260,8 @@ All content was written by the developer, Ava.
 ### Media
 
 #### Images
+
+Multi-device mockup template for readme from [freepik](https://www.freepik.com/free-vector/flat-design-responsive-website-design_28747712.htm#query=multi%20device%20mockup&position=6&from_view=keyword&track=ais)
 
 Images were sourced from the following places:
 * [Pexels](https://www.pexels.com)
