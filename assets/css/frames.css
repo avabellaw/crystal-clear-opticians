@@ -39,20 +39,19 @@
 
 .frame-card_desc {
     display: none;
-    height: fit-content;
-    width: fit-content;
 
     font-size: 0.8em;
     margin: auto;
 }
 
 .frame-card_desc p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0.3em;
 }
 
 .frame-card_desc h3 {
     font-size: 1.5em;
+    margin-bottom: 0.7em;
 }
 
 .frame-card h2 {
@@ -61,7 +60,7 @@
 
 .frame-card:hover {
     transform: scale(1.1);
-    transition: transform 0.5s ease-out;
+    transition: transform 0.4s ease-out;
     background-color: white;
     padding: 0.3em;
     border: 1px solid pink;
