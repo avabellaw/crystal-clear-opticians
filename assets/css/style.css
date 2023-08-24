@@ -87,6 +87,18 @@ h3 {
 
 /* End of Headings */
 
+.btn-primary {
+    color: #000;
+    background-color: #ffbee1;
+    border-color: #ff9cd1;
+}
+
+.btn-primary:hover {
+    background-color: #fcd7eb;
+    border-color: #ff9cd1;
+    color: black;
+}
+
 /* Background images */
 
 .bg-img {

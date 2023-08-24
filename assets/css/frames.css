@@ -3,8 +3,6 @@
 #frames-collage {
     /* This sets a variable for the spacing inbetween the frames cards and then removes the spacing from the top of the collage using minus margins */
     --frames-collage-vertical-spacing: 3rem;
-
-    /* margin-bottom: calc(var(--frames-collage-vertical-spacing) * -1); */
 }
 
 #frames-collage>.row>div {

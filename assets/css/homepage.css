@@ -15,4 +15,24 @@
 
 /* Frame spotlight */
 
+#frame-spotlight,
+#frame-spotlight>.carousel-inner {
+    width: 50vw;
+    height: 330px;
+}
+
+#frame-spotlight img {
+    width: 100%;
+    height: auto;
+}
+
+#frame-spotlight {
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+#frame-spotlight .carousel-control >span {
+    padding: 1em;
+}
+
 /* ! Frame spotlight */
