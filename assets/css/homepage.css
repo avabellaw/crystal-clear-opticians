@@ -17,8 +17,8 @@
 
 #frame-spotlight,
 #frame-spotlight>.carousel-inner {
-    width: 50vw;
-    height: 330px;
+    width: 400px;
+    height: 250px;
 }
 
 #frame-spotlight img {
