@@ -11,17 +11,17 @@ xlarge - 1200px;
     /* Height variables */
 
     --page-header-height: 15vh;
-    --navbar-min-height: 76.5px;
+    --navbar-min-height: 12vh;
     --section-vertical-margins: 1rem;
 
     /* End of Height variables */
 }
 
 body {
-    --body-bg-colour: #fff1f1;
+    --body-bg-colour: #fdf3f3;
     font-family: 'Lora';
     background-color: var(--body-bg-colour);
-    font-size: calc(0.80rem + .68vw);
+    font-size: calc(0.60rem + .6vw + 0.6vh);
 
     /* If there isn't enough content, there is whitespace below the footer. 
     Middle section grows to fill that space using flexbox. */
@@ -133,10 +133,14 @@ nav {
     min-height: var(--navbar-min-height);
 }
 
-@media screen and (min-height:1100px) {
+@media screen and (min-height:1100px) and (max-aspect-ratio:5/3) {
     body {
         /* Shrink navbar height if on device such as an iPad Air */
-        --navbar-min-height: 7vh;
+        --navbar-min-height: 8vh;
+    }
+
+    .hero_tag-line .seperator {
+        height: 7px;
     }
 }
 
@@ -153,8 +157,10 @@ nav .navbar-nav {
 
 .navbar-brand>img {
     height: auto;
-    max-width: 50vw;
-    width: 160px;
+}
+
+.navbar-brand {
+    max-width: calc(25vw + 10vh);
 }
 
 .navbar-nav>.nav-item>.nav-link {
@@ -219,11 +225,16 @@ nav .navbar-nav {
         position: absolute;
         border-left: 1px solid black;
     }
+
+    .navbar-brand {
+        max-width: 25vw;
+    }
 }
 
 @media (hover: hover) {
+
     /* Make nav dropdown appear on hover [https://bootstrap-menu.com/detail-basic-hover.html] */
-/* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
+    /* I modified this so it detects whether the device pointer can hover (essentially it will be: true if has mouse [and therefore can hover], false if has touchscreen) [https://css-irl.info/detecting-hover-capable-devices/] */
     .navbar .nav-item .dropdown-menu:not(.show) {
         display: none;
     }
@@ -312,7 +323,6 @@ nav .navbar-nav {
 .hero_tag-line {
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
 }
 
 .hero_tag-line_content {
@@ -370,7 +380,9 @@ nav .navbar-nav {
     }
 }
 
-@media screen and (min-aspect-ratio:4/3), (max-height:400px) {
+@media screen and (min-aspect-ratio:4/3) and (max-height:800px),
+(max-height:400px) {
+
     /* Learnt the aspect-ratio media queries from developer.mozilla [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio] */
     .hero-image {
         height: auto;
@@ -380,6 +392,10 @@ nav .navbar-nav {
         width: 100%;
         max-width: 1000px;
         flex-direction: column;
+    }
+
+    .hero_tag-line {
+        max-width: 1000px;
     }
 }
 
@@ -435,12 +451,12 @@ article>section {
 .diagram th {
     padding-bottom: var(--diagram-cell-vertical-spacing);
     border-bottom: 1px solid rgba(255, 192, 203, 0.488);
+    width: 40vw;
 }
 
 .diagram_img-container {
     overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     padding: 5px 0;
 }
 
@@ -525,7 +541,7 @@ article>section {
     font-size: 1rem;
 }
 
-.page-footer h5 {
+.page-footer h1 {
     /* Based on what .page-footer font-size is set to */
     font-size: 1.2em;
     font-weight: 600;

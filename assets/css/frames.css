@@ -12,13 +12,13 @@
 }
 
 #frames-collage h2 {
-    margin-top: 1rem;
+    /* margin-top: 0.5em; */
     border: solid rgba(0, 0, 0, 0.4);
     border-width: 1px 0;
     padding: 5px 0;
 }
 
-.collage-card_img {
+.frame-card_img {
     height: 100%;
     display: flex;
     align-items: center;
@@ -27,18 +27,66 @@
     padding: 10px;
 }
 
-.collage-card {
+.frame-card {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     height: 100%;
 
     transition: transform 0.3s ease;
+    font-size: 0.5em;
 }
 
-.collage-card:hover {
-    transform: scale(1.3);
+.frame-card_desc {
+    display: none;
+    height: fit-content;
+    width: fit-content;
+
+    font-size: 0.8em;
+    margin: auto;
+}
+
+.frame-card_desc p {
+    font-size: 1.1em;
+    padding: 0.3em;
+}
+
+.frame-card_desc h3 {
+    font-size: 1.5em;
+}
+
+.frame-card h2 {
+    font-size: 1.8em;
+}
+
+.frame-card:hover {
+    transform: scale(1.1);
     transition: transform 0.5s ease-out;
+    background-color: white;
+    padding: 0.3em;
+    border: 1px solid pink;
+    position: absolute;
+    height: fit-content;
+    
+    display: flex;
+    z-index: 100;
+    /* max-width: 50vw; */
+}
+
+.frame-card:hover .frame-card_desc{
+    display: flex;
+    flex-direction: column;
+}
+
+#frames-collage > .row {
+    max-width: 90vw;
+    margin: auto;
+    position: relative;
+}
+
+#frames-collage > .row > div {
+    justify-content: center;
+    display: flex;
 }
 
 /* Frames Media Queries */
@@ -46,5 +94,9 @@
 @media screen and (min-width:576px) {
     #frames-collage {
         --frames-collage-vertical-spacing: 5rem;
+    }
+
+    .frame-card {
+        font-size: 0.7em;
     }
 }
