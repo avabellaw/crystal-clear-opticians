@@ -70,7 +70,6 @@
     
     display: flex;
     z-index: 100;
-    /* max-width: 50vw; */
 }
 
 .frame-card:hover .frame-card_desc{
@@ -89,6 +88,10 @@
     display: flex;
 }
 
+#frames-collage .frame-card:last-child:hover {
+    position: relative;
+}
+
 /* Frames Media Queries */
 
 @media screen and (min-width:576px) {
@@ -98,5 +101,9 @@
 
     .frame-card {
         font-size: 0.7em;
+    }
+
+    #frames-collage .frame-card:last-child:hover {
+        position: absolute;
     }
 }
