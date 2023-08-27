@@ -8,11 +8,6 @@
     padding: 10px;
 }
 
-#about-section img {
-    max-width: 30vw;
-    max-height: 45vh;
-}
-
 .about-section_text {
     padding: 2rem;
     align-items: center;
@@ -56,5 +51,12 @@
     #about-section>.section-container {
         display: flex;
         justify-content: center;
+    }
+
+    #about-section img {
+        width: auto;
+        height: auto;
+        max-width: 30vw;
+        max-height: 45vh;
     }
 }
