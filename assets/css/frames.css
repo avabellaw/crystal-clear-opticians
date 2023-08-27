@@ -29,21 +29,21 @@
 
 .frame-card_price {
     position: absolute;
-    bottom: 20px;
-    left: 18px;
-    z-index: 101;
+    bottom: 0;
+    right: 0;
+    height: 2.5em;
+    width: 2.5em;
+
     background-color: #ffdfe4;
     border: 1px solid #ff888891;
     border-radius: 50%;
-    font-size: 2.2em;
-    line-height: 0.9em;
-    height: 2.1em;
-    width: 2.3em;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lora';
     font-weight: 600;
+    padding: 0.1rem;
+    box-sizing: content-box;
 }
 
 .frame-card {
