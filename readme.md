@@ -90,6 +90,8 @@ Site owner goals are:
 * Firefox, Microsoft Edge, Safari
     * Used to test compatability for other browsers.
 * [Responsinator](http://www.responsinator.com/) for testing on different screens.
+* [Image aspect ratio and resizing calculator](https://red-route.org/code/image-resizing-calculator)
+    * For working out what width and height an image should have when first loaded on mobile
  
 ## Testing
 
