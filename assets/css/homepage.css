@@ -25,13 +25,18 @@
     /* Creates an aspect ratio of 5/3, code from stackoverflow post [https://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width] */
     padding-bottom: 60%;
     box-sizing: border-box;
-    position: relative;
 }
 
 #frame-spotlight img {
     /* 2nd part in creating an aspect ratio of 5/3 [https://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width] */
     position: absolute;
     width: 100%;
+
+    /* Center image */
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 #frame-spotlight {
