@@ -17,8 +17,8 @@
 
 #frame-spotlight,
 #frame-spotlight>.carousel-inner {
-    width: 100%;
-    max-width: 400px;
+    width: 300px;
+    margin: auto;
 }
 
 #frame-spotlight .carousel-item {
@@ -31,6 +31,7 @@
     /* 2nd part in creating an aspect ratio of 5/3 [https://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width] */
     position: absolute;
     width: 100%;
+    height: auto;
 
     /* Center image */
     top: 0;
@@ -48,6 +49,13 @@
     padding: 1em;
 }
 
+@media screen and (min-width:576px) {
+    #frame-spotlight,
+    #frame-spotlight>.carousel-inner {
+        width: 400px;
+    }
+}
+
 /* ! Frame spotlight */
 
 /* Reglaze */
@@ -63,11 +71,11 @@
     box-shadow: 4px 4px 5px 0px #ffaab9;
 }
 
-.reglaze-container > p {
+.reglaze-container>p {
     margin: 0;
-} 
+}
 
-.reglaze-container > h3 {
+.reglaze-container>h3 {
     margin: 0.5em 0;
 }
 
@@ -75,7 +83,7 @@
     margin-bottom: 1em;
 }
 
-#reglaze-section .row > div:nth-child(2) .reglaze-container {
+#reglaze-section .row>div:nth-child(2) .reglaze-container {
     filter: brightness(1.05);
 }
 

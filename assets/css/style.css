@@ -431,15 +431,15 @@ nav .navbar-nav {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -20px;
-    bottom: -20px;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0px;
     background: url(../images/crystal-bg.webp) fixed no-repeat;
     background-size: cover;
     background-position: right;
     opacity: 0.2;
-    box-shadow: inset 0 0 30px 40px var(--body-bg-colour);
+    box-shadow: inset 0 0 30px 20px var(--body-bg-colour);
 }
 
 article>section {
@@ -469,12 +469,14 @@ article>section {
 
 .diagram_img-container {
     overflow: hidden;
-    width: 100%;
-    padding: 5px 0;
+    width: fit-content;
+    margin: auto;
+    max-width: 250px
 }
 
-.diagram_img-container>img {
-    width: 100%;
+.diagram_img-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .diagram_img-container--rounded {
@@ -502,10 +504,14 @@ article>section {
     .diagram {
         max-width: 700px;
     }
+
+    .diagram_img-container > img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ! Diagram table styling */
-
 
 /* Main section Media Queries */
 
