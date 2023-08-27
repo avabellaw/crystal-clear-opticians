@@ -17,13 +17,21 @@
 
 #frame-spotlight,
 #frame-spotlight>.carousel-inner {
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#frame-spotlight .carousel-item {
+    /* Creates an aspect ratio of 5/3, code from stackoverflow post [https://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width] */
+    padding-bottom: 60%;
+    box-sizing: border-box;
+    position: relative;
 }
 
 #frame-spotlight img {
+    /* 2nd part in creating an aspect ratio of 5/3 [https://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width] */
+    position: absolute;
     width: 100%;
-    height: auto;
 }
 
 #frame-spotlight {
@@ -31,7 +39,7 @@
     margin-bottom: 1.5em;
 }
 
-#frame-spotlight .carousel-control >span {
+#frame-spotlight .carousel-control>span {
     padding: 1em;
 }
 
