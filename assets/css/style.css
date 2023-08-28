@@ -305,7 +305,8 @@ nav .navbar-nav {
 
 .hero {
     /* Make hero take rest of space left after the navbar */
-    height: calc(100vh - var(--navbar-min-height));
+    /* --inner-vh is created through js to get the inner height (minus the top address bar on mobiles). If not created, it will use the default 100vh */
+    height: calc(var(--inner-vh, 100) - var(--navbar-min-height));
     padding: 10px;
 }
 

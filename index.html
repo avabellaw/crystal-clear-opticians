@@ -413,6 +413,13 @@
             const carousel = new bootstrap.Carousel(myCarouselElement, {
                 interval: 5000
             })
+
+            // Code and comments from css-tricks [https://css-tricks.com/the-trick-to-viewport-units-on-mobile/]
+            // This will calculate what the phone inner height is and will create and set the --inner-vh variable to it
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+            let vh = window.innerHeight;
+            // Then we set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--inner-vh', `${vh}px`);
         });
     </script>
 </body>
