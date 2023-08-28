@@ -258,6 +258,9 @@ All content was written by the developer, Ava.
 * When form is submitted, you are taken to a thank you page that auto-redirects back to index.html. This was suggested to me by my mentor Darío Carrasquel.
 * Styling content using [Boostrap typography](https://getbootstrap.com/docs/5.0/content/typography/)
 * For creating the gradient to be used with <mark> to highlight text, I used [cssgradient.io](https://cssgradient.io/)
+* How to [preload images](https://web.dev/preload-responsive-images/)
+* [Using defer and async on the script tag](https://blog.logrocket.com/9-tricks-eliminate-render-blocking-resources/)
+* [Eliminating render blocking resources](https://sia.codes/posts/render-blocking-resources/)
 
 ### Media
 
