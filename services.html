@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="At Crystal Clear Opticians we strive to deliver a high-quality service efficently, because your time matters just as much as the health of your eyes. We sell a range of frames with many add-ons included and perform private eye exams.">
-    <meta name="theme-color" content="#F5DBE5" />
+    <meta name="theme-color" content="#F5DBE5">
 
     <title>Our Services - Crystal Clear Opticians</title>
 
     <!-- Preload images -->
-    <link rel="preload" as="image" href="assets/images/crystal-bg.webp" />
+    <link rel="preload" as="image" href="assets/images/crystal-bg.webp">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="prefetch" as="font" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="preload" as="font"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -96,7 +97,7 @@
     <!-- End of Header -->
 
     <!-- Pre-screening -->
-    <section id="pre-screening-section">
+    <div id="pre-screening-section">
         <div class="container-sm section-container">
             <header>
                 <h2 class="section-header">Pre-screening</h2>
@@ -120,11 +121,11 @@
 
                             <details class="info-mark mt-auto">
                                 <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
-                                <summary>
-                                    <span class="info-symbol-container"
-                                        aria-label="Infomation mark to reveal fact">&#9432;</span>
+                                <summary aria-label="Click to reveal fact" aria-details="auto-refractor-fact">
+                                    <span class="info-symbol-container">&#9432;</span>
                                 </summary>
-                                <p>This test is to assist your optometrist by estimating your prescription (or RX for
+                                <p id="auto-refractor-fact">This test is to assist your optometrist by estimating your
+                                    prescription (or RX for
                                     shorthand!).</p>
                             </details>
 
@@ -142,12 +143,12 @@
                             </p>
 
                             <details class="info-mark mt-auto">
-                                <summary>
-                                    <span class="info-symbol-container"
-                                        aria-label="Information mark to reveal fact">&#9432;</span>
+                                <summary aria-label="Click to reveal fact" aria-details="tonometer-fact">
+                                    <span class="info-symbol-container">&#9432;</span>
                                 </summary>
 
-                                <p>People with high intraocular pressure are more likely to develop glaucoma.</p>
+                                <p id="tonometer-fact">People with high intraocular pressure are more likely to develop
+                                    glaucoma.</p>
                             </details>
                         </div>
                     </div>
@@ -191,11 +192,11 @@
                                     <div class="col-2">
                                         <div class="center-x-y">
                                             <details class="info-mark info-mark--display-center">
-                                                <summary>
-                                                    <span class="info-symbol-container"
-                                                        aria-label="Information mark to reveal fact">&#9432;</span>
+                                                <summary aria-label="Click to reveal fact" aria-details="fields-fact">
+                                                    <span class="info-symbol-container">&#9432;</span>
                                                 </summary>
-                                                <p>This test can even detect the presence of a brain tumour!</p>
+                                                <p id="fields-fact">This test can even detect the presence of a brain
+                                                    tumour!</p>
                                             </details>
                                         </div>
                                     </div>
@@ -218,11 +219,11 @@
                 </div>
             </footer>
         </div>
-    </section>
+    </div>
     <!-- End of Pre-screening -->
 
     <!-- Eye Test -->
-    <section id="eye-test-section">
+    <div id="eye-test-section">
         <div class="container-md section-container">
             <header>
                 <h2 class="section-header">Your eye exam</h2>
@@ -269,11 +270,11 @@
                                     <div class="col-12 col-sm-2">
                                         <div class="center-x-y">
                                             <details class="info-mark info-mark--display-center">
-                                                <summary>
-                                                    <span class="info-symbol-container"
-                                                        aria-label="Information mark to reveal fact">&#9432;</span>
+                                                <summary aria-label="Click to reveal fact"
+                                                    aria-details="phoropter-fact">
+                                                    <span class="info-symbol-container">&#9432;</span>
                                                 </summary>
-                                                <p>
+                                                <p id="phoropter-fact">
                                                     Some countries will rely on this machine alone but your ocular
                                                     health is much more important than an estimate!
                                                 </p>
@@ -307,11 +308,11 @@
                 </div>
             </footer>
         </div>
-    </section>
+    </div>
     <!-- End of Eye test -->
 
     <!-- Contacts -->
-    <section id="contacts-section">
+    <div id="contacts-section">
         <div class="container section-container">
             <header>
                 <h2 class="section-header">Contact lenses</h2>
@@ -363,11 +364,12 @@
                     </div>
                 </div>
             </footer>
-    </section>
+        </div>
+    </div>
     <!-- End of Contacts -->
 
     <!-- Cataracts -->
-    <section id="cataracts-section">
+    <div id="cataracts-section">
         <div class="container section-container">
             <header>
                 <h2 class="section-header">Cataracts</h2>
@@ -458,7 +460,8 @@
                     </div>
                 </div>
             </footer>
-    </section>
+        </div>
+    </div>
     <!-- End of Cataracts -->
 
     <!-- Footer -->
