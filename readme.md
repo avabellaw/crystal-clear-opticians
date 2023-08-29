@@ -118,7 +118,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 This warning is thrown because CSS validators can't check the variable without running the code. As this is only a warning and the code is functional, I have kept the code as is.
 
 
-### Deployment ASK MENTOR WHETHER OKAY I COPIED FROM THE CODE INSTITUTE README
+### Deployment
 
 #### GitHub Pages
 
@@ -150,13 +150,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/avabellaw/crystal-clear-opticians
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/avabellaw/crystal-clear-opticians
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
