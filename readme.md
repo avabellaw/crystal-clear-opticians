@@ -71,6 +71,7 @@ Site owner goals are:
     * Used to store commits and to present project using GitHub pages
 * Visual Studio Code
     * Used as the IDE for the project.
+    * I set a shortcut for Visual Code's HTML/CSS formating to ctrl+shift+f.
 * Visual Studio Code extension - Live View
     * Used instead of Python to run a server to host the website on localhost in two clicks.
 * Paint.NET
