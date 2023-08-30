@@ -15,7 +15,7 @@ It is built with responsiveness at it's core and made to be accessible, especial
 Crystal Clear is an efficient opticians that delivers fast while maintining a transparent and easy to understand pricing structure with no hidden add-ons. It also sells a range of frames and performs private eye tests.
 The site aims to drive traffic to the buisness, give an insight to patients on what to expect and allow them to browse their most popular frames.
 
-## User Goals
+### User Goals
 
 The target audience is a mixed-group of ages with a focus on older people as most people find they need glasses bettwen ages 41-61. The target audience will also contain many people with impaired vision. 
 As a result, font-sizes are big and the site maintains a simple and intuitive layout. Most font-sizes use rem (or em) which enables the user to scale font-size easily.
@@ -93,7 +93,7 @@ Site owner goals are:
 * [Responsinator](http://www.responsinator.com/) for testing on different screens.
 * [Image aspect ratio and resizing calculator](https://red-route.org/code/image-resizing-calculator)
     * For working out what width and height an image should have when first loaded on mobile
- 
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
@@ -146,7 +146,11 @@ This eliminated all validation errors/warning apart from the consecutive hyphen 
 
 ![CSS validator results](assets/images/readme/validation/css-validation.webp)
 
-My main CSS file did not have any validation errors or warnings. I will have validated the CSS earlier on in the project which may be in part why this is the case. I should have documented this at the time. 
+My main CSS file did not have any validation errors or warnings that need to be actioned. I will have validated the CSS earlier on in the project which may be in part why this is the case. I should have documented this at the time. 
+
+The CSS validator gives the warning "Due to their dynamic nature, CSS variables are currently not statically checked". 
+This warning is thrown because it can't check the variable without running the code. 
+Setting a default value would remove the warning but I there isn't usually a value I can use as a default that would work. As this is only a warning and the code is functional, I have kept the code as is. 
 
 This was the same for all the other CSS files I used. However, I hadn’t previously used the validator on these smaller files:
 * about.css
@@ -164,12 +168,14 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * Tested links and whether they went to the right places and opened the correct way.
 * My mentor, partner and friends reviewed the website and documentation to check for bugs or user experience issues I may have gone blind too or simply wouldn't have noticed. I also asked for input on some decisions from my partner.
 
+#### Google Lighthouse
+
+
+
 ### Known Bugs
 
 * One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the about page instead of the about section of the the about page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
-* CSS validators gives warning "Due to their dynamic nature, CSS variables are currently not statically checked". 
-This warning is thrown because CSS validators can't check the variable without running the code. As this is only a warning and the code is functional, I have kept the code as is.
 
 
 ### Deployment
@@ -219,7 +225,6 @@ $ git clone https://github.com/avabellaw/crystal-clear-opticians
 ```
 
 [Click Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
-
 
 ## Research 
 
@@ -290,8 +295,6 @@ https://www.cohensfashionoptical.com/
 
 ### Example of opticians website with a page explaining testing
 https://www.visionexpress.com/eye-test/eye-test-explained
-
----
 
 ## Credits
 
