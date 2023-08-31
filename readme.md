@@ -38,7 +38,6 @@ These goals are delivered on by:
 * Has all the shop information is found through the about dropdown. Has a handy map embeded in the site using an iframe from Google Maps.
 * Demonstrates pricing structure clearly on the homepage.
 
-
 Site owner goals are:
 
 * Show off the most popular frames in the shop.
@@ -72,8 +71,10 @@ Site owner goals are:
 * Visual Studio Code
     * Used as the IDE for the project.
     * I set a shortcut for Visual Code's HTML/CSS formating to ctrl+shift+f.
-* Visual Studio Code extension - Live View
+* Visual Studio Code extension - Live Server by Ritwick Dey
     * Used instead of Python to run a server to host the website on localhost in two clicks.
+* Python - http.server
+    * The Live Server extension started to not work reliably towards the end of the project and it became easier to just run the server in Python.
 * Paint.NET
     * Used to edit and create images for the project such as the homepage hero and the visual FIELDS gif in services.html
 * Figma
@@ -150,7 +151,7 @@ My main CSS file did not have any validation errors or warnings that need to be 
 
 The CSS validator gives the warning "Due to their dynamic nature, CSS variables are currently not statically checked". 
 This warning is thrown because it can't check the variable without running the code. 
-Setting a default value would remove the warning but I there isn't usually a value I can use as a default that would work. As this is only a warning and the code is functional, I have kept the code as is. 
+Setting a default value would remove the warning but there isn't usually a value I can use as a default that would work. As this is only a warning and the code is functional, I have kept the code as is. 
 
 This was the same for all the other CSS files I used. However, I hadn’t previously used the validator on these smaller files:
 * about.css
@@ -159,6 +160,26 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * services.css
 
 ### Testing User Stories from User Experience (UX) Section NOT FINISHED
+
+### Manual Testing
+
+* Social media icons.
+    * I originally used tooltips but decided there was enough information given through the well-known icons and that it distracted from the icons itself. I also thought it took away from the aesthetics if the icons and animation.
+    * I tested clicking through the icons and found that they opened the links internally rather than opening a new tab.
+* Testing the website on real-life devices.
+    * I found that phones and tablets included the top address bar in the whole viewport height (100vh). On emulators, the address bar wasn't included meaning this didn't happen. I was able to use some Javascript to rectify this but I decided that it was out of the scope of this project and may add more problems. If this website was to be revisited, I would include the fix to this problem. 
+* Testing website on emulated iPad Air.
+    * I found that the top navbar and the tagline appeared too small when using vh. I decided to add a media query to enlarge these elements when on a device with an aspect ratio of 5/3.
+* I noticed fields test animation was offcenter. Using keyboard shortcuts, I reduced the width and height of each image used to create the gif by 1px and then re-created it. The steps I performed to do this where as follows:
+    1. Ctrl + A, ENTER: Select and open all 12 images in paint.net
+    2. ctrl + shift + R: change canvas size
+    3. Set to reduce from bottom-right corner (show img) - this will now be default. Canvas size editor will open starting on the width with aspect ratio maintained
+    4. Type 249px
+    5. ENTER
+    6. Ctrl + S: Save 
+    7. Crtl + W: Close picture
+
+    Repeat 1-7
 
 ### Further Testing
 
@@ -170,7 +191,11 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
 #### Google Lighthouse
 
+![Lighthouse report - Links and headings](assets/images/readme/google-lighthouse/links-headings-issue.webp)
 
+The logo link tag pointing to the homepage didn't have an aria-label associated with it, therefore I added this in.
+
+I then went through the HTML and changed headings to make them flow in a sequential order. The diagram headings needed to become h3s and I changed the footer headings from h5s to h1s.
 
 ### Known Bugs
 
