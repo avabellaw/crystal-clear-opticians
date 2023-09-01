@@ -6,7 +6,7 @@ It is built with responsiveness at it's core and made to be accessible, especial
 [View live project](https://avabellaw.github.io/crystal-clear-opticians)
 
 
-<img src="assets/images/readme/multi-device-mockup.webp" alt="Multi-Device Mockup" width="50%">
+<img src="docs/multi-device-mockup.webp" alt="Multi-Device Mockup" width="50%">
 
 ## User Experience (UX)
 
@@ -113,11 +113,11 @@ I also realised that using <section> purely as a container for every section of 
 
 #### about.html
 
-![about.html validator first resuts](assets/images/readme/validation/about-before.webp)
+![about.html validator first resuts](docs/validation/about-before.webp)
 
 I removed trailing slashes on meta and link tags. I also removed the type attribute with value “textarea” that was on a textarea tag.
 
-![about.html after validator results](assets/images/readme/validation/about-after.webp)
+![about.html after validator results](docs/validation/about-after.webp)
 
 #### form-submitted.html
 
@@ -131,7 +131,7 @@ Again, remove trailing slashes, preload Google fonts and remove section tags tha
 
 This page had the most validator errors/warnings.
 
-![services.html validator first results](assets/images/readme/validation/services.webp)
+![services.html validator first results](docs/validation/services.webp)
 
 There was a warning for using a double hyphen as a class name as it won't work in XML 1.0.
 I decided to keep this in as I used double hyphens to signify a modifier classes becuase I went by the BEM (Block, Element, Modifier) model to name classes.
@@ -141,11 +141,11 @@ I had to remove section end tags and fix where two divs were never closed.
 I also updated aria-label for the information mark to “Click to reveal fact” and added aria-details pointing to the reveal fact within a paragraph tag.
 
 This eliminated all validation errors/warning apart from the consecutive hyphen warning.
-![Consecutive hyphen warning](assets/images/readme/validation/services-warning.webp)
+![Consecutive hyphen warning](docs/validation/services-warning.webp)
 
 ### CSS Validation
 
-![CSS validator results](assets/images/readme/validation/css-validation.webp)
+![CSS validator results](docs/validation/css-validation.webp)
 
 My main CSS file did not have any validation errors or warnings that need to be actioned. I will have validated the CSS earlier on in the project which may be in part why this is the case. I should have documented this at the time. 
 
@@ -191,7 +191,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
 #### Google Lighthouse
 
-![Lighthouse report - Links and headings](assets/images/readme/google-lighthouse/links-headings-issue.webp)
+![Lighthouse report - Links and headings](docs/google-lighthouse/links-headings-issue.webp)
 
 The logo link tag pointing to the homepage didn't have an aria-label associated with it, therefore I added this in.
 
@@ -256,7 +256,7 @@ $ git clone https://github.com/avabellaw/crystal-clear-opticians
 ### Look Deeper
 https://www.lookdeeper.com.au/
 
-![Look deeper deeper homepage image](assets/images/readme/eyesburg.webp)
+![Look deeper deeper homepage image](docs/research/eyesburg.webp)
 
 What I like:
 
@@ -270,13 +270,13 @@ What I dislike:
 Slow load speed is bad for UX. 
 The initial load time before caching the JavaScript is **8.5+ seconds**! 
 
-![Look deeper performance image](assets/images/readme/eyesburg-perfomance.webp)
-![Look deeper performance image zoomed in](assets/images/readme/eyesburg_perfomance-zoom-in.webp)
+![Look deeper performance image](docs/research/eyesburg-perfomance.webp)
+![Look deeper performance image zoomed in](docs/research/eyesburg_perfomance-zoom-in.webp)
 
 ### Smart Optometry
 https://www.smart-optometry.com/
 
-![Smart optometry homepage image](assets/images/readme/smart-optometry.webp)
+![Smart optometry homepage image](docs/research/smart-optometry.webp)
 
 What I like:
 
@@ -284,7 +284,7 @@ What I like:
 * Bright and attractive images.
 * Attractive, simple and easy-to-read font and typeface.
 
-![Smart optometry font/typeface image](assets/images/readme/smart-optometry_typeface.webp)
+![Smart optometry font/typeface image](docs/research/smart-optometry_typeface.webp)
 
 What I dislike:
 
@@ -293,7 +293,7 @@ What I dislike:
 ### Perspective Eyecare
 http://www.perspectiveyes.com
 
-![Perspective eyecare homepage](assets/images/readme/perspective-eyes.webp)
+![Perspective eyecare homepage](docs/research/perspective-eyes.webp)
 
 What I like:
 
@@ -302,7 +302,7 @@ What I like:
 * Frequent calls to action.
 * Attractive design elements and animation.
 
-![Perspective eye care services table](assets/images/readme/perspective-eyes_services.webp)
+![Perspective eye care services table](docs/research/perspective-eyes_services.webp)
 
 What I dislike:
 
@@ -311,12 +311,12 @@ What I dislike:
 ### Eye Gotcha
 https://www.eyegotchasf.com/
 
-![Eye Gotcha homepage](assets/images/readme/eyegotchasf.webp)
+![Eye Gotcha homepage](docs/research/eyegotchasf.webp)
 
 ### COHEN'S Fashion Optical
 https://www.cohensfashionoptical.com/
 
-![COHEN'S Fashion Optical image](assets/images/readme/cohensfashionoptical.webp)
+![COHEN'S Fashion Optical image](docs/research/cohensfashionoptical.webp)
 
 ### Example of opticians website with a page explaining testing
 https://www.visionexpress.com/eye-test/eye-test-explained
