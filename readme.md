@@ -100,6 +100,7 @@ Site owner goals are:
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
 
 * [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+
     * [index.html results](docs/validation/html-results/index-results.webp)
     * [services.html results](docs/validation/html-results/services-results.webp)
     * [frames.html results](docs/validation/html-results/frames-results.webp)
@@ -107,6 +108,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     * [form-submitted results](docs/validation/html-results/form-submitted-results.webp)
 
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
     * [style.css results](docs/validation/css-results/style-results.webp)
     * [homepage.css results](docs/validation/css-results/homepage-results.webp)
     * [services.css results](docs/validation/css-results/services-results.webp)
@@ -115,12 +117,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 My commit messages when fixing and committing these errors/warnings varied slightly. This was due to not always being able to keep within the character limit.
 
-### HTML Validation
+### HTML Validator Notes
+
+I needed to remove trailing slashes from the meta and link tags and update Google Fonts from "prefetch" to "preload". 
 
 #### index.html
 
 I used the validator to fix errors such as accidentally putting width and height on an image container instead of the image tag. 
-I also realised that using <section> purely as a container for every section of content was a mistake. The validator through warning because there were no h2-h5 tags and after researching, I decided to replace these redundant tags with divs.
+I also realised that using <section> purely as a container for every section of content was a mistake. This is due to the validator throwing warnings because there were no h2-h5 tags. After researching, I decided to replace these redundant tags with divs in every page.
 
 #### about.html
 
@@ -128,33 +132,23 @@ I also realised that using <section> purely as a container for every section of 
 
 I removed trailing slashes on meta and link tags. I also removed the type attribute with value “textarea” that was on a textarea tag.
 
-![about.html after validator results](docs/validation/about-after.webp)
-
-#### form-submitted.html
-
-I only needed to remove trailing slashes from meta and link tags and update Google Fonts "prefetch" to "preload".
-
-#### frames.html
-
-Again, remove trailing slashes, preload Google fonts and remove section tags that were used as containers
-
 #### services.html
 
 This page had the most validator errors/warnings.
 
 ![services.html validator first results](docs/validation/services.webp)
 
-There was a warning for using a double hyphen as a class name as it won't work in XML 1.0.
-I decided to keep this in as I used double hyphens to signify a modifier classes becuase I went by the BEM (Block, Element, Modifier) model to name classes.
+There was a warning for using a double hyphen as a class name as it won't work with XML 1.0.
+I decided to keep this in as I used double hyphens to signify a modifier classes becuase I went by the BEM (Block, Element, Modifier) model to name classes. In future, I will consider whether I should use a different way of signifying a modifier.
 
-I had to remove section end tags and fix where two divs were never closed.
+I had to remove section end tags and fix where two divs that were never closed.
 
-I also updated aria-label for the information mark to “Click to reveal fact” and added aria-details pointing to the reveal fact within a paragraph tag.
+I also updated aria-label for the information mark to “Click to reveal fact” and added aria-details pointing to the fact that is revealed that's within a paragraph tag.
 
 This eliminated all validation errors/warning apart from the consecutive hyphen warning.
 ![Consecutive hyphen warning](docs/validation/services-warning.webp)
 
-### CSS Validation
+### CSS Validator Notes
 
 ![CSS validator results](docs/validation/css-validation.webp)
 
@@ -162,7 +156,7 @@ My main CSS file did not have any validation errors or warnings that need to be 
 
 The CSS validator gives the warning "Due to their dynamic nature, CSS variables are currently not statically checked". 
 This warning is thrown because it can't check the variable without running the code. 
-Setting a default value would remove the warning but there isn't usually a value I can use as a default that would work. As this is only a warning and the code is functional, I have kept the code as is. 
+Setting a default value would remove the warning but I can't find a comfortable default for most values. As this is only a warning and the code is functional, I have kept the code as is. 
 
 This was the same for all the other CSS files I used. However, I hadn’t previously used the validator on these smaller files:
 * about.css
