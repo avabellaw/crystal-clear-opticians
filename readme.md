@@ -130,7 +130,7 @@ I also realised that using <section> purely as a container for every section of 
 
 ![about.html validator first resuts](docs/validation/about-before.webp)
 
-I removed trailing slashes on meta and link tags. I also removed the type attribute with value “textarea” that was on a textarea tag.
+I removed the type attribute with value “textarea” that was on a textarea tag.
 
 #### services.html
 
@@ -175,16 +175,19 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     * I found that phones and tablets included the top address bar in the whole viewport height (100vh). On emulators, the address bar wasn't included meaning this didn't happen. I was able to use some Javascript to rectify this but I decided that it was out of the scope of this project and may add more problems. If this website was to be revisited, I would include the fix to this problem. 
 * Testing website on emulated iPad Air.
     * I found that the top navbar and the tagline appeared too small when using vh. I decided to add a media query to enlarge these elements when on a device with an aspect ratio of 5/3.
-* I noticed fields test animation was offcenter. Using keyboard shortcuts, I reduced the width and height of each image used to create the gif by 1px and then re-created it. The steps I performed to do this where as follows:
+* I noticed fields test animation was offcenter. Using keyboard shortcuts, I reduced the width and height of each image, that was used to create the gif, by 1px and then re-created the animation. The steps I performed to do this were as follows:
     1. Ctrl + A, ENTER: Select and open all 12 images in paint.net
-    2. ctrl + shift + R: change canvas size
-    3. Set to reduce from bottom-right corner (show img) - this will now be default. Canvas size editor will open starting on the width with aspect ratio maintained
+    2. ctrl + shift + R: change canvas size on current image
+    3. Canvas size editor will open starting on the width box, with the aspect ratio maintained
+        * For the first image, anchor it to the top-left to reduce size from bottom-right corner **this will now be default**
+
+            ![paint.net bottom-right](docs/canvas-resize-anchor.webp) 
     4. Type 249px
     5. ENTER
     6. Ctrl + S: Save 
     7. Crtl + W: Close picture
-
-    Repeat 1-7
+    8. Repeat 1-7 for all images
+    9. Recreate the gif with the new images
 
 ### Further Testing
 
