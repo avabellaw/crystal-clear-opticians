@@ -276,9 +276,47 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
 ![Lighthouse report - Links and headings](docs/google-lighthouse/links-headings-issue.webp)
 
+I went through the HTML and changed headings to make them flow in a sequential order. The diagram headings needed to become h3s and I changed the footer headings from h5s to h1s. I made sure to avoid this throughout all pages.
+
 The logo link tag pointing to the homepage didn't have an aria-label associated with it, therefore I added this in.
 
-I then went through the HTML and changed headings to make them flow in a sequential order. The diagram headings needed to become h3s and I changed the footer headings from h5s to h1s.
+I added the theme_color meta data to set the colour of the address bar on mobile devices. After adding this and the description meta tag, I got 100 for seo on the homepage
+
+Homepage hero takes 0.45s to load. Added prefetch in link tag to improve load speed of the responsive image by loading aside stylesheets
+Also prefetch crystal-bg-webp image that is used for the background of the navbar, sections and footer.
+
+**No explicit width and height set on images**
+
+![Lighthouse report - No explicit width and height set on images](docs/google-lighthouse/img-width-height.webp)
+
+All my images were created to be as responsive as possible. This causes the page to continously resize and change the layout as the content and styling is loaded.
+
+Performance will take a hit due to this, especially on smaller devices such as phones. Following a mobile-first approach meant that this was an especially important problem that needed to be solved and avoided in future.
+Setting a width and height will let the browser know how much space to reserve for that image.
+
+I went through all the images on my web pages and worked out a width and height that would be suitable and maintain it's aspect ratio. Giving the browser the aspect ratio can improve perfomance on it's own. I also tried to adapt the CSS to avoid resizing the image on smaller devices as much as possible.
+While working out width and height values, I took opportunity to resize images to a size closer to what it's actually display as while maintaining the quality on larger devices.
+
+**Ensure text remains visible during webfont load**
+
+![Lighthouse report - Ensure text is visible](docs/google-lighthouse/text-remain-visible.webp)
+
+![Lighthouse report - Font load time](docs/google-lighthouse/font-load.webp) 
+
+I used the Google fonts website to obtain the HTML to preconnect to it's servers. This saves time when it comes to loading the fonts.
+I then used “&display=swap” to ensure text remained visible before swapping to the desired fonts.
+
+**Google fonts is render blocking**
+
+I preloaded Google fonts which stopped it from render blocking and showing up as something that could be improved:
+
+![Lighthouse report - render blocking](docs/google-lighthouse/eliminate-render-blocking-fonts.webp)
+
+However, I did receive a warning because the fonts weren't being used immediately: 
+
+![Lighthouse report - Preload font warning](docs/google-lighthouse/font-preload-warning.webp)
+
+I decided to switch to prefetching the fonts but this gave me a validation error when using the W3 HTML validator. I converted back to using preload. If I came back to this project, I would research more into prefetching and preloading to reduce the impact on performance and work on removing the warning.
 
 ### Known Bugs
 
