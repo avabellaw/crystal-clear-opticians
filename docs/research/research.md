@@ -3,7 +3,7 @@
 ## Look Deeper
 https://www.lookdeeper.com.au/
 
-![Look deeper deeper homepage image](docs/research/eyesburg.webp)
+![Look deeper deeper homepage image](eyesburg.webp)
 
 What I like:
 
@@ -17,13 +17,13 @@ What I dislike:
 Slow load speed is bad for UX. 
 The initial load time before caching the JavaScript is **8.5+ seconds**! 
 
-![Look deeper performance image](docs/research/eyesburg-perfomance.webp)
-![Look deeper performance image zoomed in](docs/research/eyesburg_perfomance-zoom-in.webp)
+![Look deeper performance image](eyesburg-perfomance.webp)
+![Look deeper performance image zoomed in](eyesburg_perfomance-zoom-in.webp)
 
 ## Smart Optometry
 https://www.smart-optometry.com/
 
-![Smart optometry homepage image](docs/research/smart-optometry.webp)
+![Smart optometry homepage image](smart-optometry.webp)
 
 What I like:
 
@@ -31,7 +31,7 @@ What I like:
 * Bright and attractive images.
 * Attractive, simple and easy-to-read font and typeface.
 
-![Smart optometry font/typeface image](docs/research/smart-optometry_typeface.webp)
+![Smart optometry font/typeface image](smart-optometry_typeface.webp)
 
 What I dislike:
 
@@ -40,7 +40,7 @@ What I dislike:
 ## Perspective Eyecare
 http://www.perspectiveyes.com
 
-![Perspective eyecare homepage](docs/research/perspective-eyes.webp)
+![Perspective eyecare homepage](perspective-eyes.webp)
 
 What I like:
 
@@ -49,7 +49,7 @@ What I like:
 * Frequent calls to action.
 * Attractive design elements and animation.
 
-![Perspective eye care services table](docs/research/perspective-eyes_services.webp)
+![Perspective eye care services table](perspective-eyes_services.webp)
 
 What I dislike:
 
@@ -58,12 +58,12 @@ What I dislike:
 ## Eye Gotcha
 https://www.eyegotchasf.com/
 
-![Eye Gotcha homepage](docs/research/eyegotchasf.webp)
+![Eye Gotcha homepage](eyegotchasf.webp)
 
 ## COHEN'S Fashion Optical
 https://www.cohensfashionoptical.com/
 
-![COHEN'S Fashion Optical image](docs/research/cohensfashionoptical.webp)
+![COHEN'S Fashion Optical image](cohensfashionoptical.webp)
 
 ## Example of opticians website with a page explaining testing
 

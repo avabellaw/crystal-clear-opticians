@@ -104,7 +104,7 @@ I decided in this plane and the structure plane that the desired information cou
  
 * Home - An external user wants to learn as much about Crystal Clear as possible. They should learn about it's amazing pricing structure as early as possible.
 * Our frames - They need to be assured at a glance that glasses are sold and what kinds of glasses to expect.
-* Our services - "What should I expect at my appointment?" - Our Services jumps out a the user asking this section with a dropdown that narrows down what they may want to know.
+* Our services - "What should I expect at my appointment?" - Our Services jumps out at the user asking this question with a dropdown that narrows down what they want to know.
 * About - A user is likely to expect to find the location and more information about the actual store here with a dropdown to quickly confirm this. It's also a great place for a contact form. 
 
 The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
@@ -115,9 +115,10 @@ I decided to use the fonts:
 * Assistant 
 * [PLACEHOLDER]
 
-I will create a hero with a crystal edited into it and a clear logo informing confirming to the user it's an opticians if they had any doubts.
+There will be a hero image on the homepage and a tag line. This simple layout doesn't overwhelm the user with information and is aesthetically pleasing. It also lets the user know of the core principles and selling points of Crystal Clear Opticians.
+The crystal in the eye is an indirect way of clearly conveying a focus on eyes. It is intented to stick in the back of the user's mind whenever they browse or think of the website.
 
-Throught the project, a crystal background image will be used. It will be found in the navigation and footer background and it will also have a faded version in the background of each article of content.
+Throught the project, a crystal background image will be used. It will be found in the navigation and footer background and it will also appear faded behind each section of content.
 
 ## Technologies Used
 
@@ -316,7 +317,7 @@ However, I did receive a warning because the fonts weren't being used immediatel
 
 ![Lighthouse report - Preload font warning](docs/google-lighthouse/font-preload-warning.webp)
 
-I decided to switch to prefetching the fonts but this gave me a validation error when using the W3 HTML validator. I converted back to using preload. If I came back to this project, I would research more into prefetching and preloading to reduce the impact on performance and work on removing the warning.
+I decided to switch to prefetching the fonts but this gave me a validation error when using the W3 HTML validator, therefore I converted back to using preload. If I came back to this project, I would research more into prefetching and preloading to reduce the impact on performance and work on removing the warning.
 
 ### Known Bugs
 
