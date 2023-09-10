@@ -24,9 +24,9 @@ xlarge - 1200px;
 }
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--body-bg-colour);
-    font-size: calc(0.60rem + .4vw + 0.4vh);
+    font-size: calc(0.65rem + .45vw + 0.45vh);
 
     /* If there isn't enough content, there is whitespace below the footer. 
     Middle section grows to fill that space using flexbox. */
@@ -101,6 +101,12 @@ h3 {
 .btn-primary:hover {
     background-color: #fcd7eb;
     border-color: #ff9cd1;
+    color: black;
+}
+
+.bg-success {
+    background-color: #e5c8ff!important; /* "!important is needed to override Bootstrap styling"*/
+    border: 1px solid #b37abc;
     color: black;
 }
 
@@ -297,7 +303,7 @@ nav .navbar-nav {
 
 /* ! Nav items */
 
-.navbar {
+.navbar, .page-footer {
     font-family: 'Assistant', sans-serif;
     font-weight: 500;
 }
@@ -537,16 +543,15 @@ article>section {
 .page-footer {
     position: relative;
     overflow: hidden;
-}
-
-.page-footer {
+    
     padding: 0.7rem;
+    font-size: 0.9em;
 }
 
 .page-footer>.footer_container {
     position: relative;
     text-align: center;
-    BACKGROUND-COLOR: rgba(255, 255, 255, 0.632);
+    background-color: rgba(255, 255, 255, 0.632);
 }
 
 .footer_inner-container {
@@ -564,11 +569,6 @@ article>section {
 .page-footer p:last-of-type {
     margin-bottom: 0;
 }
-
-.page-footer {
-    font-size: 0.9em;
-}
-
 .page-footer h1 {
     /* Based on what .page-footer font-size is set to */
     font-size: 1.2em;

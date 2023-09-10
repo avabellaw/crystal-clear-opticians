@@ -111,9 +111,9 @@ The logo can also be clicked to get back to the homepage. This is very common in
 
 ### Surface Plane
 
-I decided to use the fonts:
-* Assistant 
-* [PLACEHOLDER]
+I decided to use the following fonts that complement eachother:
+* Assistant - Navbar and footer
+* Poppins - Body
 
 There will be a hero image on the homepage and a tagline. This simple layout doesn't overwhelm the user with information and is aesthetically pleasing. It also lets the user know the core principles and selling points of Crystal Clear Opticians.
 The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website.
