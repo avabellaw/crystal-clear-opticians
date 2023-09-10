@@ -26,7 +26,7 @@ xlarge - 1200px;
 body {
     font-family: 'Lora', serif;
     background-color: var(--body-bg-colour);
-    font-size: calc(0.60rem + .5vw + 0.5vh);
+    font-size: calc(0.60rem + .4vw + 0.4vh);
 
     /* If there isn't enough content, there is whitespace below the footer. 
     Middle section grows to fill that space using flexbox. */
@@ -562,18 +562,13 @@ article>section {
 }
 
 .page-footer {
-    font-size: 1rem;
+    font-size: 0.9em;
 }
 
 .page-footer h1 {
     /* Based on what .page-footer font-size is set to */
     font-size: 1.2em;
     font-weight: 600;
-}
-
-.page-footer p {
-    /* Based on what .page-footer font-size is set to */
-    font-size: 1em;
 }
 
 /* Social media icons */
@@ -608,9 +603,6 @@ article>section {
 @media screen and (min-width:576px) {
 
     /* Footer styling */
-    .page-footer {
-        font-size: 1rem;
-    }
 
     .footer_inner-container {
         flex-wrap: nowrap;
