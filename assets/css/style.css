@@ -105,9 +105,7 @@ h3 {
 }
 
 .bg-success {
-    background-color: #e5c8ff!important; /* "!important is needed to override Bootstrap styling"*/
-    border: 1px solid #b37abc;
-    color: black;
+    background-color: #632982!important; /* "!important is needed to override Bootstrap styling"*/
 }
 
 /* Background images */
