@@ -412,10 +412,12 @@ Image references for the frames section of website:
 * https://www.pexels.com/photo/spectacles-placed-on-objective-lens-7501398/
 * https://unsplash.com/photos/d05w6_7FaPM
 
+The diagrams for light-reactive and tinted lenses were created by me in paint.net using icons I've previously credited. Using one glasses icon, I edited different colour lenses to demonstrate them reacting to light and also what different tints would look like.
+
 ### GIFS
 
 GIF animation to demonstrate FIELDS test created by me using paint.net and [ezgif](https://ezgif.com/maker). I used 12 pictures.
-I made the contrast quite low which was realistic however decided to edit the gif using ezgif maker to improve visibility. I decreased the brightness (-15%) and increased the contrast (+50%).
+I made the contrast quite low which was realistic. After creating the GIF, I decided to edit it using ezgif maker to improve visibility. I decreased the brightness (-15%) but increased the contrast (+50%).
 
 ### Videos
 
