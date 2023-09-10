@@ -1,7 +1,10 @@
-# Milestone Project 1 - Crystal Clear Opticians
+# **Crystal Clear Opticians** - Milestone Project 1
 
 This website showcases Crystal Clear Opticians which is a highly effiecient and affordable opticains with a range of glasses.
 It is built with responsiveness at it's core and made to be accessible, especially for people with vison problems. It has bigger font sizes and a straight-forward, simplified navigation system.
+
+This project demonstrates the development of my knowledge of HTML5, CSS3 and UX design after studying the modules with Code Institute. It's a static website, with no server-side code, purely demonstrating my skills in front-end development.
+
 
 [View live project](https://avabellaw.github.io/crystal-clear-opticians)
 
@@ -15,7 +18,16 @@ It is built with responsiveness at it's core and made to be accessible, especial
 Crystal Clear is an efficient opticians that delivers fast while maintining a transparent and easy to understand pricing structure with no hidden add-ons. It also sells a range of frames and performs private eye tests.
 The site aims to drive traffic to the buisness, give an insight to patients on what to expect and allow them to browse their most popular frames.
 
-### User Goals
+To plan, design and create the project, I used the 5 planes of UX design with a mobile-first approach:
+* Strategy - Project requirements and audience.
+* Scope - What feaures to include based on the strategy plane.
+* Structure - The structure of information and how it's grouped.
+* Skeleton - How is the information presented and navigated.
+* Surface - The look and feel of the project.
+
+### Strategy Plane
+
+#### User Goals
 
 The target audience is a mixed-group of ages with a focus on older people as most people find they need glasses bettwen ages 41-61. The target audience will also contain many people with impaired vision. 
 As a result, font-sizes are big and the site maintains a simple and intuitive layout. Most font-sizes use rem (or em) which enables the user to scale font-size easily.
@@ -43,6 +55,69 @@ Site owner goals are:
 * Show off the most popular frames in the shop.
 * Attract people to the shop to buy frames.
 * Attract people to book appointments in-store.
+
+These goals are delivered by:
+* Having a dedicated "Our Frames" page included in the top navigation.
+* Demonstrating what makes Crystal Clear Opticians special throught the content.
+* Show the benefits of using this opticians and what to expect. 
+
+#### Research
+
+You can find the research I conducted for this project [by clicking this link](docs/research/research.md).
+
+### Scope Plane
+
+Potential features to include:
+* A glasses portfolio where users can hover over glasses to reveal more information.
+* Showcase equipment and what to expect at an eyetest, animations showing what they’re like.
+* Provide infomation on opening times, pricing, contact information and location.
+
+Mini features:
+* Advert for additional addons.
+* What we stand for.
+
+Footer should include:
+Contact – Location – Opening times
+
+Possible features for the future:
+* Mini nav inside the footer.
+* A way to book appointments online.
+* A section dedicated to eyecare.
+
+### Structure Plane
+
+Pages:
+* Home page – With pricing on it.
+* Our Frames - A selection of the best frames for varias purposes.
+* Our Services - Demonstrate the services provided and what to expect.
+* About: Our Practise - Location – Contact Us
+
+### Skeleton Plane
+
+I decided to create my wireframe in Figma. To see the comments I've made, you will need to view the wireframe logged into an account such as a Google account. I didn't realise this at the time and may decide to use a different way of creating wireframes in future projects.
+
+You can find my [Figma wireframe design here](https://www.figma.com/file/WwV5w1zGJeC9GBHZv7LHMA/Opticians?type=design&node-id=49-21&mode=design). 
+
+Navigate the different pages by clicking the logo icon in the top-left corner.
+
+I decided in this plane and the structure plane that the desired information could be easily found by grouping them into four main pages. These pages would have a dropdown to get to different sections within them.
+ 
+* Home - An external user wants to learn as much about Crystal Clear as possible. They should learn about it's amazing pricing structure as early as possible.
+* Our frames - They need to be assured at a glance that glasses are sold and what kinds of glasses to expect.
+* Our services - "What should I expect at my appointment?" - Our Services jumps out a the user asking this section with a dropdown that narrows down what they may want to know.
+* About - A user is likely to expect to find the location and more information about the actual store here with a dropdown to quickly confirm this. It's also a great place for a contact form. 
+
+The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
+
+### Surface Plane
+
+I decided to use the fonts:
+* Assistant 
+* [PLACEHOLDER]
+
+I will create a hero with a crystal edited into it and a clear logo informing confirming to the user it's an opticians if they had any doubts.
+
+Throught the project, a crystal background image will be used. It will be found in the navigation and footer background and it will also have a faded version in the background of each article of content.
 
 ## Technologies Used
 
@@ -207,9 +282,8 @@ I then went through the HTML and changed headings to make them flow in a sequent
 
 ### Known Bugs
 
-* One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the about page instead of the about section of the the about page. 
+* One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the about page instead of the location section of the the about page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
-
 
 ### Deployment
 
@@ -259,76 +333,6 @@ $ git clone https://github.com/avabellaw/crystal-clear-opticians
 
 [Click Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-## Research 
-
-### Look Deeper
-https://www.lookdeeper.com.au/
-
-![Look deeper deeper homepage image](docs/research/eyesburg.webp)
-
-What I like:
-
-* Simplistic, powerful and attractive design.
-* Nice animations.
-* Interactive fact nodules.
-* Simple and cold call to action in top-right of screen.
-
-What I dislike:
-
-Slow load speed is bad for UX. 
-The initial load time before caching the JavaScript is **8.5+ seconds**! 
-
-![Look deeper performance image](docs/research/eyesburg-perfomance.webp)
-![Look deeper performance image zoomed in](docs/research/eyesburg_perfomance-zoom-in.webp)
-
-### Smart Optometry
-https://www.smart-optometry.com/
-
-![Smart optometry homepage image](docs/research/smart-optometry.webp)
-
-What I like:
-
-* Simple bold design. High quality image.
-* Bright and attractive images.
-* Attractive, simple and easy-to-read font and typeface.
-
-![Smart optometry font/typeface image](docs/research/smart-optometry_typeface.webp)
-
-What I dislike:
-
-* Important sections of website haven’t got parts that jump out at you and attract your attention
-
-### Perspective Eyecare
-http://www.perspectiveyes.com
-
-![Perspective eyecare homepage](docs/research/perspective-eyes.webp)
-
-What I like:
-
-* Feels more personal.
-* Obvious navigation that leads exactly where you want.
-* Frequent calls to action.
-* Attractive design elements and animation.
-
-![Perspective eye care services table](docs/research/perspective-eyes_services.webp)
-
-What I dislike:
-
-* Look and feel seems off. Feels outdated possibly due to the colour scheme.
-
-### Eye Gotcha
-https://www.eyegotchasf.com/
-
-![Eye Gotcha homepage](docs/research/eyegotchasf.webp)
-
-### COHEN'S Fashion Optical
-https://www.cohensfashionoptical.com/
-
-![COHEN'S Fashion Optical image](docs/research/cohensfashionoptical.webp)
-
-### Example of opticians website with a page explaining testing
-https://www.visionexpress.com/eye-test/eye-test-explained
-
 ## Credits
 
 ### Content
@@ -374,7 +378,7 @@ Images were sourced from the following places:
 Image used for background of the navbar, footer and section backgrounds:
 https://unsplash.com/photos/PrQqQVPzmlw
 
-The homepage hero is comprised of two images sourced from:
+The homepage hero is comprised of two images sourced that I edited together in paint.NET:
 * [Homepage hero main picture](https://unsplash.com/photos/UbJMy92p8wk)
 * [Quarts crystal edited into eye](https://unsplash.com/photos/k65_6C4hu2E)
 
@@ -382,7 +386,6 @@ General images:
 * [Phoropter](https://www.pexels.com/photo/crop-woman-holding-trial-frame-against-white-background-5715892/)
 * [Box of lenses](https://www.pexels.com/photo/collection-of-lenses-for-checking-vision-in-medical-center-5752235/)
 * [Collection of glasses](https://unsplash.com/photos/oqlEKLMmTNg)
-* 
 
 Glasses icons:
 * https://www.flaticon.com/free-icon/summer_75908?term=glasses&page=1&position=22&origin=tag&related_id=75908
@@ -394,7 +397,6 @@ Diagrams:
 * [Varifocal diagram image](https://crescentheightsoptometry.com/wp-content/uploads/2015/10/progressive-660x326.webp?quality=100.3019052014480)
 * [Auto-refractor hot air balloon](https://www.reddit.com/r/LiminalSpace/comments/orxnb7/it_just_feels_so_off/)
 * [Tonometer example image](https://www.reviewofoptometry.com/article/the-dos-and-donts-of-measuring-iop)
-
 
 Image references for the frames section of website:
 
