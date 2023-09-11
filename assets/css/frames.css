@@ -71,6 +71,7 @@
 
 .frame-card_desc h3 {
     font-size: 1.5em;
+    font-weight: 500;
     margin-bottom: 0.7em;
 }
 
@@ -80,6 +81,9 @@
 
 .frame-card:hover {
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+
     transition: transform 0.4s ease-out;
     background-color: white;
     padding: 0.3em;
@@ -91,18 +95,18 @@
     z-index: 100;
 }
 
-.frame-card:hover .frame-card_desc{
+.frame-card:hover .frame-card_desc {
     display: flex;
     flex-direction: column;
 }
 
-#frames-collage > .row {
+#frames-collage>.row {
     max-width: 90vw;
     margin: auto;
     position: relative;
 }
 
-#frames-collage > .row > div {
+#frames-collage>.row>div {
     justify-content: center;
     display: flex;
 }
@@ -119,10 +123,14 @@
     }
 
     .frame-card {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     #frames-collage .frame-card:last-child:hover {
         position: absolute;
+    }
+
+    .frame-card:hover {
+        max-width: 20vw;
     }
 }
