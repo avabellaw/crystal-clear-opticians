@@ -26,7 +26,7 @@ xlarge - 1200px;
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--body-bg-colour);
-    font-size: calc(0.65rem + .45vw + 0.45vh);
+    font-size: calc(0.60rem + .50vw + 0.45vh);
 
     /* If there isn't enough content, there is whitespace below the footer. 
     Middle section grows to fill that space using flexbox. */
@@ -169,6 +169,10 @@ nav .navbar-nav {
     margin-left: auto;
 }
 
+#navbarSupportedContent {
+    flex-shrink: 0; /* Stops menu from shrinking and wrapping words */
+}
+
 /* Nav items */
 
 .navbar-nav .nav-item {
@@ -178,10 +182,14 @@ nav .navbar-nav {
 
 .navbar-brand>img {
     height: auto;
+
+    max-width: 100%;
 }
 
 .navbar-brand {
     max-width: calc(25vw + 10vh);
+
+    flex-shrink: 2; /* Shrink logo if it's too big for the nav elements */
 }
 
 .navbar-nav>.nav-item>.nav-link {
@@ -296,6 +304,16 @@ nav .navbar-nav {
         border: 1px solid white;
         border-left: 0;
         border-right: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 623px) {
+    /* Make the navbar padding and margins smaller to allow the logo to shrink less */
+
+    .navbar-nav>.nav-item>.nav-link {
+        padding: 3px 4px;
+        margin: 0 4px;
+        font-size: 0.95em;
     }
 }
 

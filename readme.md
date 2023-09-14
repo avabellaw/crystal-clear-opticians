@@ -266,6 +266,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     7. Crtl + W: Close picture
     8. Repeat 1-7 for all images
     9. Recreate the gif with the new images
+* The words within the nav-links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo before this happens. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
 
 ### Further Testing
 
@@ -402,6 +403,7 @@ Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?
 * How to [preload images](https://web.dev/preload-responsive-images/)
 * [Using defer and async on the script tag](https://blog.logrocket.com/9-tricks-eliminate-render-blocking-resources/)
 * [Eliminating render-blocking resources](https://sia.codes/posts/render-blocking-resources/)
+* How to use flex-shrink from [cssreference](https://cssreference.io/property/flex-shrink/#:~:text=default%20flex%2Dshrink%3A%201%3B,and%20will%20wrap%20its%20content.&text=flex%2Dshrink%3A%200%3B,and%20not%20wrap%20its%20content.)
 
 ### Media
 
