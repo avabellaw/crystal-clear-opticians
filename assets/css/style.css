@@ -357,7 +357,7 @@ nav .navbar-nav {
     /* I've done this by setting word-spacing to 100% of the viewport width */
     word-spacing: 100vw;
     font-size: 1.05em;
-    margin: 0;
+    margin: 0 0.3em;
 }
 
 .hero_tag-line>hr.seperator:last-child {
