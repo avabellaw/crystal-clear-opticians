@@ -109,6 +109,9 @@ I decided in this plane and the structure plane that the desired information cou
 
 The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
 
+In the design phase, my original idea was to try keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. This, however, turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
+I decided to replace it with a hamburger menu on smaller devices which is an accepted as way of displaying a menu on mobile that still adheres to UX design principles.
+
 ### Surface Plane
 
 I decided to use the following fonts that complement eachother:
