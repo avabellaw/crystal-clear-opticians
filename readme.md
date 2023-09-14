@@ -267,14 +267,17 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     8. Repeat 1-7 for all images
     9. Recreate the gif with the new images
 * The words within the nav-links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo before this happens. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
+* About page hero wasn't centered on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
+* After testing on my partner's old Samsung phone, I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
 
 ### Further Testing
 
-* Tested on Google Chrome, Firefox, Safari, Microsoft Edge, and Internet Explorer
+* Tested on Google Chrome, Firefox and Microsoft Edge.
 * Continuously tested by adjusting the width of the page to discover breakpoints and useful information such as where max-width should be used.
 * Viewed on Chrome's preset device dimensions: iPhone SE, Samsung Galaxy S8+, Laptop, iPad Air and various others including Nest Hub. I switched up with brands I used for phones, laptops, tablets, etc.
 * Tested links and whether they went to the right places and opened the correct way.
 * My mentor, partner, and friends reviewed the website and documentation to check for bugs or user experience issues I may have gone blind to or simply wouldn't have noticed. I also asked for input on some decisions from my partner.
+* I tested using my Samsung s21 and using a few of my friend's phones.
 
 #### Google Lighthouse
 
