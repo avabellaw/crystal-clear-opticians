@@ -695,7 +695,7 @@ form input[type="submit"] {
 }
 
 .info-mark--display-center {
-    --info-mark-center-width: 80vw;
+    --info-mark-center-width: 80%;
     position: initial;
 }
 
@@ -720,9 +720,9 @@ form input[type="submit"] {
 
 /* info-mark Media Queries */
 
-@media screen and (min-width:57px) {
+@media screen and (min-width:992px) {
     .info-mark--display-center {
-        --info-mark-center-width: 40vw;
+        --info-mark-center-width: 60%;
     }
 }
 

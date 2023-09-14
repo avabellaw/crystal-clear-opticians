@@ -269,6 +269,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * The words within the nav-links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo before this happens. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
 * About page hero wasn't centered on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
 * After testing on my partner's old Samsung phone, I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
+* On mobile, I discovered that the 'fact' that opens upon clicking the info-mark was too narrow. I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
 
 ### Further Testing
 
