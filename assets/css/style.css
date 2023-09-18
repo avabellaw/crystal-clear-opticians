@@ -215,8 +215,8 @@ nav .navbar-nav {
     border: none;
     background-color: #fff6f7;
     border-top: 5px solid transparent;
-    border-radius: 15px;
     text-align: center;
+    font-size: 1em;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -267,6 +267,11 @@ nav .navbar-nav {
 
     .dropdown-menu {
         box-shadow: 0 0 10px 5px rgb(255, 228, 232) inset;
+    }
+
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+        /* Selectors copied from Bootstrap when using inspect element */
+        width: 100%;
     }
 }
 
