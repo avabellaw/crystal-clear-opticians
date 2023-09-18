@@ -36,7 +36,6 @@
     #about-section {
         /* Sets about-section to the remaining height after page-header and navbar height  */
         height: calc(100vh - var(--page-header-height) - var(--navbar-min-height));
-        margin: 0;
     }
 }
 
