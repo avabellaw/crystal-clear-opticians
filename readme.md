@@ -109,12 +109,12 @@ I decided in this plane and the structure plane that the desired information cou
 
 The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
 
-In the design phase, my original idea was to try keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. This, however, turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
+In the design phase, my original idea was to try to keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. This, however, turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
 I decided to replace it with a hamburger menu on smaller devices which is an accepted as way of displaying a menu on mobile that still adheres to UX design principles.
 
 ### Surface Plane
 
-I decided to use the following fonts that complement eachother:
+I decided to use the following fonts that complement each other:
 * Assistant - Navbar and footer
 * Poppins - Body
 
@@ -127,14 +127,14 @@ Throughout the project, a crystal background image will be used. It will be foun
 
 1. As a first-time user I want to find out more about the opticians and how the glasses are priced.
 2. As a first-time user I want to find out how to get to the opticians.
-3. As a first-time user I want to find links to the shop's social medias.
+3. As a first-time user I want to find links to the shop's social media.
 4. As a first-time user I want to see what to expect if I book an appointment.
-5. As a reaccuring user I want to see whether there are new frames.
-6. As a reaccuring user I may want to contact the opticians to check an appointment date/time.
+5. As a recurring user I want to see whether there are new frames.
+6. As a recurring user I may want to contact the opticians to check an appointment date/time.
 
 In future releases:
 
-* A reaccuring and first-time user may want to book and check on appointments
+* A recurring and first-time user may want to book and check on appointments
 
 ## Technologies Used
 
@@ -261,7 +261,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
     **a.** From the homepage you can find Crystal Clear Optician's clear and affordable pricing structure.
 
-    **b.** You can see that there is an about page in the nav bar that explains Crystal Clear Optician's values. There's also a map with the location and a contact form.
+    **b.** You can see that there is an About page in the nav bar that explains Crystal Clear Optician's values. There's also a map with the location and a contact form.
 
     **c.** There is location information and contact information in the footer along with social media icon links.
 
@@ -269,9 +269,9 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
     **a.** The address is in the footer of every page.
 
-    **b.** There is a handy map in the about section that will take you to Google Maps for directions.
+    **b.** There is a handy map in the About section that will take you to Google Maps for directions.
 
-3. **As a first-time user I want to find links to the shop's social medias.**
+3. **As a first-time user I want to find links to the shop's social media.**
 
     **a.** You can find the social media icon links in the footer. Using aria-labels, these are accessible to people using screen readers.
 
@@ -279,15 +279,15 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
     **a.** There is a whole page you can find in the nav bar that explains all the services available to patients called 'Our Services'.
 
-5. **As a reaccuring user I want to see whether there are new frames.**
+5. **As a recurring user I want to see whether there are new frames.**
 
-    **a.** In the homepage, there is a frame spotlight that will link to the 'frames' page.
+    **a.** On the homepage, there is a frame spotlight that will link to the 'frames' page.
 
     **b.** The 'frames' page, called 'Our Frames' in the nav, displays all the frames available with prices and a description.
 
-6. **As a reaccuring user I may want to contact the opticians to check an appointment date/time.**
+6. **As a recurring user I may want to contact the opticians to check an appointment date/time.**
 
-    **a.** You can find the contact form in the about section. It gives feedback once the form is submitted.
+    **a.** You can find the contact form in the About section. It gives feedback once the form is submitted.
     
     **b.** You can also find a phone number and email in the footer of every page.
 
@@ -313,10 +313,10 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     7. Crtl + W: Close picture
     8. Repeat 1-7 for all images
     9. Recreate the gif with the new images
-* The words within the nav-links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo before this happens. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
-* About page hero wasn't centered on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
+* The words within the nav links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo to create more space. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
+* About page hero wasn't centred on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
 * After testing on my partner's old Samsung phone, I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
-* On mobile, I discovered that the fact bubble that opens upon clicking the info-mark was too narrow. I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
+* On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
 
 ### Further Testing
 
