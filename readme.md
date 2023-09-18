@@ -187,7 +187,9 @@ In future releases:
 * [Responsinator](http://www.responsinator.com/) for testing on different screens.
 * [Image aspect ratio and resizing calculator](https://red-route.org/code/image-resizing-calculator)
     * For working out what width and height an image should have when first loaded on a mobile
-
+* [Grammarly](https://app.grammarly.com/)
+    * To help find grammar and spelling mistakes to correct.
+    
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
