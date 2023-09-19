@@ -189,7 +189,7 @@ In future releases:
     * For working out what width and height an image should have when first loaded on a mobile
 * [Grammarly](https://app.grammarly.com/)
     * To help find grammar and spelling mistakes to correct.
-    
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page as I went to ensure unexpected errors were kept to a minimum. I used these validators at the end to ensure there were no validation errors upon project submission.
@@ -262,10 +262,17 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 1. **As a first-time user I want to find out more about the opticians and how the glasses are priced.**
 
     **a.** From the homepage you can find Crystal Clear Optician's clear and affordable pricing structure.
+    ![Homepage pricing structure, necessary add-ons included](docs/user-story-testing/pricing-structure.webp)
 
-    **b.** You can see that there is an About page in the nav bar that explains Crystal Clear Optician's values. There's also a map with the location and a contact form.
+    **b.** You can see that there is an About page in the nav bar that explains Crystal Clear Optician's values. There's also a map with the location and a contact form. 
+    The embedded map from Google Maps, has an indistinct location that doesn't relate to Crystal Clear Opticians. Unfortunately, it's no possible to supply a real map here as Crystal Clear Opticians and its town is a fictional place. Adding placeholder content is is my only option.
+    ![About page hero](docs/user-story-testing/about-hero.webp)
+    ![About page embedded Google Map](docs/user-story-testing/about-page-location.webp)
+    ![About page contact form](docs/user-story-testing/about-page-contact-us.webp)
 
-    **c.** There is location information and contact information in the footer along with social media icon links.
+    **c.** There is location and contact information in the footer along with social media icon links.
+    ![Image of footer](docs/user-story-testing/image-of-footer.webp)
+
 
 2. **As a first-time user I want to find out how to get to the opticians.**
 
@@ -281,15 +288,21 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
     **a.** There is a whole page you can find in the nav bar that explains all the services available to patients called 'Our Services'.
 
+        ![Screenshot of Our Services page](docs/user-story-testing/our-services-page.webp)
+
 5. **As a recurring user I want to see whether there are new frames.**
 
     **a.** On the homepage, there is a frame spotlight that will link to the 'frames' page.
+    ![Frame spotlight](docs/user-story-testing/frame-spotlight.webp)
 
     **b.** The 'frames' page, called 'Our Frames' in the nav, displays all the frames available with prices and a description.
+    ![Screenshot of Our frames page](docs/user-story-testing/our-frames-page.webp)
 
 6. **As a recurring user I may want to contact the opticians to check an appointment date/time.**
 
     **a.** You can find the contact form in the About section. It gives feedback once the form is submitted.
+    ![Contact form showing that a field is required](docs/user-story-testing/contact-form-field-required.webp)
+    ![Contact form submitted](docs/user-story-testing/contact-form-submitted.webp)
     
     **b.** You can also find a phone number and email in the footer of every page.
 
