@@ -13,11 +13,13 @@
     ![Image of footer](image-of-footer.webp)
 
 
-2. **As a first-time user I want to find out how to get to the opticians.**
+2. **As a first-time user I want to find out how to get to the opticians and contact them.**
 
     **a.** The address is in the footer of every page.
 
     **b.** There is a handy map in the About section that will take you to Google Maps for directions.
+
+    **c.** The email and contact number have special hrefs that will open the relevant app when clicked.
 
 3. **As a first-time user I want to find links to the shop's social media.**
 
