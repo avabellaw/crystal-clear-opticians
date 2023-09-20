@@ -465,7 +465,7 @@ nav .navbar-nav {
 
 .section-container {
     /* Adding horizontal padding here will break bootstrap container */
-    padding: 1.2rem 0;
+    padding: 1.2rem 0.6rem;
     text-align: center;
     position: relative;
 }

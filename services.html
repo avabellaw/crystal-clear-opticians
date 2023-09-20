@@ -99,125 +99,135 @@
     <!-- Pre-screening -->
     <div id="pre-screening-section">
         <div class="container-sm section-container">
-            <header>
-                <h2 class="section-header">Pre-screening</h2>
-            </header>
+            <article>
+                <header>
+                    <h2 class="section-header">Pre-screening</h2>
+                </header>
 
-            <section>
-                <div class="container-md">
-                    <div class="row">
-                        <!-- Make col flex and then set <details> margin-top to auto to push to bottom of col [https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/] -->
-                        <div class="col-12 col-md-6 d-flex flex-column">
+                <section>
+                    <div class="container-md">
+                        <div class="row">
+                            <!-- Make col flex and then set <details> margin-top to auto to push to bottom of col [https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/] -->
+                            <div class="col-12 col-md-6 d-flex flex-column">
 
-                            <h3>Auto-Refractor</h3>
-                            <div class="overflow-hidden d-flex justify-content-center mb-3">
-                                <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
-                                    alt="Common hot air balloon image for auto-refrator">
+                                <h3>Auto-Refractor</h3>
+                                <div class="overflow-hidden d-flex justify-content-center mb-3">
+                                    <img height="230" src="assets/images/autorefractor-hot-air-balloon.webp"
+                                        alt="Common hot air balloon image for auto-refrator">
+                                </div>
+                                <p>
+                                    Whilst focusing on this image, this machine will measure how well your eyes focus on
+                                    the
+                                    image. It will blur and unblur.
+                                </p>
+
+                                <details class="info-mark mt-auto">
+                                    <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
+                                    <summary aria-label="Click to reveal fact" aria-details="auto-refractor-fact">
+                                        <span class="info-symbol-container">&#9432;</span>
+                                    </summary>
+                                    <p id="auto-refractor-fact">This test is to assist your optometrist by estimating
+                                        your
+                                        prescription (or RX for
+                                        shorthand!).</p>
+                                </details>
+
                             </div>
-                            <p>
-                                Whilst focusing on this image, this machine will measure how well your eyes focus on the
-                                image. It will blur and unblur.
-                            </p>
+                            <div class="col-12 col-md-6 d-flex flex-column">
+                                <h3>Tonometer</h3>
+                                <div class="overflow-hidden d-flex justify-content-center mb-3">
+                                    <img height="230" src="assets/images/tonometer-example.webp"
+                                        alt="Man with Tonometer aimed at right eye">
+                                </div>
 
-                            <details class="info-mark mt-auto">
-                                <!-- Research what aria components are needed for a <details> tag [https://stackoverflow.com/questions/58065441/adding-aria-attributes-to-details-elements] -->
-                                <summary aria-label="Click to reveal fact" aria-details="auto-refractor-fact">
-                                    <span class="info-symbol-container">&#9432;</span>
-                                </summary>
-                                <p id="auto-refractor-fact">This test is to assist your optometrist by estimating your
-                                    prescription (or RX for
-                                    shorthand!).</p>
-                            </details>
+                                <p>
+                                    You will see a blinking dot and 4 puffs of air will be used to determine the
+                                    pressure of
+                                    your eye.
+                                </p>
 
-                        </div>
-                        <div class="col-12 col-md-6 d-flex flex-column">
-                            <h3>Tonometer</h3>
-                            <div class="overflow-hidden d-flex justify-content-center mb-3">
-                                <img height="230" src="assets/images/tonometer-example.webp"
-                                    alt="Man with Tonometer aimed at right eye">
+                                <details class="info-mark mt-auto">
+                                    <summary aria-label="Click to reveal fact" aria-details="tonometer-fact">
+                                        <span class="info-symbol-container">&#9432;</span>
+                                    </summary>
+
+                                    <p id="tonometer-fact">People with high intraocular pressure are more likely to
+                                        develop
+                                        glaucoma.</p>
+                                </details>
                             </div>
-
-                            <p>
-                                You will see a blinking dot and 4 puffs of air will be used to determine the pressure of
-                                your eye.
-                            </p>
-
-                            <details class="info-mark mt-auto">
-                                <summary aria-label="Click to reveal fact" aria-details="tonometer-fact">
-                                    <span class="info-symbol-container">&#9432;</span>
-                                </summary>
-
-                                <p id="tonometer-fact">People with high intraocular pressure are more likely to develop
-                                    glaucoma.</p>
-                            </details>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-12 col-md-10 offset-md-1">
-                            <h3 class="section-header" id="fields-gif-title">Visual Fields Test</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-10 offset-md-1">
+                                <h3 class="section-header" id="fields-gif-title">Visual Fields Test</h3>
 
-                            <!-- Created gif using paint.net and ezgif.com [https://ezgif.com/effects/ezgif-2-e7f53d63ed.gif], machine in real life is usually as simplistic as gif anyway and I couldn't find any videos of the test  -->
-                            <img class="mb-3 img-thumbnail rounded-circle" aria-labelledby="fields-gif-title"
-                                aria-describedby="fields-test-desc" src="assets/images/fields-test.gif"
-                                alt="Animation demonstrating visiual fields test">
-                            <p>
-                                This will test how sensitive your visual field is and where there are blind spots.
-                            </p>
-                            <p id="fields-test-desc">
-                                There are 4 red dots, fixate on the center of these dots for the entirety of the
-                                test. You will also be handed a trigger with a button on top.
-                                <br>
-                                A white dot, with a brightness calibrated to the sensitivity of your eye, will appear in
-                                different parts of your visual field. Click the button everytime you see it.
-                            </p>
+                                <!-- Created gif using paint.net and ezgif.com [https://ezgif.com/effects/ezgif-2-e7f53d63ed.gif], machine in real life is usually as simplistic as gif anyway and I couldn't find any videos of the test  -->
+                                <img class="mb-3 img-thumbnail rounded-circle" aria-labelledby="fields-gif-title"
+                                    aria-describedby="fields-test-desc" src="assets/images/fields-test.gif"
+                                    alt="Animation demonstrating visiual fields test">
+                                <p>
+                                    This will test how sensitive your visual field is and where there are blind spots.
+                                </p>
+                                <p id="fields-test-desc">
+                                    There are 4 red dots, fixate on the center of these dots for the entirety of the
+                                    test. You will also be handed a trigger with a button on top.
+                                    <br>
+                                    A white dot, with a brightness calibrated to the sensitivity of your eye, will
+                                    appear in
+                                    different parts of your visual field. Click the button everytime you see it.
+                                </p>
 
-                            <hr class="space-seperator">
+                                <hr class="space-seperator">
 
-                            <p class="mb-0">
-                                This test will discover or monitor any array of conidition including but not limited to:
-                            </p>
+                                <p class="mb-0">
+                                    This test will discover or monitor any array of conidition including but not limited
+                                    to:
+                                </p>
 
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-10">
-                                        <ul class="bullet-list">
-                                            <li>Glaucoma</li>
-                                            <li>Macular degeneration</li>
-                                            <li>Scotoma - Blind spot</li>
-                                            <li>Cataracts</li>
-                                        </ul>
-                                    </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <ul class="bullet-list">
+                                                <li>Glaucoma</li>
+                                                <li>Macular degeneration</li>
+                                                <li>Scotoma - Blind spot</li>
+                                                <li>Cataracts</li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="col-2">
-                                        <div class="center-x-y">
-                                            <details class="info-mark info-mark--display-center">
-                                                <summary aria-label="Click to reveal fact" aria-details="fields-fact">
-                                                    <span class="info-symbol-container">&#9432;</span>
-                                                </summary>
-                                                <p id="fields-fact">This test can even detect the presence of a brain
-                                                    tumour!</p>
-                                            </details>
+                                        <div class="col-2">
+                                            <div class="center-x-y">
+                                                <details class="info-mark info-mark--display-center">
+                                                    <summary aria-label="Click to reveal fact"
+                                                        aria-details="fields-fact">
+                                                        <span class="info-symbol-container">&#9432;</span>
+                                                    </summary>
+                                                    <p id="fields-fact">This test can even detect the presence of a
+                                                        brain
+                                                        tumour!</p>
+                                                </details>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <hr class="space-seperator">
+                <hr class="space-seperator">
 
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-8 offset-md-2">
-                            <h4>Now you will see the optometrist who will determine your prescripion.</h4>
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 offset-md-2">
+                                <h4>Now you will see the optometrist who will determine your prescripion.</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </article>
         </div>
     </div>
     <!-- End of Pre-screening -->
@@ -225,88 +235,92 @@
     <!-- Eye Test -->
     <div id="eye-test-section">
         <div class="container-md section-container">
-            <header>
-                <h2 class="section-header">Your eye exam</h2>
-            </header>
-            <section>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
-                            <!-- <div class="container--small"> -->
-                            <h3>After pre-screening, you meet you're optometrist. <br><small>What happens now?</small>
-                            </h3>
+            <article>
+                <header>
+                    <h2 class="section-header">Your eye exam</h2>
+                </header>
+                <section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+                                <!-- <div class="container--small"> -->
+                                <h3>After pre-screening, you meet you're optometrist.
+                                    <br>
+                                    <small>What happens now?</small>
+                                </h3>
 
-                            <p>
-                                One of the many tools at their disposal will be the Phoropter.
-                            </p>
-                            <!-- </div> -->
+                                <p>
+                                    One of the many tools at their disposal will be the Phoropter.
+                                </p>
+                                <!-- </div> -->
 
-                            <hr class="space-seperator">
+                                <hr class="space-seperator">
 
 
-                            <h3>Phoropter</h3>
-                            <div class="overflow-hidden d-flex justify-content-center mb-2">
+                                <h3>Phoropter</h3>
+                                <div class="overflow-hidden d-flex justify-content-center mb-2">
 
-                                <img class="img-responsive mw-100" src="assets/images/phoropter.webp"
-                                    alt="Phoropter, glasses with many different lenses">
+                                    <img class="img-responsive mw-100" src="assets/images/phoropter.webp"
+                                        alt="Phoropter, glasses with many different lenses">
 
-                            </div>
+                                </div>
 
-                            <p>
-                                This will be used to find the perfect lens and help determine your final
-                                prescription.
-                            </p>
+                                <p>
+                                    This will be used to find the perfect lens and help determine your final
+                                    prescription.
+                                </p>
 
-                            <hr class="space-seperator">
+                                <hr class="space-seperator">
 
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-sm-10">
-                                        <p class="mb-0">
-                                            Using the Auto-Refractor's results as baseline for your prescripion, the
-                                            optometrist will ask you many questions and take varias measurements.
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-sm-2">
-                                        <div class="center-x-y">
-                                            <details class="info-mark info-mark--display-center">
-                                                <summary aria-label="Click to reveal fact"
-                                                    aria-details="phoropter-fact">
-                                                    <span class="info-symbol-container">&#9432;</span>
-                                                </summary>
-                                                <p id="phoropter-fact">
-                                                    Some countries will rely on this machine alone but your ocular
-                                                    health is much more important than an estimate!
-                                                </p>
-                                            </details>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-10">
+                                            <p class="mb-0">
+                                                Using the Auto-Refractor's results as baseline for your prescripion, the
+                                                optometrist will ask you many questions and take varias measurements.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-sm-2">
+                                            <div class="center-x-y">
+                                                <details class="info-mark info-mark--display-center">
+                                                    <summary aria-label="Click to reveal fact"
+                                                        aria-details="phoropter-fact">
+                                                        <span class="info-symbol-container">&#9432;</span>
+                                                    </summary>
+                                                    <p id="phoropter-fact">
+                                                        Some countries will rely on this machine alone but your ocular
+                                                        health is much more important than an estimate!
+                                                    </p>
+                                                </details>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <hr class="space-seperator">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>You now have your presciption!</h3>
-                            <p>It's time to choose your frame to be ordered and
-                                delivered within 3 weeks!</p>
-                            <!-- Boostrap alert, modification inspired by alert-info [https://getbootstrap.com/docs/4.0/components/alerts/] -->
-                            <div class="alert alert--pink alert--soft-border" role="alert">
-                                <h4>Need your new glasses sooner?</h4>
-                                <hr class="seperator">
-                                <p><strong>Expedite your journey to 20/20 vision for only £35!</strong></p>
-                                <p>Reducing your wait to only <mark>12 days</mark> max!</p>
+                                <hr class="space-seperator">
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </section>
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3>You now have your presciption!</h3>
+                                <p>It's time to choose your frame to be ordered and
+                                    delivered within 3 weeks!</p>
+                                <!-- Boostrap alert, modification inspired by alert-info [https://getbootstrap.com/docs/4.0/components/alerts/] -->
+                                <div class="alert alert--pink alert--soft-border" role="alert">
+                                    <h4>Need your new glasses sooner?</h4>
+                                    <hr class="seperator">
+                                    <p><strong>Expedite your journey to 20/20 vision for only £35!</strong></p>
+                                    <p>Reducing your wait to only <mark>12 days</mark> max!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
         </div>
     </div>
     <!-- End of Eye test -->
@@ -314,56 +328,58 @@
     <!-- Contacts -->
     <div id="contacts-section">
         <div class="container section-container">
-            <header>
-                <h2 class="section-header">Contact lenses</h2>
-            </header>
+            <article>
+                <header>
+                    <h2 class="section-header">Contact lenses</h2>
+                </header>
 
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Interested in contact lenses?</h3>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Interested in contact lenses?</h3>
 
-                            <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
-                                <p><i>* Buying contacts requires an in-date presciption.</i></p>
-                            </div>
+                                <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
+                                    <p><i>* Buying contacts requires an in-date presciption.</i></p>
+                                </div>
 
-                            <hr class="space-seperator">
+                                <hr class="space-seperator">
 
-                            <p>Book a contact lense fitting where we'll ensure they're the perfect fit!</p>
-                            <p>
-                                Our quick and easy ordering system will make ordering your contacts seemless.
-                                Online, in-person or through phone call and gain sight without glasses today!
-                            </p>
-                            <p>
-                                <i>After this, you will require an aftercare appointment each year to comply with
-                                    British law</i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="alert alert-info alert--soft-border">
+                                <p>Book a contact lense fitting where we'll ensure they're the perfect fit!</p>
                                 <p>
-                                    There are instances where certain contacts will need to be ordered.<br>
-                                    <strong>This will take 10 days.</strong>
+                                    Our quick and easy ordering system will make ordering your contacts seemless.
+                                    Online, in-person or through phone call and gain sight without glasses today!
                                 </p>
-
                                 <p>
-                                    By choosing our £15 priority service,<br>this takes <strong><mark
-                                            class="mark--blue">only 4
-                                            days</mark></strong>.
+                                    <i>After this, you will require an aftercare appointment each year to comply with
+                                        British law</i>
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </section>
+
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="alert alert-info alert--soft-border">
+                                    <p>
+                                        There are instances where certain contacts will need to be ordered.<br>
+                                        <strong>This will take 10 days.</strong>
+                                    </p>
+
+                                    <p>
+                                        By choosing our £15 priority service,<br>this takes <strong><mark
+                                                class="mark--blue">only 4
+                                                days</mark></strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
         </div>
     </div>
     <!-- End of Contacts -->
@@ -371,95 +387,104 @@
     <!-- Cataracts -->
     <div id="cataracts-section">
         <div class="container section-container">
-            <header>
-                <h2 class="section-header">Cataracts</h2>
-            </header>
+            <article>
+                <header>
+                    <h2 class="section-header">Cataracts</h2>
+                </header>
 
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>What is cataracts?</h3>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3>What is cataracts?</h3>
 
-                            <p>Most cataracts develops as you get older. It is when the lens of your eye thickens and
-                                becomes cloudy which makes seeing out of the affected eye(s) increasingly difficult.</p>
-                            <p>Luckily, surgery has a 99% success rate and you'll be back
-                                on your feet <a href="https://www.nhs.uk/conditions/cataract-surgery"
-                                    aria-label="NHS Cataract Surgery (opens in new tab)" target="_blank"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="NHS Cataract Surgery">within
-                                    2-6 weeks.</a></p>
-
-                            <hr class="space-seperator">
-
-                            <h3 id="cataracts-surgery-video-title">What is cataract-surgery?</h3>
-
-                            <!-- W3Schools HTML5 video tag [https://www.w3schools.com/tags/tag_video.asp] -->
-                            <video class="video-responsive img-thumbnail" id="cataract-surgery-video"
-                                aria-labelledby="cataracts-surgery-video-title"
-                                aria-describedby="cataracts-surgery-video-desc" controls>
-                                <!-- Video from pixabay [https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/] -->
-                                <source src="assets/videos/cataract-surgery.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                            </video>
-
-                            <p id="cataracts-surgery-video-desc" class="px-4">
-                                Your cloudy lens will be removed and replaced with a clear plastic lens.
-                            </p>
-
-                            <hr class="space-seperator">
-
-                            <h3>Refferal for surgery</h3>
-
-                            <p>We can discover cataracts during an eye test and refer you for surgery.<br>We will also
-                                give you advise on what to do next.</p>
-
-                            <hr class="space-seperator">
-
-                            <h3>Post-operative appointment</h3>
-
-                            <p>After surgery, it's advised you book an appointment to evaluate your eye(s).
-                            </p>
-                            <p>
-                                You will arrive 25 minutes before your appointment to have drops put in your eye(s) that
-                                will dilate your pupil(s)
-                                <br>
-                                This will enable the optometrist to see to the back of your eye clearly.
-                            </p>
-
-                            <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
-                                <p>
-                                    <i>* You cannot drive after receiving eye drops that dilate pupils.</i>
-
-                                    <br><br>
-
-                                    We offer transporation options for getting to and from the hospital or Crystal Clear
-                                    Opticians.
+                                <p>Most cataracts develops as you get older. It is when the lens of your eye thickens
+                                    and
+                                    becomes cloudy which makes seeing out of the affected eye(s) increasingly difficult.
                                 </p>
+                                <p>Luckily, surgery has a 99% success rate and you'll be back
+                                    on your feet <a href="https://www.nhs.uk/conditions/cataract-surgery"
+                                        aria-label="NHS Cataract Surgery (opens in new tab)" target="_blank"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="NHS Cataract Surgery">within
+                                        2-6 weeks.</a></p>
+
+                                <hr class="space-seperator">
+
+                                <h3 id="cataracts-surgery-video-title">What is cataract-surgery?</h3>
+
+                                <!-- W3Schools HTML5 video tag [https://www.w3schools.com/tags/tag_video.asp] -->
+                                <video class="video-responsive img-thumbnail" id="cataract-surgery-video"
+                                    aria-labelledby="cataracts-surgery-video-title"
+                                    aria-describedby="cataracts-surgery-video-desc" controls>
+                                    <!-- Video from pixabay [https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/] -->
+                                    <source src="assets/videos/cataract-surgery.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <p id="cataracts-surgery-video-desc" class="px-4">
+                                    Your cloudy lens will be removed and replaced with a clear plastic lens.
+                                </p>
+
+                                <hr class="space-seperator">
+
+                                <h3>Refferal for surgery</h3>
+
+                                <p>We can discover cataracts during an eye test and refer you for surgery.<br>We will
+                                    also
+                                    give you advise on what to do next.</p>
+
+                                <hr class="space-seperator">
+
+                                <h3>Post-operative appointment</h3>
+
+                                <p>After surgery, it's advised you book an appointment to evaluate your eye(s).
+                                </p>
+                                <p>
+                                    You will arrive 25 minutes before your appointment to have drops put in your eye(s)
+                                    that
+                                    will dilate your pupil(s)
+                                    <br>
+                                    This will enable the optometrist to see to the back of your eye clearly.
+                                </p>
+
+                                <div class="alert alert-danger d-inline-block p-2 mt-1" role="alert">
+                                    <p>
+                                        <i>* You cannot drive after receiving eye drops that dilate pupils.</i>
+
+                                        <br><br>
+
+                                        We offer transporation options for getting to and from the hospital or Crystal
+                                        Clear
+                                        Opticians.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <hr class="space-seperator">
+                <hr class="space-seperator">
 
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="container-small">
-                                <h3>Free consultation</h3>
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="container-small">
+                                    <h3>Free consultation</h3>
 
-                                <p>
-                                    <a href="tel:+447783834565">Call us now</a> to arrange your free consultation where
-                                    we
-                                    will create your personalised health care plan.
-                                </p>
+                                    <p>
+                                        <a href="tel:+447783834565">Call us now</a> to arrange your free consultation
+                                        where
+                                        we
+                                        will create your personalised health care plan.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </article>
         </div>
     </div>
     <!-- End of Cataracts -->
@@ -488,7 +513,7 @@
                         <!-- Searched for how to add semantic data for contact info [https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number] -->
                         <address>
                             <a href="tel:+447783834565">07783834565</a>
-                            <br />
+                            <br>
                             <a href="mailto:crystal.clear@clearoptics.co.uk">crystal.clear@clearoptics.co.uk</a>
                         </address>
                     </div>
@@ -499,7 +524,6 @@
 
             <!-- HTML from mdboostrap [https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/#section-icons] -->
             <!-- Icons from Font Awesome [https://fontawesome.com/search] -->
-            <!-- Tooltips from Boostrap [https://getbootstrap.com/docs/5.0/components/tooltips/] -->
             <div class="social-icons-container">
                 <!-- Facebook -->
                 <a class="btn btn-link btn-floating btn-lg" aria-label="Our Facebook (opens in new tab)" target="_blank"
@@ -551,7 +575,7 @@
     <script defer src="https://kit.fontawesome.com/7f8d320380.js" crossorigin="anonymous"></script>
 
     <!-- How to include JS from local file [http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html#:~:text=To%20include%20an%20external%20JavaScript%20file%2C%20we%20can%20use%20the,path%20to%20your%20JavaScript%20file.&text=This%20script%20tag%20should%20be,tags%20in%20your%20HTML%20document.] -->
-    <script type="text/javascript" src="assets/js/expand-dropdown-on-hover.js"></script>
+    <script src="assets/js/expand-dropdown-on-hover.js"></script>
 
 
     <script>
