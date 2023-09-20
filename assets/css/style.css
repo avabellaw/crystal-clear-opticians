@@ -90,7 +90,7 @@ h3 {
     }
 }
 
-/* End of Headings */
+/* End of Headings Media Queries */
 
 .btn-primary {
     color: #000;
@@ -105,7 +105,7 @@ h3 {
 }
 
 .bg-success {
-    background-color: #632982!important; /* "!important is needed to override Bootstrap styling"*/
+    background-color: #632982!important; /* "!important" is needed to override Bootstrap styling */
 }
 
 /* Background images */
@@ -122,12 +122,14 @@ h3 {
 }
 
 .bg-img--nav {
+    /* .bg-img modifier for the nav */
     background-image: url(../images/crystal-bg.webp);
     background-position-y: 47%;
     opacity: 0.55;
 }
 
 .bg-img--footer {
+    /* bg-img modifier for the footer */
     background: url(../images/crystal-bg.webp) no-repeat right top;
     background-size: cover;
     transform: scaleY(-1);
@@ -151,6 +153,7 @@ nav {
 }
 
 .navbar {
+    /* Sets the minimum height so that the dropdown can still expand but I can know how many pixels it takes up. */
     min-height: var(--navbar-min-height);
 }
 
@@ -166,6 +169,7 @@ nav {
 }
 
 nav .navbar-nav {
+    /* Pushes the nav-links to the right */
     margin-left: auto;
 }
 
@@ -220,6 +224,7 @@ nav .navbar-nav {
 }
 
 .dropdown-menu[data-bs-popper] {
+    /* Override Bootstrap styles for an open dropdown */
     left: initial;
     margin-top: 0;
 }
@@ -465,6 +470,7 @@ nav .navbar-nav {
 }
 
 .section-container:before {
+    /* Sets the background of each section to a faded background image of crystals */
     content: "";
     position: absolute;
     z-index: -1;
@@ -697,15 +703,18 @@ form input[type="submit"] {
 
 
 .info-mark[open] p {
+    /* Zoomin fact when info-mark is clicked */
     animation: zoomIn 0.2s;
 }
 
 .info-mark--display-center {
+    /* Set width of info mark to 80% and reset position */
     --info-mark-center-width: 80%;
     position: initial;
 }
 
 .info-mark--display-center p {
+    /* Center info-mark fact */
     width: var(--info-mark-center-width);
     left: calc(50% - var(--info-mark-center-width)/2);
 }
@@ -739,6 +748,7 @@ form input[type="submit"] {
 }
 
 @media (hover:hover) {
+    /* If device can hover, apply transition to and make the info-mark icon brighter */
     .info-symbol-container:hover {
         transition: all 0.2s ease-in-out;
         filter: brightness(1.3);
@@ -807,6 +817,7 @@ mark {
 }
 
 mark.mark--blue {
+    /* Make mark's highlight blue */
     --mark-highlight-colour: rgb(198, 205, 255);
 }
 
@@ -815,6 +826,7 @@ mark.mark--blue {
 /* Utilities */
 
 .center-x-y {
+    /* Center content both vertically and horizontally */
     height: 100%;
     width: 100%;
     display: flex;
