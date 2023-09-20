@@ -25,6 +25,19 @@ To plan, design and create the project, I used the 5 planes of UX design with a 
 * Skeleton - How is the information presented and navigated?
 * Surface - The look and feel of the project.
 
+### User Stories
+
+1. As a first-time user I want to find out more about the opticians and how the glasses are priced.
+2. As a first-time user I want to find out how to get to the opticians.
+3. As a first-time user I want to find links to the shop's social media.
+4. As a first-time user I want to see what to expect if I book an appointment.
+5. As a recurring user I want to see whether there are new frames.
+6. As a recurring user I may want to contact the opticians to check an appointment date/time.
+
+In future releases:
+
+* A recurring and first-time user may want to book and check on appointments
+
 ### Strategy Plane
 
 #### User Goals
@@ -122,19 +135,6 @@ There will be a hero image on the homepage and a tagline. This simple layout doe
 The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website.
 
 Throughout the project, a crystal background image will be used. It will be found in the navigation and footer background and it will also appear faded behind each section of content.
-
-## User Stories
-
-1. As a first-time user I want to find out more about the opticians and how the glasses are priced.
-2. As a first-time user I want to find out how to get to the opticians.
-3. As a first-time user I want to find links to the shop's social media.
-4. As a first-time user I want to see what to expect if I book an appointment.
-5. As a recurring user I want to see whether there are new frames.
-6. As a recurring user I may want to contact the opticians to check an appointment date/time.
-
-In future releases:
-
-* A recurring and first-time user may want to book and check on appointments
 
 ## Technologies Used
 
@@ -263,58 +263,14 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 
 ### JS Validator Notes
 
-I recieved warnings, relating to JQueryz, but no errors when I used JSLint on expand-dropdown-on-hover.js.
-It also suggested using double quotes instead of single but single quotes are still valid in JavaScript.
-Lastly, it had issues with comments being longer than 80 characters but they work for the purpose of this project.
+* expand-dropdown-on-hover.js
+    * I recieved warnings, relating mostly to JQuery, but no errors.
+    * JSLint suggests using double quotes instead of single but single quotes are still valid in JavaScript.
+    * JSLint had issues with comments being longer than 80 characters but they work for the purpose of this project.
 
-### Testing User Stories
+### Testing User Stories From 'User Experience' Section
 
-1. **As a first-time user I want to find out more about the opticians and how the glasses are priced.**
-
-    **a.** From the homepage you can find Crystal Clear Optician's clear and affordable pricing structure.
-    ![Homepage pricing structure, necessary add-ons included](docs/user-story-testing/pricing-structure.webp)
-
-    **b.** You can see that there is an About page in the nav bar that explains Crystal Clear Optician's values. There's also a map with the location and a contact form. 
-    The embedded map from Google Maps, has an indistinct location that doesn't relate to Crystal Clear Opticians. Unfortunately, it's no possible to supply a real map here as Crystal Clear Opticians and its town is a fictional place. Adding placeholder content is is my only option.
-    ![About page hero](docs/user-story-testing/about-hero.webp)
-    ![About page embedded Google Map](docs/user-story-testing/about-page-location.webp)
-    ![About page contact form](docs/user-story-testing/about-page-contact-us.webp)
-
-    **c.** There is location and contact information in the footer along with social media icon links.
-    ![Image of footer](docs/user-story-testing/image-of-footer.webp)
-
-
-2. **As a first-time user I want to find out how to get to the opticians.**
-
-    **a.** The address is in the footer of every page.
-
-    **b.** There is a handy map in the About section that will take you to Google Maps for directions.
-
-3. **As a first-time user I want to find links to the shop's social media.**
-
-    **a.** You can find the social media icon links in the footer. Using aria-labels, these are accessible to people using screen readers.
-
-4. **As a first-time user I want to see what to expect if I book an appointment.**
-
-    **a.** There is a whole page you can find in the nav bar that explains all the services available to patients called 'Our Services'.
-
-        ![Screenshot of Our Services page](docs/user-story-testing/our-services-page.webp)
-
-5. **As a recurring user I want to see whether there are new frames.**
-
-    **a.** On the homepage, there is a frame spotlight that will link to the 'frames' page.
-    ![Frame spotlight](docs/user-story-testing/frame-spotlight.webp)
-
-    **b.** The 'frames' page, called 'Our Frames' in the nav, displays all the frames available with prices and a description.
-    ![Screenshot of Our frames page](docs/user-story-testing/our-frames-page.webp)
-
-6. **As a recurring user I may want to contact the opticians to check an appointment date/time.**
-
-    **a.** You can find the contact form in the About section. It gives feedback once the form is submitted.
-    ![Contact form showing that a field is required](docs/user-story-testing/contact-form-field-required.webp)
-    ![Contact form submitted](docs/user-story-testing/contact-form-submitted.webp)
-    
-    **b.** You can also find a phone number and email in the footer of every page.
+[Testing User Stories](docs/user-story-testing/testing-user-stories.md)
 
 ### Manual Testing
 
