@@ -46,7 +46,7 @@ In future releases:
 
 #### User Goals
 
-The target audience is a mixed group of ages with a focus on older people as most people find they need glasses between ages 41-61. The target audience will also be many people with impaired vision. 
+The target audience is a mixed group of ages with impaired vision, with a focus on older people as most people find they need glasses between ages 41-61.
 As a result, font sizes are big and the site maintains a simple and intuitive layout. Most font sizes use rem (or em) which enables the user to scale font size easily.
 
 The navigation is comprised of 4 main sections that contain the most important and frequently accessed information.
@@ -125,9 +125,9 @@ I decided in this plane and the structure plane that the desired information cou
 * Our services - "What should I expect at my appointment?" - "Our Services" jumps out at the user asking this question with a dropdown that narrows down what they want to know.
 * About - A user is likely to expect to find the location and more information about the actual store here with a dropdown to quickly confirm this. It's also a great place for a contact form. 
 
-The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
+The logo can also be clicked to get back to the homepage as this is very common in websites and intuitive to the majority of users.
 
-In the design phase, my original idea was to try to keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. This, however, turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
+In the design phase, my original idea was to try to keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. However, this turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
 I decided to replace it with a hamburger menu on smaller devices which is an accepted way of displaying a menu on mobile that still adheres to UX design principles.
 
 ### Surface Plane
@@ -142,7 +142,7 @@ I later used blue for an advert alert in the contact lenses section of Our Servi
 
 
 There will be a hero image on the homepage and a tagline. This simple layout doesn't overwhelm the user with information and is aesthetically pleasing. It also lets the user know the core principles and selling points of Crystal Clear Opticians.
-The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website.
+The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website. This contributes to the brand's image.
 
 Throughout the project, a crystal background image will be used. It will be found in the navigation and footer background and it will also appear faded behind each section of content.
 
@@ -308,9 +308,9 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     9. Recreate the gif with the new images
 * The words within the nav links would break onto a new line when the viewport width was too small.
     * I fixed this at the end of the project by using flex-shrink to shrink the logo to create more space. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
-* About page hero wasn't centred on Microsoft Edge
+* About page hero wasn't centred on Microsoft Edge.
     * I fixed this by adding margin: auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
-* Testing on my partner's old Samsung phone
+* Testing on my partner's old Samsung phone.
     * I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
     
         ![Address in footer needs a <br>](docs/manual-testing/address-no-new-line.webp)
@@ -318,7 +318,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     * I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
 * Clicking the nav dropdown buttons too quickly on a desktop, meant that it would try to open even though it was already due to the mouse hovering over it. 
     * I solved this issue by disabling the dropdown button first, and then enabling it if the device couldn't hover over the menu options.
-    I would rather the dropdown not be disabled by default and I would like to revise the code as it isn't very well written. I decided not to because I didn't want to waste too much time on this as JavaScript won't be graded on this project. I had attempted to revise this code in the past but I didn't due to this reason. Additionally, the revision would've involved removing some CSS that could be graded.
+    I would rather the dropdown not be disabled by default and I would like to revise the code. I decided not to because I didn't want to waste too much time on this as JavaScript won't be graded on this project. I had attempted to revise this code in the past but I didn't due to this reason. Additionally, the revision would've involved removing some CSS that could be graded.
 * While editing the JavaScript for the nav dropdown menus, I realised that I was supposed to have moved the JavaScript into its own file to be reused on each page. 
     * I created 'expand-dropdown-on-hover.js' for this JavaScript.
 
@@ -353,7 +353,7 @@ All my images were created to be as responsive as possible. This causes the page
 Performance will take a hit due to this, especially on smaller devices such as phones. Following a mobile-first approach meant that this was an especially important problem that needed to be solved and avoided in the future.
 Setting a width and height will let the browser know how much space to reserve for that image.
 
-I went through all the images on my web pages and worked out a width and height that would be suitable and maintain its aspect ratio. Giving the browser the aspect ratio can improve performance on its own. I also tried to adapt the CSS to avoid resizing the image on smaller devices as much as possible.
+I went through all the images on my web pages and worked out a width and height that would be suitable and maintained its aspect ratio. Giving the browser the correct aspect ratio can improve performance on its own. I also tried to adapt the CSS to avoid resizing the image on smaller devices as much as possible.
 While working out width and height values, I took the opportunity to resize images to a size closer to what it is displayed as while maintaining the quality on larger devices.
 
 **Ensure text remains visible during webfont load**
@@ -447,7 +447,7 @@ Service.html [information mark character code](https://stackoverflow.com/questio
 
 Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?f=classic&s=solid)
 
-[Most people get glasses between 41-60](https://www.smarteyecare.nyc/blog/at-what-age-will-i-need-reading-glasses#:~:text=Typically%2C%20most%20people%20start%20needing,the%20ages%20of%2041%2D60.)
+[Most people get glasses between the ages 41-60](https://www.smarteyecare.nyc/blog/at-what-age-will-i-need-reading-glasses#:~:text=Typically%2C%20most%20people%20start%20needing,the%20ages%20of%2041%2D60.)
  
 ### Code
 
@@ -455,7 +455,7 @@ Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?
 * Navbar created using [Bootstrap's navbar]([https://getbootstrap.com/docs/5.0/components/navbar/]) and then modified.
 * Footer also uses Bootstrap classes
 * Code to open navbar dropdowns on hover taken from this [Stackoverflow post]([https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]) 
-* JQuery _check device can hover_ code taken from [this website](https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42)
+* JQuery code to "check device can hover" taken from [this website](https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42)
 * Disable dropdown on click to prevent issues taken from [Stackoverflow post](https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown)
 * When the form is submitted, you are taken to a thank you page that auto-redirects back to index.html. This was suggested to me by my mentor Darío Carrasquel.
 * Styling content using [Boostrap typography](https://getbootstrap.com/docs/5.0/content/typography/)
