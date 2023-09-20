@@ -1,0 +1,210 @@
+<!-- Found article from GitHub explaining how to add 404 page [https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site] -->
+
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="At Crystal Clear Opticians we strive to deliver a high-quality service efficently, because your time matters just as much as the health of your eyes. We sell a range of frames with many add-ons included and perform private eye exams.">
+    <meta name="theme-color" content="#F5DBE5">
+
+    <title>Form Submitted - Crystal Clear Opticians</title>
+
+    <!-- Preload images -->
+    <link rel="preload" as="image" href="assets/images/crystal-bg.webp">
+
+    <!-- Metatag that takes you to homepage after 10 seconds, suggested by my mentor -->
+    <meta http-equiv="refresh" content="10; url=index.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" as="font"
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <div class="navbar-container">
+            <div class="bg-img bg-img--nav"></div>
+            <!-- Nav taken from boostrap and modified [https://getbootstrap.com/docs/5.0/components/navbar/] -->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <!-- [class="container-md"] Boostrap 5 class that keeps the container width at 100% (like container-fluid) until it gets to the md breakpoint -->
+                <div class="container-lg">
+                    <a class="navbar-brand" aria-label="logo - go to the homepage" href="index.html">
+                        <img width="160" height="61" src="assets/images/nav-logo.webp"
+                            alt="Logo display the text Crystal Clear Opticians">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown"
+                                    role="button" data-bs-toggle="dropdown--disabled" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item"
+                                            href="services.html#pre-screening-section">Pre-screening</a></li>
+                                    <li><a class="dropdown-item" href="services.html#eye-test-section">Eye test</a></li>
+                                    <li><a class="dropdown-item" href="services.html#contacts-section">Contacts</a></li>
+                                    <li><a class="dropdown-item" href="services.html#cataracts-section">Cataracts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="frames.html">Our Frames</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                                    data-bs-toggle="dropdown--disabled" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="about.html">About</a></li>
+                                    <li><a class="dropdown-item" href="about.html#location-section">Location</a></li>
+                                    <li><a class="dropdown-item" href="about.html#contact-section">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End of Navbar -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Confirmation -->
+    <section id="form-confirmation-section">
+        <div class="container section-container">
+
+            <!-- Typography from Boostrap [https://getbootstrap.com/docs/5.0/content/typography/] -->
+            <Header>
+                <h2 class="section-header">Form submitted</h2>
+
+            </Header>
+
+            <hr class="space-seperator">
+
+            <section>
+                <h3>Thank you for your message.</h3>
+                <p>Please allow 48hrs for us to respond.</p>
+            </section>
+
+            <hr class="space-seperator">
+
+            <footer>
+                <p><u>You will be redirected to the homepage in 10 seconds...</u></p>
+                <p><small>Feel free to navigate to a page before then.</small></p>
+            </footer>
+        </div>
+    </section>
+    <!-- End of Confirmation -->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="bg-img bg-img--footer"></div>
+
+        <div class="container-lg footer_container">
+            <div class="row">
+                <div class="d-flex footer_inner-container">
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h1>Address</h1>
+                        <address>
+                            <p>127 Firefly Avenue<br>Teep Town<br>Wales<br>ZB18 6YO</p>
+                        </address>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h1>Opening Times</h1>
+                        <p>Monday - Saturday<br>09:00 - 20:00</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 footer_column">
+                        <h1>Contact Us</h1>
+                        <!-- Searched for how to add semantic data for contact info [https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number] -->
+                        <address>
+                            <a href="tel:+447783834565">07783834565</a>
+                            <br />
+                            <a href="mailto:crystal.clear@clearoptics.co.uk">crystal.clear@clearoptics.co.uk</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Social media -->
+
+            <!-- HTML from mdboostrap [https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/#section-icons] -->
+            <!-- Icons from Font Awesome [https://fontawesome.com/search] -->
+            <!-- Tooltips from Boostrap [https://getbootstrap.com/docs/5.0/components/tooltips/] -->
+            <div class="social-icons-container">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Facebook (opens in new tab)" target="_blank"
+                    href="https://www.facebook.com/" role="button" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Instagram (opens in new tab)"
+                    target="_blank" href="https://www.instagram.com/" role="button" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg" aria-label="Our Linkedin (opens in new tab)" target="_blank"
+                    href="https://www.linkedin.com/feed/" role="button" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg" target="_blank"
+                    aria-label="Github project link (opens in new tab)"
+                    href="https://github.com/avabellaw/crystal-clear-opticians" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Section: Social media -->
+
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col p-0">
+                    <div class="footer_copyright">
+                        © 2023 Copyright: Crystal Clear Opticians
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/7f8d320380.js" crossorigin="anonymous"></script>
+
+    <!-- How to include JS from local file [http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html#:~:text=To%20include%20an%20external%20JavaScript%20file%2C%20we%20can%20use%20the,path%20to%20your%20JavaScript%20file.&text=This%20script%20tag%20should%20be,tags%20in%20your%20HTML%20document.] -->
+    <script type="text/javascript" src="assets/js/expand-dropdown-on-hover.js"></script>
+</body>
+
+</html>
