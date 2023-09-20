@@ -105,7 +105,9 @@ h3 {
 }
 
 .bg-success {
-    background-color: #632982!important; /* "!important" is needed to override Bootstrap styling */
+    background-color: #632982 !important;
+    /* "!important" is needed to override Bootstrap styling */
+    margin-left: 0.6rem;
 }
 
 /* Background images */
@@ -174,7 +176,8 @@ nav .navbar-nav {
 }
 
 #navbarSupportedContent {
-    flex-shrink: 0; /* Stops menu from shrinking and wrapping words */
+    flex-shrink: 0;
+    /* Stops menu from shrinking and wrapping words */
 }
 
 /* Nav items */
@@ -193,7 +196,8 @@ nav .navbar-nav {
 .navbar-brand {
     max-width: calc(25vw + 10vh);
 
-    flex-shrink: 2; /* Shrink logo if it's too big for the nav elements */
+    flex-shrink: 2;
+    /* Shrink logo if it's too big for the nav elements */
 }
 
 .navbar-nav>.nav-item>.nav-link {
@@ -283,7 +287,7 @@ nav .navbar-nav {
 
 @media screen and (min-width:992px) {
     .navbar-brand>img {
-        width:190px;
+        width: 190px;
     }
 }
 
@@ -330,7 +334,8 @@ nav .navbar-nav {
 
 /* ! Nav items */
 
-.navbar, .page-footer {
+.navbar,
+.page-footer {
     font-family: 'Assistant', sans-serif;
     font-weight: 500;
 }
@@ -390,7 +395,7 @@ nav .navbar-nav {
     padding: 0;
 }
 
-.hero_image-container{
+.hero_image-container {
     overflow: hidden;
     width: fit-content;
     max-width: 100%;
@@ -554,6 +559,20 @@ article>section {
     }
 }
 
+@media screen and (max-width:576px) {
+    /* 
+        Following a mobile-first approach, be applying styles with a media query on a smaller device. However, it's easier to apply these styles than attempting to reverse them.
+        This will make both the "FREE" badges go under the diagram_titles "Varifocals" and "Bifocals" on the homepage when on a mobile. Otherwise only one would wrap because "Varifocals" uses up more space.
+    */
+
+    .diagram_title>.bg-success {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 0.35em;
+    }
+}
+
 /* ! Diagram table styling */
 
 /* Main section Media Queries */
@@ -571,7 +590,7 @@ article>section {
 .page-footer {
     position: relative;
     overflow: hidden;
-    
+
     padding: 0.7rem;
     font-size: 0.9em;
 }
@@ -597,6 +616,7 @@ article>section {
 .page-footer p:last-of-type {
     margin-bottom: 0;
 }
+
 .page-footer h1 {
     /* Based on what .page-footer font-size is set to */
     font-size: 1.2em;
@@ -748,6 +768,7 @@ form input[type="submit"] {
 }
 
 @media (hover:hover) {
+
     /* If device can hover, apply transition to and make the info-mark icon brighter */
     .info-symbol-container:hover {
         transition: all 0.2s ease-in-out;
