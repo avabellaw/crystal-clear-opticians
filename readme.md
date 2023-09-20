@@ -1,6 +1,6 @@
 # **Crystal Clear Opticians** - Milestone Project 1
 
-This website showcases my HTML/CSS milstone project: Crystal Clear Opticians. A highly efficient and affordable opticians with a range of glasses.
+This website showcases my HTML/CSS milestone project: Crystal Clear Opticians. A highly efficient and affordable opticians with a range of glasses.
 It is built with responsiveness at its core and made to be accessible, especially for older people and those with vision problems. 
 * Bigger font sizes.
 * Simplified navigation system.
@@ -23,9 +23,9 @@ The site aims to drive traffic to the business, give insight to patients on what
 
 To plan, design and create the project, I used the 5 planes of UX design with a mobile-first approach:
 * Strategy - Project requirements and audience.
-* Scope - What features to include based on the strategy plane?
+* Scope - Features to include based on the strategy plane.
 * Structure - The structure of information and how it's grouped.
-* Skeleton - How the information presented and navigated.
+* Skeleton - How the information is presented and navigated.
 * Surface - The look and feel of the project.
 
 ### User Stories
@@ -64,7 +64,7 @@ These goals are delivered by:
 * Having a services dropdown (Our Services) in the navigation that explains the shop's process.
 * While explaining the process, the site delivers information on eye care.
 * Has a dedicated section in the navigation that shows off the glasses cleanly and simply.
-* All the shop information is found through the About dropdown. THis page also contains a handy map embedded in the site using an iframe from Google Maps.
+* All the shop information is found through the About dropdown. This page also contains a handy map embedded in the site using an iframe from Google Maps.
 * Demonstrates pricing structure clearly on the homepage.
 
 Site owner goals are:
@@ -122,13 +122,13 @@ I decided in this plane and the structure plane that the desired information cou
  
 * Home - An external user wants to learn as much about Crystal Clear as possible. They should learn about its amazing pricing structure as early as possible.
 * Our frames - They need to be assured at a glance that glasses are sold and what kinds of glasses to expect.
-* Our services - "What should I expect at my appointment?" - Our Services jumps out at the user asking this question with a dropdown that narrows down what they want to know.
+* Our services - "What should I expect at my appointment?" - "Our Services" jumps out at the user asking this question with a dropdown that narrows down what they want to know.
 * About - A user is likely to expect to find the location and more information about the actual store here with a dropdown to quickly confirm this. It's also a great place for a contact form. 
 
 The logo can also be clicked to get back to the homepage. This is very common in websites and intuitive to the majority of users.
 
 In the design phase, my original idea was to try to keep the 4 links in the navigation visible on all devices as it is on my wireframe mockup. This was to make it immediately evident what pages were available to the user. This, however, turned out to not work well in practice as the text and/or logo would look disproportionately small. It also meant that I wouldn't be able to use purely Bootstrap classes to change to a hamburger on very small devices. 
-I decided to replace it with a hamburger menu on smaller devices which is an accepted as way of displaying a menu on mobile that still adheres to UX design principles.
+I decided to replace it with a hamburger menu on smaller devices which is an accepted way of displaying a menu on mobile that still adheres to UX design principles.
 
 ### Surface Plane
 
@@ -183,7 +183,7 @@ Throughout the project, a crystal background image will be used. It will be foun
 * Figma
     * Used to create the mockup of the website before developing.
 * Word 
-    * Used to present the project requirements in my own words, for project research, and for brainstorming.
+    * Used to present the project requirements in my own words, for project research, and brainstorming.
 * Notepad and Notepad++
     * Used for quick notes from my mentor and for notes while developing.
 * Chrome - Inspect element
@@ -239,7 +239,7 @@ I also realized that using <section> purely as a container for every section of 
 
 ![about.html validator first resuts](docs/validation/about-before.webp)
 
-The textarea tag on the contact form had a type attribute with the value “textarea” so I removed this.I also fixed the warnings found in previous validator results.
+The textarea tag on the contact form had a type attribute with the value “textarea” so I removed this. I also fixed the warnings found in the previous validator results.
 
 #### services.html
 
@@ -274,11 +274,11 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 ### JS Validator Notes
 
 * expand-dropdown-on-hover.js
-    * I recieved warnings, relating mostly to JQuery, but no errors.
+    * I received warnings, relating mostly to JQuery, but no errors.
     * JSLint suggests using double quotes instead of single but single quotes are still valid in JavaScript.
-    * JSLint had issues with comments being longer than 80 characters but they work for the purpose of this project.
+    * JSLint had issues with comments being longer than 80 characters but they work as proper documentation for the project.
 
-### Testing User Stories From 'User Experience' Section
+### Testing User Stories From The User Experience Section
 
 [Testing User Stories](docs/user-story-testing/testing-user-stories.md)
 
@@ -293,7 +293,7 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
         <img src="docs/manual-testing/screenshot-mobile-address-bar.webp" alt="Screenshot on Samsung s21" width="30%">
 * Testing website on emulated iPad Air.
     * I found that the top navbar and the tagline appeared too small when using vh. I decided to add a media query to enlarge these elements when on a device with an aspect ratio of 5/3.
-* I noticed the fields test animation was off-center. Using keyboard shortcuts, I reduced the width and height of each image, that was used to create the gif, by 1px and then re-created the animation. The steps I performed to do this were as follows:
+* I noticed the Visual Fields test animation was off-centre. Using keyboard shortcuts, I reduced the width and height of each image, that was used to create the gif, by 1px and then re-created the animation. The steps I performed to do this were as follows:
     1. Ctrl + A, ENTER: Select and open all 12 images in paint.net
     2. ctrl + shift + R: Change canvas size on the current image
     3. Canvas size editor will open starting on the width box, with the aspect ratio maintained
@@ -309,17 +309,17 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * The words within the nav links would break onto a new line when the viewport width was too small.
     * I fixed this at the end of the project by using flex-shrink to shrink the logo to create more space. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
 * About page hero wasn't centred on Microsoft Edge
-    * I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
+    * I fixed this by adding margin: auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
 * Testing on my partner's old Samsung phone
     * I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
     
         ![Address in footer needs a <br>](docs/manual-testing/address-no-new-line.webp)
 * On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. 
     * I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
-* Clicking the nav dropdown buttons too quickly on desktop, meant that it would try to open even though it was already due to the mouse hovering over it. 
-    * I solved this issue by disabling the dropdown button first, and then enabling it if the device didn't have the capacity to hover over the menu options.
+* Clicking the nav dropdown buttons too quickly on a desktop, meant that it would try to open even though it was already due to the mouse hovering over it. 
+    * I solved this issue by disabling the dropdown button first, and then enabling it if the device couldn't hover over the menu options.
     I would rather the dropdown not be disabled by default and I would like to revise the code as it isn't very well written. I decided not to because I didn't want to waste too much time on this as JavaScript won't be graded on this project. I had attempted to revise this code in the past but I didn't due to this reason. Additionally, the revision would've involved removing some CSS that could be graded.
-* While editing the JavaScript for the nav dropdown menus, I realised that I was suppoed to have moved the JavaScript into it's own file to be reused on each page. 
+* While editing the JavaScript for the nav dropdown menus, I realised that I was supposed to have moved the JavaScript into its own file to be reused on each page. 
     * I created 'expand-dropdown-on-hover.js' for this JavaScript.
 
 ### Further Testing
@@ -381,7 +381,7 @@ I decided to switch to prefetching the fonts but this gave me a validation error
 
 * One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the About page instead of the location section of the About page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
-* If you open the dropdown with a device that can't hover (for example a tablet or mobile) then switch to one that can like a desktop, the already open dropdown will try to open and you will need to refresh. In a real-life application, this wouldn't be a bug. 
+* If you open the dropdown with a device that can't hover (for example a tablet or mobile) and then switch to one that can like a desktop, the already open dropdown will try to open and you will need to refresh. In a real-life application, this wouldn't be a bug. 
 * I was unable to get 'animation' or 'transition' to work on the dropdown sub menus when on a mobile device.
 * The info-mark when clicked, will open a fact with a zoomIn transition. This will only work the first time.
 
@@ -520,9 +520,9 @@ The diagrams for light-reactive and tinted lenses were created by me in paint.ne
 
 ### GIFS
 
-GIF animation to demonstrate the fields test created by me using paint.net and [ezgif](https://ezgif.com/maker). I used 12 pictures.
+GIF animation to demonstrate the Visual Fields test created by me using paint.net and [ezgif](https://ezgif.com/maker). I used 12 pictures.
 I made the contrast quite low which was realistic. After creating the GIF, I decided to edit it using ezgif Maker to improve visibility. I decreased the brightness (-15%) but increased the contrast (+50%).
 
 ### Videos
 
-Video of cataracts surgery on  Our Services page [from pixabay](https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/)
+Video of cataract surgery on  Our Services page [from pixabay](https://pixabay.com/videos/cataract-surgery-eye-retina-vision-4215/)
