@@ -210,6 +210,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     * [frames.css results](docs/validation/css-results/frames-results.webp)
     * [about.css results](docs/validation/css-results/about-results.webp)
 
+* [JSLint JS Validator](https://www.jslint.com/)
+
+    * [expand-dropdown-on-hover.js results](docs/validation/js-results/expand-dropdown-on-hover.webp)
+
 My commit messages when fixing and committing these errors/warnings varied slightly. This was due to not always being able to keep within the character limit.
 
 ### HTML Validator Notes
@@ -256,6 +260,12 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * frames.css
 * home.css
 * services.css
+
+### JS Validator Notes
+
+I recieved warnings, relating to JQueryz, but no errors when I used JSLint on expand-dropdown-on-hover.js.
+It also suggested using double quotes instead of single but single quotes are still valid in JavaScript.
+Lastly, it had issues with comments being longer than 80 characters but they work for the purpose of this project.
 
 ### Testing User Stories
 
