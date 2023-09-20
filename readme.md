@@ -465,6 +465,7 @@ Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?
 * [Eliminating render-blocking resources](https://sia.codes/posts/render-blocking-resources/)
 * How to use flex-shrink from [cssreference](https://cssreference.io/property/flex-shrink/#:~:text=default%20flex%2Dshrink%3A%201%3B,and%20will%20wrap%20its%20content.&text=flex%2Dshrink%3A%200%3B,and%20not%20wrap%20its%20content.)
 * [Stackoverflow](https://stackoverflow.com) for help working out code and code tricks.
+* [Article from GitHub explaining how to add a 404 page for GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
 
 ### Media
 

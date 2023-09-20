@@ -580,13 +580,7 @@
 
     <script>
         $(document).ready(function () {
-            $(function () {
-                $('[data-toggle="popover"]').popover({
-                    container: 'body'
-                });
-            });
-
-            // Initialize Bootstrap tooltips
+            // Initialize Bootstrap tooltips (https://getbootstrap.com/docs/5.0/components/tooltips/)
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
