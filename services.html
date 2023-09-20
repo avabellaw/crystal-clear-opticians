@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preload" as="font"
         href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap">
-        
+
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -51,7 +51,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle" href="services.html" id="servicesDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    role="button" data-bs-toggle="dropdown--disabled" aria-expanded="false">
                                     Our Services
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -68,7 +68,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    data-bs-toggle="dropdown--disabled" aria-expanded="false">
                                     About
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -550,30 +550,12 @@
         crossorigin="anonymous"></script>
     <script defer src="https://kit.fontawesome.com/7f8d320380.js" crossorigin="anonymous"></script>
 
+    <!-- How to include JS from local file [http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html#:~:text=To%20include%20an%20external%20JavaScript%20file%2C%20we%20can%20use%20the,path%20to%20your%20JavaScript%20file.&text=This%20script%20tag%20should%20be,tags%20in%20your%20HTML%20document.] -->
+    <script type="text/javascript" src="assets/js/expand-dropdown-on-hover.js"></script>
+
+
     <script>
-        // Taken and then modified [https://www.geeksforgeeks.org/how-to-make-menu-dropdown-on-hover-using-bootstrap/]
         $(document).ready(function () {
-            $('.dropdown').hover(function () {
-                $(this).addClass('show--hover');
-                $(this).find('.dropdown-toggle').addClass('show--hover');
-                $(this).find('.dropdown-toggle').attr("aria-expanded", true);
-                $(this).find('.dropdown-menu').addClass('show--hover');
-
-                // Check whether device can hover just like css media query [https://dev.to/niorad/detecting-hover-and-touch-in-css-and-js-4e42]
-                const canHover = window.matchMedia('(hover: hover)').matches;
-
-                if (canHover) {
-                    // Disable dropdown on click [https://stackoverflow.com/questions/15697968/how-to-disable-bootstraps-button-dropdown]
-                    $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown--disabled");
-                }
-            }, function () {
-                $(this).removeClass('show--hover');
-                $(this).find('.dropdown-toggle').removeClass('show--hover');
-                $(this).find('.dropdown-toggle').attr("aria-expanded", false);
-                $(this).find('.dropdown-menu').removeClass('show--hover');
-
-                $(this).find('.dropdown-toggle').attr("data-bs-toggle", "dropdown");
-            });
             $(function () {
                 $('[data-toggle="popover"]').popover({
                     container: 'body'
@@ -586,7 +568,6 @@
                 return new bootstrap.Tooltip(tooltipTriggerEl)
             })
         });
-
     </script>
 </body>
 

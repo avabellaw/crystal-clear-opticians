@@ -332,6 +332,9 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
 * About page hero wasn't centred on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
 * After testing on my partner's old Samsung phone, I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
 * On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
+* Clicking the nav dropdown buttons too quickly on desktop, meant that it would try to open even though it was opened on-hover.  I solved this issue by disabling the dropdown button first, and then enabling it if the device didn't have the capacity to hover over menu options.
+I also realised that I was suppoed to have moved the Javascript into it's own file to be reused for each page.
+I would rather the dropdown not be disabled by default, however I didn't want to waste too much time on this as Javascript won't be graded on this project. If Javascript was disabled on a device, they wouldn't see the dropdown but would still be able to access the pages when clicked.
 
 ### Further Testing
 
@@ -392,6 +395,7 @@ I decided to switch to prefetching the fonts but this gave me a validation error
 
 * One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the About page instead of the location section of the About page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
+* If you open the dropdown with a device that can't hover (for example a tablet or mobile) then switch to one that can like a desktop, the dropdown will try to open and close and you will need to refresh. In a real-life application, this wouldn't be a bug. 
 
 ### Deployment
 

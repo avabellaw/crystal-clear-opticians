@@ -221,6 +221,7 @@ nav .navbar-nav {
 
 .dropdown-menu[data-bs-popper] {
     left: initial;
+    margin-top: 0;
 }
 
 .dropdown-item:hover {
