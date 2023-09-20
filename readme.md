@@ -31,7 +31,7 @@ To plan, design and create the project, I used the 5 planes of UX design with a 
 ### User Stories
 
 1. As a first-time user I want to find out more about the opticians and how the glasses are priced.
-2. As a first-time user I want to find out how to get to the opticians.
+2. As a first-time user I want to find out how to get to the opticians and contact them.
 3. As a first-time user I want to find links to the shop's social media.
 4. As a first-time user I want to see what to expect if I book an appointment.
 5. As a recurring user I want to see whether there are new frames.
@@ -464,7 +464,7 @@ Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?
 * [Using defer and async on the script tag](https://blog.logrocket.com/9-tricks-eliminate-render-blocking-resources/)
 * [Eliminating render-blocking resources](https://sia.codes/posts/render-blocking-resources/)
 * How to use flex-shrink from [cssreference](https://cssreference.io/property/flex-shrink/#:~:text=default%20flex%2Dshrink%3A%201%3B,and%20will%20wrap%20its%20content.&text=flex%2Dshrink%3A%200%3B,and%20not%20wrap%20its%20content.)
-* [Stackoverflow](https://stackoverflow.com) for answering and checking code tricks.
+* [Stackoverflow](https://stackoverflow.com) for help working out code and code tricks.
 
 ### Media
 
@@ -490,6 +490,7 @@ General images:
 * [Phoropter](https://www.pexels.com/photo/crop-woman-holding-trial-frame-against-white-background-5715892/)
 * [Box of lenses](https://www.pexels.com/photo/collection-of-lenses-for-checking-vision-in-medical-center-5752235/)
 * [Collection of glasses](https://unsplash.com/photos/oqlEKLMmTNg)
+* [About page quartz crystal](https://www.pexels.com/photo/close-up-photo-of-clear-crystal-4040608/)
 
 Glasses icons:
 * https://www.flaticon.com/free-icon/summer_75908?term=glasses&page=1&position=22&origin=tag&related_id=75908
@@ -504,19 +505,23 @@ Diagrams:
 
 Image references for the frames section of the website:
 
-* https://www.pexels.com/photo/photo-of-round-eyeglasses-on-white-surface-2530391/
 * https://www.stockvault.net/photo/125815/glasses
 * https://www.pexels.com/photo/stylish-elegant-eyeglasses-for-vision-improvement-4226870/
 * https://www.pexels.com/photo/stylish-heart-shaped-sunglasses-on-wooden-surface-6479569/
 * https://www.pexels.com/photo/trendy-sunglasses-placed-on-wooden-table-5472304/
 * https://www.pexels.com/photo/crop-stylish-lady-woman-holding-eyeglasses-in-hand-4468154/
-* https://www.pexels.com/photo/funny-dog-in-pink-eyeglasses-and-accessory-5731803/
 * https://www.pexels.com/photo/modern-eyeglasses-against-plant-foliage-on-white-background-7923926/
 * https://www.pexels.com/photo/happy-boy-with-books-looking-at-camera-7258418/
 * https://www.pexels.com/photo/spectacles-placed-on-objective-lens-7501398/
 * https://unsplash.com/photos/d05w6_7FaPM
 
-The diagrams for light-reactive and tinted lenses were created by me in paint.net using icons I've previously credited. Using one glasses icon, I edited different colour lenses to demonstrate them reacting to light and also what different tints would look like.
+Images I ended up not using:
+
+* https://www.pexels.com/photo/photo-of-round-eyeglasses-on-white-surface-2530391/
+* https://www.pexels.com/photo/funny-dog-in-pink-eyeglasses-and-accessory-5731803/
+
+
+The diagrams for light-reactive and tinted lenses were created by me in paint.net using icons I've previously credited. Using one glasses icon, I edited different colour lenses to demonstrate them reacting to light and also for what different tints would look like.
 
 ### GIFS
 
