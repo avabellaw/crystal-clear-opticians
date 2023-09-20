@@ -131,6 +131,8 @@ I decided to use the following fonts that complement each other:
 * Assistant - Navbar and footer
 * Poppins - Body
 
+I used a colour theme based on the crystal image I used as the background for the nav, footer and sections of content. This was a mix of pinks 
+
 There will be a hero image on the homepage and a tagline. This simple layout doesn't overwhelm the user with information and is aesthetically pleasing. It also lets the user know the core principles and selling points of Crystal Clear Opticians.
 The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website.
 
@@ -450,6 +452,7 @@ Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?
 * [Using defer and async on the script tag](https://blog.logrocket.com/9-tricks-eliminate-render-blocking-resources/)
 * [Eliminating render-blocking resources](https://sia.codes/posts/render-blocking-resources/)
 * How to use flex-shrink from [cssreference](https://cssreference.io/property/flex-shrink/#:~:text=default%20flex%2Dshrink%3A%201%3B,and%20will%20wrap%20its%20content.&text=flex%2Dshrink%3A%200%3B,and%20not%20wrap%20its%20content.)
+* [Stackoverflow](https://stackoverflow.com) for answering and checking code tricks.
 
 ### Media
 
