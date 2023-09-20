@@ -396,6 +396,8 @@ I decided to switch to prefetching the fonts but this gave me a validation error
 * One user experience issue I haven't overcome is allowing touchscreen users to click the dropdown button to go to the main page instead of skipping to sections within them. Eg. going to the About page instead of the location section of the About page. 
 * Devices with a width under 250px begin to distort the webpage, however, this accounts for a minuscule percentage of users browsing the internet. 
 * If you open the dropdown with a device that can't hover (for example a tablet or mobile) then switch to one that can like a desktop, the already open dropdown will try to open and you will need to refresh. In a real-life application, this wouldn't be a bug. 
+* I was unable to get 'animation' or 'transition' to work on the dropdown sub menus when on a mobile device.
+* The info-mark when clicked, will open a fact with a zoomIn transition. This will only work the first time.
 
 ### Deployment
 
