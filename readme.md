@@ -312,7 +312,8 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     * I originally used tooltips but decided there was enough information given through the well-known icons and that it distracted from the icons itself. I also thought it took away from the aesthetics of the icons and animation.
     * I tested clicking through the icons and found that they opened the links internally rather than opening a new tab.
 * Testing the website on real-life devices.
-    * I found that phones and tablets included the top address bar in the whole viewport height (100vh). On emulators, the address bar wasn't included meaning this didn't happen. I was able to use some Javascript to rectify this but I decided that it was out of the scope of this project and may add more problems. If this website were to be revisited, I would include the fix to this problem. 
+    * I found that phones and tablets included the top address bar in the whole viewport height (100vh). On emulators, the address bar wasn't included meaning this didn't happen. I was able to use some JavaScript to rectify this but I decided that it was out of the scope of this project and may add more problems. If this website were to be revisited, I would include the fix to this problem. 
+    ![Screenshot on Samsung s21](docs/manual-testing/screenshot-mobile-address-bar.webp)
 * Testing website on emulated iPad Air.
     * I found that the top navbar and the tagline appeared too small when using vh. I decided to add a media query to enlarge these elements when on a device with an aspect ratio of 5/3.
 * I noticed the fields test animation was off-center. Using keyboard shortcuts, I reduced the width and height of each image, that was used to create the gif, by 1px and then re-created the animation. The steps I performed to do this were as follows:
@@ -328,13 +329,20 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     7. Crtl + W: Close picture
     8. Repeat 1-7 for all images
     9. Recreate the gif with the new images
-* The words within the nav links would break onto a new line when the viewport width was too small. I fixed this at the end of the project by using flex-shrink to shrink the logo to create more space. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
-* About page hero wasn't centred on Microsoft Edge and I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
-* After testing on my partner's old Samsung phone, I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
-* On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
-* Clicking the nav dropdown buttons too quickly on desktop, meant that it would try to open even though it was already due to the mouse hovering over it. I solved this issue by disabling the dropdown button first, and then enabling it if the device didn't have the capacity to hover over the menu options.
-I would rather the dropdown not be disabled by default and I would like to revise the code as it isn't very well written. I decided not to because I didn't want to waste too much time on this as Javascript won't be graded on this project. I had attempted to revise this code in the past but I didn't due to this reason. Additionally, the revision would've involved removing some CSS that could be graded.
-* While editing the Javascript for the nav dropdown menus, I realised that I was suppoed to have moved the Javascript into it's own file to be reused on each page. Therefore, I did this before fixing the above bug.
+* The words within the nav links would break onto a new line when the viewport width was too small.
+    * I fixed this at the end of the project by using flex-shrink to shrink the logo to create more space. I also created a media query to make padding and margins smaller which would avoid the logo having to shrink too small.
+* About page hero wasn't centred on Microsoft Edge
+    * I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
+* Testing on my partner's old Samsung phone
+    * I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
+    ![Address in footer needs a <br>](docs/manual-testing/address-no-new-line.webp)
+* On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. 
+    * I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
+* Clicking the nav dropdown buttons too quickly on desktop, meant that it would try to open even though it was already due to the mouse hovering over it. 
+    * I solved this issue by disabling the dropdown button first, and then enabling it if the device didn't have the capacity to hover over the menu options.
+    I would rather the dropdown not be disabled by default and I would like to revise the code as it isn't very well written. I decided not to because I didn't want to waste too much time on this as JavaScript won't be graded on this project. I had attempted to revise this code in the past but I didn't due to this reason. Additionally, the revision would've involved removing some CSS that could be graded.
+* While editing the JavaScript for the nav dropdown menus, I realised that I was suppoed to have moved the JavaScript into it's own file to be reused on each page. 
+    * I created 'expand-dropdown-on-hover.js' for this JavaScript.
 
 ### Further Testing
 
