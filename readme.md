@@ -1,7 +1,10 @@
 # **Crystal Clear Opticians** - Milestone Project 1
 
-This website showcases Crystal Clear Opticians which is a highly efficient and affordable opticians with a range of glasses.
-It is built with responsiveness at its core and made to be accessible, especially for people with vision problems. It has bigger font sizes and a simplified navigation system.
+This website showcases my HTML/CSS milstone project: Crystal Clear Opticians. A highly efficient and affordable opticians with a range of glasses.
+It is built with responsiveness at its core and made to be accessible, especially for older people and those with vision problems. 
+* Bigger font sizes.
+* Simplified navigation system.
+* Screen reader accessible by using aria roles and attributes.
 
 This project demonstrates the development of my knowledge of HTML5, CSS3, and UX design after studying the modules with Code Institute. It's a static website, with no server-side code, purely demonstrating my skills in front-end development.
 
@@ -22,7 +25,7 @@ To plan, design and create the project, I used the 5 planes of UX design with a 
 * Strategy - Project requirements and audience.
 * Scope - What features to include based on the strategy plane?
 * Structure - The structure of information and how it's grouped.
-* Skeleton - How is the information presented and navigated?
+* Skeleton - How the information presented and navigated.
 * Surface - The look and feel of the project.
 
 ### User Stories
@@ -36,7 +39,8 @@ To plan, design and create the project, I used the 5 planes of UX design with a 
 
 In future releases:
 
-* A recurring and first-time user may want to book and check on appointments
+* A recurring and first-time user may want to book and check on appointments.
+* A recurring and first-time user may want to order glasses on the website.
 
 ### Strategy Plane
 
@@ -57,10 +61,10 @@ User goals are:
 
 These goals are delivered by:
 
-* Having a services dropdown in the navigation that explains the shop's process.
+* Having a services dropdown (Our Services) in the navigation that explains the shop's process.
 * While explaining the process, the site delivers information on eye care.
 * Has a dedicated section in the navigation that shows off the glasses cleanly and simply.
-* All the shop information is found through the About dropdown. Has a handy map embedded in the site using an iframe from Google Maps.
+* All the shop information is found through the About dropdown. THis page also contains a handy map embedded in the site using an iframe from Google Maps.
 * Demonstrates pricing structure clearly on the homepage.
 
 Site owner goals are:
@@ -96,11 +100,12 @@ Possible features for the future:
 * Mini nav inside the footer.
 * A way to book appointments online.
 * A section dedicated to eye care.
+* A way to order glasses online.
 
 ### Structure Plane
 
 Pages:
-* Home page – With pricing on it.
+* Home page – With pricing structure on it.
 * Our Frames - A selection of the best frames for various purposes.
 * Our Services - Demonstrate the services provided and what to expect.
 * About: Our Practise - Location – Contact Us
@@ -131,7 +136,10 @@ I decided to use the following fonts that complement each other:
 * Assistant - Navbar and footer
 * Poppins - Body
 
-I used a colour theme based on the crystal image I used as the background for the nav, footer and sections of content. This was a mix of pinks 
+I will use a colour theme based on the crystal image I will use as the background for the nav, footer and sections of content. 
+This is a mix of pinks with purple for elements that need to stand out. 
+I later used blue for an advert alert in the contact lenses section of Our Services.
+
 
 There will be a hero image on the homepage and a tagline. This simple layout doesn't overwhelm the user with information and is aesthetically pleasing. It also lets the user know the core principles and selling points of Crystal Clear Opticians.
 The crystal in the eye is an indirect way of clearly conveying a focus on the eyes. It is intended to stick in the back of the user's mind whenever they browse or think of the website.
@@ -153,7 +161,7 @@ Throughout the project, a crystal background image will be used. It will be foun
     * Reduce time wasted on reinventing the wheel. 
 * Google Fonts
     * Gives easy access to many fonts supplied through a CDN that downloads close to the region of the user. Speeding up delivery.
-    * I used the fonts: Assistant and Lora - used throughout the website. Lora for content and Assistant for the headings and nav/footer.
+    * I used the fonts: Assistant and Poppins - used throughout the website. Poppins for content and Assistant for the headings and nav/footer.
 * JQuery
     * Used to add tooltips, make the nav responsive and add a dropdown within the nav.
     * I edited Bootstrap's JQuery to allow me to create new rules for the nav dropdown such as dropdown on hover when on screens that can hover.
@@ -165,7 +173,7 @@ Throughout the project, a crystal background image will be used. It will be foun
     * Used to store commits and to present the project using GitHub pages
 * Visual Studio Code
     * Used as the IDE for the project.
-    * I set a shortcut for Visual Code's HTML/CSS formatting to ctrl+shift+f.
+    * I set a shortcut for Visual Code to format HTML/CSS (ctrl+shift+f).
 * Visual Studio Code extension - Live Server by Ritwick Dey
     * Used instead of Python to run a server to host the website on localhost in two clicks.
 * Python - http.server
@@ -185,7 +193,7 @@ Throughout the project, a crystal background image will be used. It will be foun
         * Bug fix.
         * Find out how Bootstrap is styling elements.
 * Firefox, Microsoft Edge, Safari
-    * Used to test compatibility for other browsers.
+    * Used to test compatibility on other browsers.
 * [Responsinator](http://www.responsinator.com/) for testing on different screens.
 * [Image aspect ratio and resizing calculator](https://red-route.org/code/image-resizing-calculator)
     * For working out what width and height an image should have when first loaded on a mobile
@@ -231,7 +239,7 @@ I also realized that using <section> purely as a container for every section of 
 
 ![about.html validator first resuts](docs/validation/about-before.webp)
 
-The textarea tag on the contact form had a type attribute with the value “textarea” so I removed this.
+The textarea tag on the contact form had a type attribute with the value “textarea” so I removed this.I also fixed the warnings found in previous validator results.
 
 #### services.html
 
@@ -281,7 +289,8 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     * I tested clicking through the icons and found that they opened the links internally rather than opening a new tab.
 * Testing the website on real-life devices.
     * I found that phones and tablets included the top address bar in the whole viewport height (100vh). On emulators, the address bar wasn't included meaning this didn't happen. I was able to use some JavaScript to rectify this but I decided that it was out of the scope of this project and may add more problems. If this website were to be revisited, I would include the fix to this problem. 
-    ![Screenshot on Samsung s21](docs/manual-testing/screenshot-mobile-address-bar.webp)
+    
+        <img src="docs/manual-testing/screenshot-mobile-address-bar.webp" alt="Screenshot on Samsung s21" width="30%">
 * Testing website on emulated iPad Air.
     * I found that the top navbar and the tagline appeared too small when using vh. I decided to add a media query to enlarge these elements when on a device with an aspect ratio of 5/3.
 * I noticed the fields test animation was off-center. Using keyboard shortcuts, I reduced the width and height of each image, that was used to create the gif, by 1px and then re-created the animation. The steps I performed to do this were as follows:
@@ -303,7 +312,8 @@ This was the same for all the other CSS files I used. However, I hadn’t previo
     * I fixed this by adding margin:auto to the about-hero-container. I also noticed that the words were getting squished and becoming very tall. I simply changed the container-sm to container-md to allow for more space on small devices.
 * Testing on my partner's old Samsung phone
     * I found that I forgot to put a line break between the phone number and email within the footer's contact section. They were changed from paragraph tags to anchor tags since I last tested on mobile and, because anchor tags are inline elements, they don't wrap to a new line if they have space.
-    ![Address in footer needs a <br>](docs/manual-testing/address-no-new-line.webp)
+    
+        ![Address in footer needs a <br>](docs/manual-testing/address-no-new-line.webp)
 * On mobile, I discovered that the fact bubble that is revealed upon clicking the info-mark was too narrow. 
     * I realised I had missed a number off a media query, making it "min-width:57px" instead of "min-width:576px". The media query set the width to only 40% of the viewport on devices that were medium or larger but that media query condition was always met. I decided to set it to 80% normally and 60% on large devices.
 * Clicking the nav dropdown buttons too quickly on desktop, meant that it would try to open even though it was already due to the mouse hovering over it. 
@@ -436,6 +446,8 @@ Services.html cataract surgery facts:
 Service.html [information mark character code](https://stackoverflow.com/questions/33878539/is-there-an-html-entity-for-an-info-icon)
 
 Eye SVG for bullet points [from Font Awesome](https://fontawesome.com/icons/eye?f=classic&s=solid)
+
+[Most people get glasses between 41-60](https://www.smarteyecare.nyc/blog/at-what-age-will-i-need-reading-glasses#:~:text=Typically%2C%20most%20people%20start%20needing,the%20ages%20of%2041%2D60.)
  
 ### Code
 
